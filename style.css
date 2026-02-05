@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=LXGW+WenKai+Mono+TC&family=Pacifico&family=Playwrite+DE+Grund+Guides&display=swap');
+
+:root{
+  --purple:#5C2EB3;
+  --violet:#AC42B6;
+  --violet2:#F26FAF;
+  --purple2:#B061DE;
+  --pink:#FED0E0;
+  --pink2:#F1419D;
+  --pink3:#FBD7EE;
+  --white:#FDF9F9;
+}
+
+body{
+  width: 100%;
+  margin: 0;
+  font-family: "Playwrite DE Grund Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    var(--purple),
+    var(--violet),
+    var(--purple2),
+    var(--violet2),
+    var(--pink2)
+  );
+
+}
+.text{
+
+}
+
+.text1{
+
+}
+
+.text2{
+
+}
+
+.btn{
+  
+}
