@@ -17,22 +17,11 @@ body{
   font-family: "Playwrite DE Grund Guides", cursive;
   font-weight: 400;
   font-style: normal;
+  position: relative;
 }
 
 header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  width: 100%;
-  background-image: linear-gradient(
-    to right,
-    var(--purple),
-    var(--violet),
-    var(--purple2),
-    var(--violet2),
-    var(--pink2)
-  );
+ 
 
 }
 .text{

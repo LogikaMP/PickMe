@@ -1,0 +1,34 @@
+logo - https://codepen.io/maciekmaciej/pen/gpoaJG
+logo text - https://codepen.io/Twixes/pen/xZejZY
+
+Card Carousel :
+1 - https://codepen.io/Lakshanaapriyavijay/pen/eYQyBaa
+2 - https://codepen.io/jackcohle/pen/dyoyzyX
+3 - https://codepen.io/Ada-Ash/pen/QWZZxNG
+4 - https://codepen.io/Forte_high/pen/OPXvwpe
+5 - https://codepen.io/chrisesch/pen/raLVRWV
+6 - https://codepen.io/Forte_high/pen/RNRNzPQ
+
+Card product:
+1 - https://codepen.io/Ahmod-Musa/pen/OPyRXqb
+2 - https://codepen.io/_eddy/pen/aboqWaK
+3 - https://codepen.io/codewithsurya/pen/yLqzXzN
+
+Button:
+1 - https://codepen.io/Petr-Knoll/pen/QwWLZdx
+2 - https://codepen.io/tofjadesign/pen/EayYPZB
+
+Footer:
+1 - https://codepen.io/alvarotrigo/pen/vYRRxje
+2 - https://codepen.io/malik_Waleed24/pen/yLLaBXG
+3 - https://codepen.io/poojanahelia/pen/Exabvdy
+
+Card ОБЛОЖКА:
+1 - https://codepen.io/Megafry/pen/QWeppjp
+2 - https://codepen.io/l-ignatova/pen/poKMWLp
+3 - https://codepen.io/team/jotform/pen/XWmqoMp
+
+Filter:
+1 - https://codepen.io/3gdata/pen/VYmEgb
+2 - https://codepen.io/tkuriki/pen/dyVepVg
+3 - https://codepen.io/ueple/pen/ByzVEZN
