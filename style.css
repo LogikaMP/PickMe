@@ -26,10 +26,15 @@ position: fixed;
 display: flex;
 align-items: center;
 justify-content: space-evenly;
-height: fit-content;
+height: 150px;
 background-image: linear-gradient(to right, var(--purple),
 var(--violet),var(--purple2),var(--violet2),var(--pink2),var(--pink),var(--white));
+}
 
+main{
+  width: 100%;
+  position: relative;
+  top: 150px;
 }
 .text{
 
