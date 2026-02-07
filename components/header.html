@@ -1,0 +1,204 @@
+<style> 
+/* logo img */
+.logo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img,
+.logo div {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+.logo img {
+  fill: #fff;
+}
+.logo div {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  border-radius: 20%;
+  transform: rotate(45deg);
+  mix-blend-mode: multiply;
+  -webkit-animation: 2s cubic-bezier(0.66, -0.7, 0.27, 1.6) infinite;
+          animation: 2s cubic-bezier(0.66, -0.7, 0.27, 1.6) infinite;
+}
+.logo div:nth-child(1) {
+  background-color: #29ffff;
+  -webkit-animation-name: rotate-1;
+          animation-name: rotate-1;
+}
+.logo div:nth-child(2) {
+  background-color: #ff65ff;
+  -webkit-animation-name: rotate-2;
+          animation-name: rotate-2;
+}
+.logo div:nth-child(3) {
+  background-color: #ffc;
+  -webkit-animation-name: rotate-3;
+          animation-name: rotate-3;
+}
+@-webkit-keyframes rotate-1 {
+  to {
+    transform: rotate(135deg);
+  }
+}
+@keyframes rotate-1 {
+  to {
+    transform: rotate(135deg);
+  }
+}
+@-webkit-keyframes rotate-2 {
+  to {
+    transform: rotate(225deg);
+  }
+}
+@keyframes rotate-2 {
+  to {
+    transform: rotate(225deg);
+  }
+}
+@-webkit-keyframes rotate-3 {
+  to {
+    transform: rotate(315deg);
+  }
+}
+@keyframes rotate-3 {
+  to {
+    transform: rotate(315deg);
+  }
+}
+/* logo txt */
+.bounce {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  font: normal bold 6rem "Product Sans", sans-serif;
+  white-space: nowrap;
+}
+
+.letter {
+  -webkit-animation: bounce 0.75s cubic-bezier(0.05, 0, 0.2, 1) infinite alternate;
+          animation: bounce 0.75s cubic-bezier(0.05, 0, 0.2, 1) infinite alternate;
+  display: inline-block;
+  transform: translate3d(0, 0, 0);
+  margin-top: 0.5em;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 0 0.05em;
+  font: normal bold 6rem "Product Sans", sans-serif;
+}
+.letter:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  color: var(--purple);
+}
+.letter:nth-child(2) {
+  -webkit-animation-delay: 0.0833333333s;
+          animation-delay: 0.0833333333s;
+  color: var(--purple2);
+}
+.letter:nth-child(3) {
+  -webkit-animation-delay: 0.1666666667s;
+          animation-delay: 0.1666666667s;
+  color: var(--violet);
+}
+.letter:nth-child(4) {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+  color: var(--violet2);
+}
+.letter:nth-child(5) {
+  -webkit-animation-delay: 0.3333333333s;
+          animation-delay: 0.3333333333s;
+  color: var(--pink);
+}
+.letter:nth-child(6) {
+  -webkit-animation-delay: 0.4166666667s;
+          animation-delay: 0.4166666667s;
+  color: var(--pink2);
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translate3d(0, 0, 0);
+    text-shadow: rgba(0, 0, 0, 0.4) 0 0 0.05em;
+  }
+  100% {
+    transform: translate3d(0, -1em, 0);
+    text-shadow: rgba(0, 0, 0, 0.4) 0 1em 0.35em;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate3d(0, 0, 0);
+    text-shadow: rgba(0, 0, 0, 0.4) 0 0 0.05em;
+  }
+  100% {
+    transform: translate3d(0, -1em, 0);
+    text-shadow: rgba(0, 0, 0, 0.4) 0 1em 0.35em;
+  }
+}
+/* input */
+.div_search{
+    display: flex;
+    width: 40%;
+    align-items: center;
+}
+.search{
+    height: 40px;
+    width: 100%;
+    background-image: linear-gradient(to right,var(--purple),
+                                            var(--purple2),
+                                            var(--violet),
+                                            var(--violet2),
+                                            var(--pink));
+    border-radius: 40px ;
+    box-shadow:3px 3px 3px 0 rgba(0, 0, 0, 1);
+    padding: 5px;
+    border: none;
+}
+
+.div_search img{
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    background-color: var(--pink);
+    padding: 5px;
+    border-radius: 50%;
+    position:relative;
+    right: 0;
+}
+
+</style>
+<div class="logo">
+    <div></div>
+    <div></div>
+    <div></div>
+      <img src = "../src/logo-removebg-preview.png">
+  </div>
+  <div class="bounce">
+    <span class="letter">P</span>
+    <span class="letter">i</span>
+    <span class="letter">c</span>
+    <span class="letter">k</span>
+    <span class="letter">M</span>
+    <span class="letter">e</span>
+  </div> 
+<div class="div_search">
+<img src="../src/search.svg">
+<input type="text" class="search" placeholder="Шукайте товар, продавця...">
+
+</div>
+<!-- Button -->
+<div class="button-wrap">
+    <button>
+      <span>Generate</span>
+    </button>
+    <div class="button-shadow"></div>
+  </div>
