@@ -1,4 +1,3 @@
 document.addEventListener("DOMContentLoaded", function(){
-    loadComponent("../components/header.html", ".header")
-
+    loadComponent('../components/header.html', '.header')
 })

@@ -1,6 +1,6 @@
-<style> 
-/* logo img */
-.logo {
+<style>
+    /* logo img */
+    .logo {
   width: 100px;
   height: 100px;
   position: relative;
@@ -72,14 +72,14 @@
     transform: rotate(315deg);
   }
 }
-/* logo txt */
-.bounce {
+    /* logo text */
+.bounce{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30%;
+  width: 20%;
   height: 100%;
-  font: normal bold 6rem "Product Sans", sans-serif;
+  font: normal bold 4rem "Product Sans", sans-serif;
   white-space: nowrap;
 }
 
@@ -90,7 +90,7 @@
   transform: translate3d(0, 0, 0);
   margin-top: 0.5em;
   text-shadow: rgba(0, 0, 0, 0.4) 0 0 0.05em;
-  font: normal bold 6rem "Product Sans", sans-serif;
+  font: normal bold 4rem "Product Sans", sans-serif;
 }
 .letter:nth-child(1) {
   -webkit-animation-delay: 0s;
@@ -100,27 +100,27 @@
 .letter:nth-child(2) {
   -webkit-animation-delay: 0.0833333333s;
           animation-delay: 0.0833333333s;
-  color: var(--purple2);
+  color: var(--violet);
 }
 .letter:nth-child(3) {
   -webkit-animation-delay: 0.1666666667s;
           animation-delay: 0.1666666667s;
-  color: var(--violet);
+  color: var(--pink2);
 }
 .letter:nth-child(4) {
   -webkit-animation-delay: 0.25s;
           animation-delay: 0.25s;
-  color: var(--violet2);
+  color: var(--pink3);
 }
 .letter:nth-child(5) {
   -webkit-animation-delay: 0.3333333333s;
           animation-delay: 0.3333333333s;
-  color: var(--pink);
+  color: var(--white);
 }
 .letter:nth-child(6) {
   -webkit-animation-delay: 0.4166666667s;
           animation-delay: 0.4166666667s;
-  color: var(--pink2);
+  color: var(--violet2);
 }
 
 @-webkit-keyframes bounce {
@@ -145,60 +145,66 @@
   }
 }
 /* input */
-.div_search{
-    display: flex;
-    width: 40%;
-    align-items: center;
+.div_search {
+  display: flex;
+  width: 40%;
+  align-items: center;
 }
 .search{
     height: 40px;
     width: 100%;
-    background-image: linear-gradient(to right,var(--purple),
-                                            var(--purple2),
-                                            var(--violet),
-                                            var(--violet2),
-                                            var(--pink));
-    border-radius: 40px ;
-    box-shadow:3px 3px 3px 0 rgba(0, 0, 0, 1);
+    background-image: linear-gradient(to right, var(--purple),
+    var(--violet),var(--purple2),var(--violet2),var(--pink2),var(--pink),var(--white));
+    border-radius: 40px;
+    box-shadow: 3px 3px 5px 0 rgba(54, 54, 54, 0.425);
     padding: 5px;
     border: none;
+    
 }
-
 .div_search img{
     width: 30px;
     height: 30px;
     filter: invert(1);
-    background-color: var(--pink);
+    background-color: var(--pink2);
     padding: 5px;
     border-radius: 50%;
-    position:relative;
-    right: 0;
+    position: relative;
+    right: 10%;
 }
-
-</style>
-<div class="logo">
-    <div></div>
-    <div></div>
-    <div></div>
-      <img src = "../src/logo-removebg-preview.png">
-  </div>
-  <div class="bounce">
-    <span class="letter">P</span>
-    <span class="letter">i</span>
-    <span class="letter">c</span>
-    <span class="letter">k</span>
-    <span class="letter">M</span>
-    <span class="letter">e</span>
-  </div> 
-<div class="div_search">
-<img src="../src/search.svg">
-<input type="text" class="search" placeholder="Шукайте товар, продавця...">
-
+.search::placeholder{
+  color: rgb(83, 82, 82);
+  font-size: large;
+  padding: 10px;
+}
+.search:focus{
+  border: 2px solid white;
+}
+</style>  
+  
+  <div class="logo">
+  <div></div>
+  <div></div>
+  <div></div>
+<img src ="../src/logo-removebg-preview.png">
 </div>
-<!-- Button -->
+
+<div class="bounce">
+    <span class="letter">P</span>
+    <span class="letter">I</span>
+    <span class="letter">C</span>
+    <span class="letter">K</span>
+    <span class="letter">M</span>
+    <span class="letter">E</span>
+</div>
+<div class="div_search">
+<input type="text" class = "search" placeholder="Шукай товар, продавця...">
+<img src="../src/search.svg" class="search-icon">
+</div>
 <div class="button-wrap">
-    <button>
-      <span>Generate</span>
-    </button>
-    <div class="button-shadow"></div>
-  </div>
+  <button>
+    <span>Generate
+    <img src="../src/shopping-cart.svg" alt="">
+    </span>
+  </button>
+  <div class="button-shadow"></div>
+</div>

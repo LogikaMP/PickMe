@@ -8,7 +8,7 @@
   --pink:#FED0E0;
   --pink2:#F1419D;
   --pink3:#FBD7EE;
-  --white:#FDF9F9;
+  --white:#ffd7d7;
 }
 
 body{
@@ -21,22 +21,21 @@ body{
 }
 
 header{
- width: 100%;
- position: fixed;
- display: flex;
- align-items: center;
- justify-content: space-evenly;
- height: 150px;
- background-image: linear-gradient(to right,var(--purple),
-                                            var(--purple2),
-                                            var(--violet),
-                                            var(--violet2),
-                                            var(--pink));
+width: 100%;
+padding: 20px;
+position: fixed;
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 100px;
+background-image: linear-gradient(to right, var(--purple),
+var(--violet),var(--purple2),var(--violet2),var(--pink2),var(--pink),var(--white));
 }
+
 main{
   width: 100%;
   position: relative;
-  top: 150px;
+  top: 140px;
 }
 .text{
 
@@ -53,7 +52,9 @@ main{
 .btn{
   
 }
-/* Defs */
+
+/* button style */
+   /* Defs */
 @property --angle-1 {
   syntax: "<angle>";
   inherits: false;
@@ -76,7 +77,9 @@ main{
 
 /* Button Wrap Container */
 .button-wrap {
+  width: fit-content;
   position: relative;
+  right: 50px;
   z-index: 2;
   border-radius: 999vw;
   background: transparent;
@@ -129,14 +132,14 @@ button {
   all: unset;
   cursor: pointer;
   position: relative;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: var(--purple);
   pointer-events: auto;
   z-index: 3;
   background: linear-gradient(
     -75deg,
-    rgba(255, 255, 255, 0.05),
-    rgba(255, 255, 255, 0.2),
-    rgba(255, 255, 255, 0.05)
+    var(--pink),
+   var(--pink3),
+   var(--violet2)
   );
   border-radius: 999vw;
   box-shadow: inset 0 0.125em 0.125em rgba(0, 0, 0, 0.05),
@@ -149,6 +152,12 @@ button {
   -moz-backdrop-filter: blur(clamp(1px, 0.125em, 4px));
   -ms-backdrop-filter: blur(clamp(1px, 0.125em, 4px));
   transition: all var(--anim--hover-time) var(--anim--hover-ease);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: fit-content;
+  padding: 5px;
 }
 
 button:hover {
@@ -163,11 +172,15 @@ button:hover {
     0 0 0.05em 0.1em inset rgba(255, 255, 255, 0.5),
     0 0 0 0 rgba(255, 255, 255, 1);
 }
+button span img{
+  filter: invert(23%) sepia(88%) saturate(6200%) hue-rotate(255deg) brightness(90%) contrast(105%);
 
+}
 /* Button Text */
 button span {
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -176,7 +189,7 @@ button span {
   letter-spacing: -0.05em;
   font-weight: 500;
   font-size: 1em;
-  color: rgba(50, 50, 50, 1);
+  color: var(--purple);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-shadow: 0em 0.25em 0.05em rgba(0, 0, 0, 0.1);
@@ -327,5 +340,4 @@ button:active::after {
 .button-wrap:has(button:active) span {
   text-shadow: 0.025em 0.25em 0.05em rgba(0, 0, 0, 0.12);
 }
-
-
+/*  */
