@@ -8,7 +8,7 @@
   --pink:#FED0E0;
   --pink2:#F1419D;
   --pink3:#FBD7EE;
-  --white:#FDF9F9;
+  --white:#ffd7d7;
 }
 
 body{
@@ -21,7 +21,14 @@ body{
 }
 
 header{
- 
+width: 100%;
+position: fixed;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+height: fit-content;
+background-image: linear-gradient(to right, var(--purple),
+var(--violet),var(--purple2),var(--violet2),var(--pink2),var(--pink),var(--white));
 
 }
 .text{
