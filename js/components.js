@@ -5,11 +5,9 @@ async function loadComponent(name_file, name_sel){
 }
 
 async function loadData(name_file){
-    fetch(name_file).then(function(data){
-        return data
-    }).then(function(data2){
-        return data2.json()
-    })
+    let file = await fetch(name_file)
+    let data_file = await file.json()
+    return data_file
 }
 
 function choice(arr) {
