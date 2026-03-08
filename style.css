@@ -18,11 +18,12 @@ body{
   font-weight: 400;
   font-style: normal;
   position: relative;
+  background: var(--violet);
 }
 
 header{
-width: 100%;
-padding: 20px;
+width: 97%;
+padding: 2%;
 position: fixed;
 display: flex;
 align-items: center;
@@ -30,6 +31,7 @@ justify-content: space-between;
 height: 100px;
 background-image: linear-gradient(to right, var(--purple),
 var(--violet),var(--purple2),var(--violet2),var(--pink2),var(--pink),var(--white));
+
 }
 
 main{
@@ -38,29 +40,30 @@ main{
   top: 140px;
 }
 .text{
-width: 100%;
-height: fit-content;
-padding: 10px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-background-image: linear-gradient(var(--purple), 
-var(--purple2), 
+  width: 100%;
+  gap: 30px;
+  color: white;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, var(--purple),
+var(--violet), 
+var(--purple2),
+var(--violet2),
 var(--pink2),
-var(--purple2));
-color: white;
-gap: 30px;
+var(--pink),
+var(--white));
 }
 
 .text1{
-font-size: 2em;
-font-weight: bold;
+  font-size: 3em;
 }
 
 .text2{
-font-size: 1.5em ;
-font-weight: bold;
+  font-size: 1.5em;
 }
 
 .btn{
@@ -354,10 +357,10 @@ button:active::after {
 .button-wrap:has(button:active) span {
   text-shadow: 0.025em 0.25em 0.05em rgba(0, 0, 0, 0.12);
 }
-/* Акційна карусель */
+
 :root {
-  --glass: rgb(120, 39, 187);
-  --glass-border: rgb(160, 33, 132);
+  --glass: var(--pink2);
+  --glass-border: var(--pink);
   --blur: blur(20px);
   /* This variable controls the horizontal "spread" */
   --shift-x: 30vw;
@@ -367,12 +370,14 @@ button:active::after {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background: #8d3badbd;
+  min-height: 80vh;
+  background: var(--violet);
   perspective: 2000px; /* Increased for better depth on wide screens */
   overflow: hidden;
   color: white;
   width: 100%;
+   padding:  50px 15px;
+ 
 }
 
 .carousel-stage {
@@ -509,6 +514,7 @@ button:active::after {
   padding: 10px 20px;
   border-radius: 50px;
   border: 1px solid var(--glass-border);
+ 
 }
 
 .nav-btn {
@@ -623,9 +629,12 @@ button:active::after {
   margin-top: 20px;
   display: flex;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
+
   padding: 8px 16px;
   border-radius: 100px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   gap: 15px;
 }
+
+/* стилі продавців */
+

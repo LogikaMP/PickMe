@@ -3,7 +3,7 @@
     {
       "name": "Stylish Backpack",
       "price": 49.99,
-      "image": "../src/sofia/backpack.jpg",
+      "image": "../src/sofia/1.jpg",
       "aboutshort": "Compact and trendy backpack",
       "about": "A versatile backpack made of durable material, perfect for school or travel. Comes with multiple compartments and a comfortable strap.",
       "comment": ["Love this backpack!", "Very useful for travel."]
@@ -13,7 +13,7 @@
     {
       "name": "Wireless Earbuds",
       "price": 79.99,
-      "image": "../src/yana/earbuds.jpg",
+      "image": "../src/yana/1.jpg",
       "aboutshort": "High-quality wireless earbuds",
       "about": "Enjoy clear sound and long battery life with these wireless earbuds. Perfect for workouts and daily commutes.",
       "comment": ["Sound quality is amazing.", "Battery lasts long!"]
@@ -23,7 +23,7 @@
     {
       "name": "Smart Watch",
       "price": 129.99,
-      "image": "../src/maksim/smartwatch.jpg",
+      "image": "../src/maksim/1.jpg",
       "aboutshort": "Fitness smart watch",
       "about": "Track your fitness and notifications with this sleek smartwatch. Compatible with iOS and Android devices.",
       "comment": ["Very stylish!", "Tracks my steps accurately."]
@@ -33,7 +33,7 @@
     {
       "name": "Gaming Mouse",
       "price": 59.99,
-      "image": "../src/yrik/gaming_mouse.jpg",
+      "image": "../src/yrik/1.jpg",
       "aboutshort": "Ergonomic gaming mouse",
       "about": "High-precision mouse with customizable buttons. Ideal for gamers who need speed and comfort.",
       "comment": ["Excellent for gaming.", "Buttons are very responsive."]
@@ -43,7 +43,7 @@
     {
       "name": "LED Desk Lamp",
       "price": 39.99,
-      "image": "../src/dasha/desk_lamp.jpg",
+      "image": "../src/dasha/1.jpg",
       "aboutshort": "Adjustable LED desk lamp",
       "about": "Brighten your workspace with this adjustable LED lamp. Comes with multiple brightness levels and color modes.",
       "comment": ["Very bright and adjustable.", "Perfect for my study desk."]
@@ -53,7 +53,7 @@
     {
       "name": "Bluetooth Speaker",
       "price": 69.99,
-      "image": "../src/nikita/bluetooth_speaker.jpg",
+      "image": "../src/nikita/1.jpg",
       "aboutshort": "Portable Bluetooth speaker",
       "about": "Take your music anywhere with this portable speaker. Offers powerful sound and long battery life.",
       "comment": ["Sound is loud and clear.", "Very portable and handy."]
@@ -63,7 +63,7 @@
     {
       "name": "Yoga Mat",
       "price": 29.99,
-      "image": "../src/illaM/yoga_mat.jpg",
+      "image": "../src/illaM/1.jpg",
       "aboutshort": "Eco-friendly yoga mat",
       "about": "Comfortable and non-slip yoga mat made from eco-friendly materials. Perfect for yoga and home workouts.",
       "comment": ["Soft and non-slip.", "Love the eco-friendly material."]
@@ -73,7 +73,7 @@
     {
       "name": "Coffee Mug",
       "price": 14.99,
-      "image": "../src/illaD/coffee_mug.jpg",
+      "image": "../src/illaD/1.jpg",
       "aboutshort": "Ceramic coffee mug",
       "about": "A sturdy ceramic mug with a stylish design. Perfect for coffee, tea, or hot chocolate.",
       "comment": ["Keeps my coffee warm.", "Nice design and size."]
