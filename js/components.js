@@ -4,14 +4,15 @@ async function loadComponent(name_file, name_sel){
     div_cont.innerHTML = await component.text()
 }
 
-async function loadComponent(name_file){
-    fetch(name_file).then(function(data){
-        return data.json()
-    }).then(function(data))
+async function loadData(name_file){
+    let file = await fetch(name_file)
+    let data_file = await file.json()
+    return data_file
 }
+
 function choice(arr) {
-    if (!arr.length) {
-      throw new Error("Cannot choose from an empty array");
-    }
-    return arr[Math.floor(Math.random() * arr.length)];
+  if (!arr.length) {
+    throw new Error("Cannot choose from an empty array");
   }
+  return arr[Math.floor(Math.random() * arr.length)];
+}
