@@ -18,6 +18,7 @@ body{
   font-weight: 400;
   font-style: normal;
   position: relative;
+  background-color: var(--white);
 }
 
 header{
@@ -370,7 +371,6 @@ button:active::after {
   align-items: center;
   justify-content: center;
   min-height: 80vh;
-  background: var(--violet);
   perspective: 2000px; /* Increased for better depth on wide screens */
   overflow: hidden;
   color: white;
@@ -634,3 +634,103 @@ button:active::after {
 }
 
 /*  */
+
+/* cadr of seller */
+.flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 400px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .flip-card-front {
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .flip-card-front img {
+      max-width: 100%;
+      max-height: 220px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .flip-card-front h3 {
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .flip-card-back {
+      background-color: #222;
+      color: white;
+      transform: rotateY(180deg);
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flip-card-back p {
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+
+    .flip-card-back button {
+      background-color: #ff5722;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .flip-card-back button:hover {
+      background-color: #e64a19;
+    }
+
+    @media (max-width: 400px) {
+      .flip-card {
+        width: 90%;
+        height: 380px;
+      }
+    }
+/*  */
+.selers{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, var(--purple)),
+}

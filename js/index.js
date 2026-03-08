@@ -103,5 +103,29 @@ document.addEventListener("DOMContentLoaded", async function(){
     if (e.key === "ArrowLeft") prev();
     });
 
+    
     init();
+
+    //add card selers//
+    let divSelers = document.querySelector(".selers")
+    let selers = await loadData("../data/selers.json")
+    selers = selers["selers"]
+    selers.forEach(function(selers) {
+        let name = Object.keys(selers)[0]
+        let data = selers[name]
+        let card = `<div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="${data['img']}" alt = "product image" />
+        <h3>${data["name"]}</h3>
+        <h3>${name}</h3>
+      </div>
+      <div class="flip-card-back">
+        <p>${data["about"]}</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </div>`
+        divSelers.innerHTML += card
+    })
 })
