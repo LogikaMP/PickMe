@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", async function(){
     await loadComponent('../components/header.html', '.header')
+    await loadComponent('../components/footer.html', '.footer')
 
 
     let all_product = await loadData("../data/product.json")
@@ -122,10 +123,20 @@ document.addEventListener("DOMContentLoaded", async function(){
       </div>
       <div class="flip-card-back">
         <p>${data["about"]}</p>
-        <button>Buy Now</button>
+        <button id="${name}" class="buy-now">Buy Now</button>
       </div>
     </div>
   </div>`
         divSelers.innerHTML += card
     })
 })
+
+let btnBuy = document.querySelectorAll(".buy-now")
+btnBuy.forEach(element => {
+    element.addEventListener('click'),function(){
+        let name_seler = this.id()
+        localStorage.setItem("seler", name_seler)
+        window.location.href = "seler.html"
+    }
+
+});
