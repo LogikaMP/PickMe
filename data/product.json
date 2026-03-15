@@ -5,78 +5,163 @@
       "price": 49.99,
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Compact and trendy backpack",
-      "about": "A versatile backpack made of durable material, perfect for school or travel. Comes with multiple compartments and a comfortable strap.",
+      "about": "A versatile backpack made of durable material, perfect for school or travel.",
       "comment": ["Love this backpack!", "Very useful for travel."]
+    },
+    {
+      "name": "Canvas Tote Bag",
+      "price": 24.99,
+      "image": "../src/sofia/1.jpg",
+      "aboutshort": "Lightweight tote bag",
+      "about": "Eco-friendly canvas tote bag ideal for daily shopping or casual use.",
+      "comment": ["Great quality!", "Very comfortable to carry."]
+    },
+    {
+      "name": "Travel Organizer",
+      "price": 19.99,
+      "image": "../src/sofia/1.jpg",
+      "aboutshort": "Organizer for travel",
+      "about": "Compact organizer to keep cables, cosmetics, and accessories tidy.",
+      "comment": ["Very practical.", "Helps keep things organized."]
+    },
+    {
+      "name": "Mini Handbag",
+      "price": 39.99,
+      "image": "../src/sofia/1.jpg",
+      "aboutshort": "Small fashionable handbag",
+      "about": "Elegant mini handbag perfect for casual outings and events.",
+      "comment": ["Looks amazing.", "Perfect size."]
+    },
+    {
+      "name": "Laptop Sleeve",
+      "price": 29.99,
+      "image": "../src/sofia/1.jpg",
+      "aboutshort": "Protective laptop sleeve",
+      "about": "Soft padded sleeve to protect your laptop from scratches.",
+      "comment": ["Fits perfectly.", "Very soft inside."]
+    },
+    {
+      "name": "Cosmetic Bag",
+      "price": 15.99,
+      "image": "../src/sofia/1.jpg",
+      "aboutshort": "Compact cosmetic bag",
+      "about": "Stylish bag for storing makeup and small accessories.",
+      "comment": ["Cute design.", "Very useful."]
+    },
+    {
+      "name": "Travel Pillow",
+      "price": 21.99,
+      "image": "../src/sofia/1.jpg",
+      "aboutshort": "Comfortable neck pillow",
+      "about": "Soft neck pillow designed for long flights and travel comfort.",
+      "comment": ["Very comfortable.", "Perfect for flights."]
+    },
+    {
+      "name": "Fashion Wallet",
+      "price": 27.99,
+      "image": "../src/sofia/1.jpg",
+      "aboutshort": "Stylish wallet",
+      "about": "Elegant wallet with multiple card slots and secure zipper.",
+      "comment": ["Very stylish.", "Great storage."]
+    },
+    {
+      "name": "Portable Mirror",
+      "price": 12.99,
+      "image": "../src/sofia/1.jpg",
+      "aboutshort": "Compact pocket mirror",
+      "about": "Small mirror perfect for travel and daily use.",
+      "comment": ["Very handy.", "Nice design."]
+    },
+    {
+      "name": "Phone Crossbody Bag",
+      "price": 34.99,
+      "image": "../src/sofia/1.jpg",
+      "aboutshort": "Small phone bag",
+      "about": "Light crossbody bag designed to carry phone and essentials.",
+      "comment": ["Very practical.", "Great for daily use."]
     }
   ],
+
   "yana": [
     {
       "name": "Wireless Earbuds",
       "price": 79.99,
       "image": "../src/yana/1.jpg",
       "aboutshort": "High-quality wireless earbuds",
-      "about": "Enjoy clear sound and long battery life with these wireless earbuds. Perfect for workouts and daily commutes.",
+      "about": "Enjoy clear sound and long battery life.",
       "comment": ["Sound quality is amazing.", "Battery lasts long!"]
-    }
-  ],
-  "maksim": [
+    },
     {
-      "name": "Smart Watch",
-      "price": 129.99,
-      "image": "../src/maksim/1.jpg",
-      "aboutshort": "Fitness smart watch",
-      "about": "Track your fitness and notifications with this sleek smartwatch. Compatible with iOS and Android devices.",
-      "comment": ["Very stylish!", "Tracks my steps accurately."]
-    }
-  ],
-  "yrik": [
+      "name": "Bluetooth Headphones",
+      "price": 99.99,
+      "image": "../src/yana/1.jpg",
+      "aboutshort": "Over-ear headphones",
+      "about": "Comfortable headphones with powerful bass.",
+      "comment": ["Great bass.", "Very comfortable."]
+    },
     {
-      "name": "Gaming Mouse",
-      "price": 59.99,
-      "image": "../src/yrik/1.jpg",
-      "aboutshort": "Ergonomic gaming mouse",
-      "about": "High-precision mouse with customizable buttons. Ideal for gamers who need speed and comfort.",
-      "comment": ["Excellent for gaming.", "Buttons are very responsive."]
-    }
-  ],
-  "dasha": [
-    {
-      "name": "LED Desk Lamp",
-      "price": 39.99,
-      "image": "../src/dasha/1.jpg",
-      "aboutshort": "Adjustable LED desk lamp",
-      "about": "Brighten your workspace with this adjustable LED lamp. Comes with multiple brightness levels and color modes.",
-      "comment": ["Very bright and adjustable.", "Perfect for my study desk."]
-    }
-  ],
-  "nikita": [
-    {
-      "name": "Bluetooth Speaker",
-      "price": 69.99,
-      "image": "../src/nikita/1.jpg",
-      "aboutshort": "Portable Bluetooth speaker",
-      "about": "Take your music anywhere with this portable speaker. Offers powerful sound and long battery life.",
-      "comment": ["Sound is loud and clear.", "Very portable and handy."]
-    }
-  ],
-  "illaM": [
-    {
-      "name": "Yoga Mat",
+      "name": "Portable Charger",
       "price": 29.99,
-      "image": "../src/illaM/1.jpg",
-      "aboutshort": "Eco-friendly yoga mat",
-      "about": "Comfortable and non-slip yoga mat made from eco-friendly materials. Perfect for yoga and home workouts.",
-      "comment": ["Soft and non-slip.", "Love the eco-friendly material."]
-    }
-  ],
-  "illaD": [
+      "image": "../src/yana/1.jpg",
+      "aboutshort": "Power bank",
+      "about": "Fast charging portable power bank.",
+      "comment": ["Very useful.", "Charges quickly."]
+    },
     {
-      "name": "Coffee Mug",
+      "name": "USB-C Cable",
+      "price": 9.99,
+      "image": "../src/yana/1.jpg",
+      "aboutshort": "Durable charging cable",
+      "about": "Strong braided cable for fast charging.",
+      "comment": ["Very durable.", "Works great."]
+    },
+    {
+      "name": "Wireless Charger",
+      "price": 34.99,
+      "image": "../src/yana/1.jpg",
+      "aboutshort": "Fast wireless charger",
+      "about": "Charge your phone without cables.",
+      "comment": ["Very convenient.", "Fast charging."]
+    },
+    {
+      "name": "Laptop Stand",
+      "price": 39.99,
+      "image": "../src/yana/1.jpg",
+      "aboutshort": "Adjustable stand",
+      "about": "Improves posture while working.",
+      "comment": ["Very ergonomic.", "Great build."]
+    },
+    {
+      "name": "USB Hub",
+      "price": 24.99,
+      "image": "../src/yana/1.jpg",
+      "aboutshort": "Multi-port hub",
+      "about": "Add extra ports to your laptop.",
+      "comment": ["Very useful.", "Works perfectly."]
+    },
+    {
+      "name": "Phone Holder",
       "price": 14.99,
-      "image": "../src/illaD/1.jpg",
-      "aboutshort": "Ceramic coffee mug",
-      "about": "A sturdy ceramic mug with a stylish design. Perfect for coffee, tea, or hot chocolate.",
-      "comment": ["Keeps my coffee warm.", "Nice design and size."]
+      "image": "../src/yana/1.jpg",
+      "aboutshort": "Desk phone holder",
+      "about": "Adjustable holder for comfortable viewing.",
+      "comment": ["Very stable.", "Great design."]
+    },
+    {
+      "name": "Noise Cancelling Earbuds",
+      "price": 119.99,
+      "image": "../src/yana/1.jpg",
+      "aboutshort": "ANC earbuds",
+      "about": "Block outside noise with active noise cancellation.",
+      "comment": ["Noise canceling works great.", "Amazing sound."]
+    },
+    {
+      "name": "Mini Bluetooth Adapter",
+      "price": 19.99,
+      "image": "../src/yana/1.jpg",
+      "aboutshort": "Bluetooth adapter",
+      "about": "Add Bluetooth connectivity to your PC.",
+      "comment": ["Easy to use.", "Works perfectly."]
     }
   ]
 }
