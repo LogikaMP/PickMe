@@ -57,11 +57,11 @@
       }
     },
     {
-      "IllaD":
+      "Spamton": 
       {
-        "name": "coffee corner",
-        "image": "../src/illaD/1.jpg",
-        "about": "Чашки, термокружки та аксесуари для кави і чаю."
+            "img": "../src/illaD/images.png",
+            "name": "BIG SHOT [Deals]",
+            "about": "HAVE YOU EVER WANTED TO BE A [[BIG SHOT]]? WELCOME TO THE [Number 1 Rated Salesman 1997] SHOP! WE HAVE EVERYTHING FROM [Hyperlink Blocked] TO [Kromer]. DON'T BE A [[Little Sponge]], TAKE A [Great Deal] TODAY!"
       }
     }
   ]

@@ -2,6 +2,7 @@
   "sofia": [
     {
       "name": "Stylish Backpack",
+      "data_menu": "",
       "price": 49.99,
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Compact and trendy backpack",
@@ -10,6 +11,7 @@
     },
     {
       "name": "Canvas Tote Bag",
+      "data_menu": "",
       "price": 24.99,
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Lightweight tote bag",
@@ -18,6 +20,7 @@
     },
     {
       "name": "Travel Organizer",
+      "data_menu": "",
       "price": 19.99,
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Organizer for travel",
@@ -26,6 +29,7 @@
     },
     {
       "name": "Mini Handbag",
+      "data_menu": "",
       "price": 39.99,
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Small fashionable handbag",
@@ -34,6 +38,7 @@
     },
     {
       "name": "Laptop Sleeve",
+      "data_menu": "",
       "price": 29.99,
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Protective laptop sleeve",
@@ -42,6 +47,7 @@
     },
     {
       "name": "Cosmetic Bag",
+      "data_menu": "",
       "price": 15.99,
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Compact cosmetic bag",
@@ -50,6 +56,7 @@
     },
     {
       "name": "Travel Pillow",
+      "data_menu": "",
       "price": 21.99,
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Comfortable neck pillow",
@@ -58,6 +65,7 @@
     },
     {
       "name": "Fashion Wallet",
+      "data_menu": "",
       "price": 27.99,
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Stylish wallet",
@@ -66,6 +74,7 @@
     },
     {
       "name": "Portable Mirror",
+      "data_menu": "",
       "price": 12.99,
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Compact pocket mirror",
@@ -74,6 +83,7 @@
     },
     {
       "name": "Phone Crossbody Bag",
+      "data_menu": "",
       "price": 34.99,
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Small phone bag",
@@ -85,6 +95,7 @@
   "yana": [
     {
       "name": "Wireless Earbuds",
+      "data_menu": "",
       "price": 79.99,
       "image": "../src/yana/1.jpg",
       "aboutshort": "High-quality wireless earbuds",
@@ -93,6 +104,7 @@
     },
     {
       "name": "Bluetooth Headphones",
+      "data_menu": "",
       "price": 99.99,
       "image": "../src/yana/1.jpg",
       "aboutshort": "Over-ear headphones",
@@ -101,6 +113,7 @@
     },
     {
       "name": "Portable Charger",
+      "data_menu": "",
       "price": 29.99,
       "image": "../src/yana/1.jpg",
       "aboutshort": "Power bank",
@@ -109,6 +122,7 @@
     },
     {
       "name": "USB-C Cable",
+      "data_menu": "",
       "price": 9.99,
       "image": "../src/yana/1.jpg",
       "aboutshort": "Durable charging cable",
@@ -117,6 +131,7 @@
     },
     {
       "name": "Wireless Charger",
+      "data_menu": "",
       "price": 34.99,
       "image": "../src/yana/1.jpg",
       "aboutshort": "Fast wireless charger",
@@ -125,6 +140,7 @@
     },
     {
       "name": "Laptop Stand",
+      "data_menu": "",
       "price": 39.99,
       "image": "../src/yana/1.jpg",
       "aboutshort": "Adjustable stand",
@@ -133,6 +149,7 @@
     },
     {
       "name": "USB Hub",
+      "data_menu": "",
       "price": 24.99,
       "image": "../src/yana/1.jpg",
       "aboutshort": "Multi-port hub",
@@ -141,6 +158,7 @@
     },
     {
       "name": "Phone Holder",
+      "data_menu": "",
       "price": 14.99,
       "image": "../src/yana/1.jpg",
       "aboutshort": "Desk phone holder",
@@ -149,6 +167,7 @@
     },
     {
       "name": "Noise Cancelling Earbuds",
+      "data_menu": "",
       "price": 119.99,
       "image": "../src/yana/1.jpg",
       "aboutshort": "ANC earbuds",
@@ -157,11 +176,50 @@
     },
     {
       "name": "Mini Bluetooth Adapter",
+      "data_menu": "",
       "price": 19.99,
       "image": "../src/yana/1.jpg",
       "aboutshort": "Bluetooth adapter",
       "about": "Add Bluetooth connectivity to your PC.",
       "comment": ["Easy to use.", "Works perfectly."]
+    }
+  ],
+  "spamton": [
+    {
+      "name": "[[S.POTIS]] Link",
+      "data_menu": "",
+      "price": 0.00,
+      "image": "../src/illaD/product.jpg",
+      "aboutshort": "BE A [[BIG SHOT]]!!!",
+      "about": "HAVE YOU EVER WANTED TO BE A [[BIG SHOT]]? CLICK THIS LINK TO GET [Free Kromer] AND LIVE IN A [Mansion]!!",
+      "comment": ["WAIT! IS THIS A... [[BIG SHOT]]?!", "MY [Life] IS FINALLY [Hyperlink Blocked]."]
+    },
+    {
+      "name": "KeyGen",
+      "data_menu": "",
+      "price": 1997.00,
+      "image": "../src/illaD/product.jpg",
+      "aboutshort": "UN-LOCK THE [World]!",
+      "about": "THE KEY TO YOUR [[Dreams]]! ONLY FOR THE LOW LOW PRICE OF [1997] KROMER! (NO REFUNDS).",
+      "comment": ["EVERYONE'S FAVORITE [Salesman 1997]!", "DON'T YOU WANNA BE [Big]?!"]
+    },
+    {
+      "name": "B3verage",
+      "data_menu": "",
+      "price": 4.99,
+      "image": "../src/illaD/product.jpg",
+      "aboutshort": "TASTES LIKE [[Pipis]]",
+      "about": "A REFRESHING [Cold Drink] THAT WILL MAKE YOUR [HeartShapedObject] FEEL LIKE [Burning].",
+      "comment": ["DELICIOUS [Kromer] TASTE!", "I CAN'T FEEL MY [Hands]!"]
+    },
+    {
+      "name": "Frayed Puppet Strings",
+      "data_menu": "",
+      "price": 99.99,
+      "image": "../src/illaD/product.jpg",
+      "aboutshort": "BE A REAL BOY!",
+      "about": "TIRED OF BEING A [Little Sponge]? TAKE CONTROL OF YOUR [Strings] TODAY!",
+      "comment": ["HE'S PULLING THE STRINGS!", "DEALS SO GOOD I [Cried]."]
     }
   ]
 }
