@@ -6,7 +6,9 @@
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Compact and trendy backpack",
       "about": "A versatile backpack made of durable material, perfect for school or travel.",
-      "comment": ["Love this backpack!", "Very useful for travel."]
+      "comment": ["Love this backpack!", "Very useful for travel."],
+      "seller": "sofia",
+      "data-menu": "green"
     },
     {
       "name": "Canvas Tote Bag",
@@ -14,7 +16,9 @@
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Lightweight tote bag",
       "about": "Eco-friendly canvas tote bag ideal for daily shopping or casual use.",
-      "comment": ["Great quality!", "Very comfortable to carry."]
+      "comment": ["Great quality!", "Very comfortable to carry."],
+      "seller": "sofia",
+      "data-menu": "pirple"
     },
     {
       "name": "Travel Organizer",
@@ -22,7 +26,9 @@
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Organizer for travel",
       "about": "Compact organizer to keep cables, cosmetics, and accessories tidy.",
-      "comment": ["Very practical.", "Helps keep things organized."]
+      "comment": ["Very practical.", "Helps keep things organized."],
+      "seller": "sofia",
+      "data-menu": "cadetblue"
     },
     {
       "name": "Mini Handbag",
@@ -30,7 +36,9 @@
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Small fashionable handbag",
       "about": "Elegant mini handbag perfect for casual outings and events.",
-      "comment": ["Looks amazing.", "Perfect size."]
+      "comment": ["Looks amazing.", "Perfect size."],
+      "seller": "sofia",
+      "data-menu": "red"
     },
     {
       "name": "Laptop Sleeve",
@@ -38,7 +46,9 @@
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Protective laptop sleeve",
       "about": "Soft padded sleeve to protect your laptop from scratches.",
-      "comment": ["Fits perfectly.", "Very soft inside."]
+      "comment": ["Fits perfectly.", "Very soft inside."],
+      "seller": "sofia",
+      "data-menu": "gray"
     },
     {
       "name": "Cosmetic Bag",
@@ -46,7 +56,9 @@
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Compact cosmetic bag",
       "about": "Stylish bag for storing makeup and small accessories.",
-      "comment": ["Cute design.", "Very useful."]
+      "comment": ["Cute design.", "Very useful."],
+      "seller": "sofia",
+      "data-menu": "green"
     },
     {
       "name": "Travel Pillow",
@@ -54,7 +66,9 @@
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Comfortable neck pillow",
       "about": "Soft neck pillow designed for long flights and travel comfort.",
-      "comment": ["Very comfortable.", "Perfect for flights."]
+      "comment": ["Very comfortable.", "Perfect for flights."],
+      "seller": "sofia",
+      "data-menu": "pirple"
     },
     {
       "name": "Fashion Wallet",
@@ -62,7 +76,9 @@
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Stylish wallet",
       "about": "Elegant wallet with multiple card slots and secure zipper.",
-      "comment": ["Very stylish.", "Great storage."]
+      "comment": ["Very stylish.", "Great storage."],
+      "seller": "sofia",
+      "data-menu": "cadetblue"
     },
     {
       "name": "Portable Mirror",
@@ -70,7 +86,9 @@
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Compact pocket mirror",
       "about": "Small mirror perfect for travel and daily use.",
-      "comment": ["Very handy.", "Nice design."]
+      "comment": ["Very handy.", "Nice design."],
+      "seller": "sofia",
+      "data-menu": "red"
     },
     {
       "name": "Phone Crossbody Bag",
@@ -78,7 +96,9 @@
       "image": "../src/sofia/1.jpg",
       "aboutshort": "Small phone bag",
       "about": "Light crossbody bag designed to carry phone and essentials.",
-      "comment": ["Very practical.", "Great for daily use."]
+      "comment": ["Very practical.", "Great for daily use."],
+      "seller": "sofia",
+      "data-menu": "gray"
     }
   ],
 
@@ -89,7 +109,9 @@
       "image": "../src/yana/1.jpg",
       "aboutshort": "High-quality wireless earbuds",
       "about": "Enjoy clear sound and long battery life.",
-      "comment": ["Sound quality is amazing.", "Battery lasts long!"]
+      "comment": ["Sound quality is amazing.", "Battery lasts long!"],
+      "seller": "yana",
+      "data-menu": "green"
     },
     {
       "name": "Bluetooth Headphones",
@@ -97,7 +119,9 @@
       "image": "../src/yana/1.jpg",
       "aboutshort": "Over-ear headphones",
       "about": "Comfortable headphones with powerful bass.",
-      "comment": ["Great bass.", "Very comfortable."]
+      "comment": ["Great bass.", "Very comfortable."],
+      "seller": "yana",
+      "data-menu": "pirple"
     },
     {
       "name": "Portable Charger",
@@ -105,7 +129,9 @@
       "image": "../src/yana/1.jpg",
       "aboutshort": "Power bank",
       "about": "Fast charging portable power bank.",
-      "comment": ["Very useful.", "Charges quickly."]
+      "comment": ["Very useful.", "Charges quickly."],
+      "seller": "yana",
+      "data-menu": "cadetblue"
     },
     {
       "name": "USB-C Cable",
@@ -113,7 +139,9 @@
       "image": "../src/yana/1.jpg",
       "aboutshort": "Durable charging cable",
       "about": "Strong braided cable for fast charging.",
-      "comment": ["Very durable.", "Works great."]
+      "comment": ["Very durable.", "Works great."],
+      "seller": "yana",
+      "data-menu": "red"
     },
     {
       "name": "Wireless Charger",
@@ -121,7 +149,9 @@
       "image": "../src/yana/1.jpg",
       "aboutshort": "Fast wireless charger",
       "about": "Charge your phone without cables.",
-      "comment": ["Very convenient.", "Fast charging."]
+      "comment": ["Very convenient.", "Fast charging."],
+      "seller": "yana",
+      "data-menu": "gray"
     },
     {
       "name": "Laptop Stand",
@@ -129,7 +159,9 @@
       "image": "../src/yana/1.jpg",
       "aboutshort": "Adjustable stand",
       "about": "Improves posture while working.",
-      "comment": ["Very ergonomic.", "Great build."]
+      "comment": ["Very ergonomic.", "Great build."],
+      "seller": "yana",
+      "data-menu": "green"
     },
     {
       "name": "USB Hub",
@@ -137,7 +169,9 @@
       "image": "../src/yana/1.jpg",
       "aboutshort": "Multi-port hub",
       "about": "Add extra ports to your laptop.",
-      "comment": ["Very useful.", "Works perfectly."]
+      "comment": ["Very useful.", "Works perfectly."],
+      "seller": "yana",
+      "data-menu": "pirple"
     },
     {
       "name": "Phone Holder",
@@ -145,7 +179,9 @@
       "image": "../src/yana/1.jpg",
       "aboutshort": "Desk phone holder",
       "about": "Adjustable holder for comfortable viewing.",
-      "comment": ["Very stable.", "Great design."]
+      "comment": ["Very stable.", "Great design."],
+      "seller": "yana",
+      "data-menu": "cadetblue"
     },
     {
       "name": "Noise Cancelling Earbuds",
@@ -153,7 +189,9 @@
       "image": "../src/yana/1.jpg",
       "aboutshort": "ANC earbuds",
       "about": "Block outside noise with active noise cancellation.",
-      "comment": ["Noise canceling works great.", "Amazing sound."]
+      "comment": ["Noise canceling works great.", "Amazing sound."],
+      "seller": "yana",
+      "data-menu": "red"
     },
     {
       "name": "Mini Bluetooth Adapter",
@@ -161,7 +199,9 @@
       "image": "../src/yana/1.jpg",
       "aboutshort": "Bluetooth adapter",
       "about": "Add Bluetooth connectivity to your PC.",
-      "comment": ["Easy to use.", "Works perfectly."]
+      "comment": ["Easy to use.", "Works perfectly."],
+      "seller": "yana",
+      "data-menu": "gray"
     }
   ]
 }

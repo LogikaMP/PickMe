@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", async function(){
     let name_seler = localStorage.getItem("seler")
     all_product = all_product[name_seler]
     seler_data = seler_data["selers"][name_seler]
-    console.log(seler_data)
+    console.log(all_product)
     let seler_img = document.querySelector(".cover-seler-img")
     let seler_name = document.querySelector(".cover-seler-text-name")
     let seler_seler = document.querySelector(".cover-seler-text-seler")
