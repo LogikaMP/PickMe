@@ -19,4 +19,13 @@ document.addEventListener("DOMContentLoaded", async function(){
     seler_name.innerHTML = seler_data['name']
     seler_about.innerHTML = seler_data['about']
     seler_seler.innerHTML = name_seler
+
+    // додамо картки
+
+    let allwrps = this.doctype.querySelector(".allwrps")
+    all_product.forEach(product => {
+        let card = `<div data-menu="${product}" class="single" style="background-color: blueviolet;">
+        </div>`
+        
+    });
 })
