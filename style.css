@@ -940,6 +940,12 @@ ul{
   background: blueviolet;
   color: #fff;
 }
+.btns button.selected {
+    background: white;
+    color: purple;
+    font-weight: bold;
+    border: 2px solid purple;
+}
 /* seler page */
 /* MAIN CONTAINER */
 .cover-seler {

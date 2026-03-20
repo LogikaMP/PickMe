@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", async function(){
     let seler_data = await loadData("../data/selers.json")
     
     let all_product = await loadData("../data/product.json")
+    
     let name_seler = localStorage.getItem("seler")
     all_product = all_product[name_seler]
     seler_data = seler_data["selers"][name_seler]
