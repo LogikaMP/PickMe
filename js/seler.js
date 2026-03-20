@@ -24,7 +24,9 @@ document.addEventListener("DOMContentLoaded", async function(){
 
     let allwrps = this.doctype.querySelector(".allwrps")
     all_product.forEach(product => {
-        let card = `<div data-menu="${product}" class="single" style="background-color: blueviolet;">
+        let card = `<div data-menu="${product['data-menu']}" class="single">
+       
+        </div>
         </div>`
         
     });

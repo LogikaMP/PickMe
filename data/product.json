@@ -1,65 +1,66 @@
 {
   "Dasha": [
-    { "name": "Home Lamp", "about": "Stylish lamp for cozy home lighting.", "seller": "Dasha", "data-menu": "green", "price": 24.99 },
-    { "name": "Kitchen Set", "about": "Practical kitchen accessories for everyday use.", "seller": "Dasha", "data-menu": "red", "price": 39.50 },
-    { "name": "Wall Decor", "about": "Modern decorations for your room walls.", "seller": "Dasha", "data-menu": "cadetblue", "price": 18.00 },
-    { "name": "Candle Set", "about": "Aromatic candles for relaxation.", "seller": "Dasha", "data-menu": "gray", "price": 12.99 },
-    { "name": "Storage Box", "about": "Organizer box for home items.", "seller": "Dasha", "data-menu": "pirple", "price": 15.75 }
+    { "name": "Home Lamp", "about": "Stylish lamp for cozy home lighting.", "seller": "Dasha", "data-menu": "green", "price": 24.99, "image": "../src/Dasha/1.jpg" },
+    { "name": "Kitchen Set", "about": "Practical kitchen accessories for everyday use.", "seller": "Dasha", "data-menu": "red", "price": 39.5, "image": "../src/Dasha/2.jpg" },
+    { "name": "Wall Decor", "about": "Modern decorations for your room walls.", "seller": "Dasha", "data-menu": "cadetblue", "price": 18.0, "image": "../src/Dasha/3.jpg" },
+    { "name": "Candle Set", "about": "Aromatic candles for relaxation.", "seller": "Dasha", "data-menu": "gray", "price": 12.99, "image": "../src/Dasha/4.jpg" },
+    { "name": "Storage Box", "about": "Organizer box for home items.", "seller": "Dasha", "data-menu": "pirple", "price": 15.75, "image": "../src/Dasha/5.jpg" }
   ],
 
   "Sofia": [
-    { "name": "Fashion Bag", "about": "Trendy bag for everyday outfits.", "seller": "Sofia", "data-menu": "green", "price": 45.00 },
-    { "name": "Backpack", "about": "Light backpack for school or travel.", "seller": "Sofia", "data-menu": "red", "price": 32.90 },
-    { "name": "Wallet", "about": "Elegant wallet with multiple compartments.", "seller": "Sofia", "data-menu": "cadetblue", "price": 19.99 },
-    { "name": "Sunglasses", "about": "Stylish sunglasses for sunny days.", "seller": "Sofia", "data-menu": "gray", "price": 27.50 },
-    { "name": "Makeup Pouch", "about": "Small pouch for cosmetics.", "seller": "Sofia", "data-menu": "pirple", "price": 11.25 }
+    { "name": "Fashion Bag", "about": "Trendy bag for everyday outfits.", "seller": "Sofia", "data-menu": "green", "price": 45.0, "image": "../src/Sofia/1.jpg" },
+    { "name": "Backpack", "about": "Light backpack for school or travel.", "seller": "Sofia", "data-menu": "red", "price": 32.9, "image": "../src/Sofia/2.jpg" },
+    { "name": "Wallet", "about": "Elegant wallet with multiple compartments.", "seller": "Sofia", "data-menu": "cadetblue", "price": 19.99, "image": "../src/Sofia/3.jpg" },
+    { "name": "Sunglasses", "about": "Stylish sunglasses for sunny days.", "seller": "Sofia", "data-menu": "gray", "price": 27.5, "image": "../src/Sofia/4.jpg" },
+    { "name": "Makeup Pouch", "about": "Small pouch for cosmetics.", "seller": "Sofia", "data-menu": "pirple", "price": 11.25, "image": "../src/Sofia/5.jpg" }
   ],
 
   "Yana": [
-    { "name": "Moto Helmet", "about": "Safe helmet for motorcycle riders.", "seller": "Yana", "data-menu": "green", "price": 89.99 },
-    { "name": "Gloves", "about": "Protective gloves for riding.", "seller": "Yana", "data-menu": "red", "price": 22.50 },
-    { "name": "Motor Jacket", "about": "Durable jacket for bikers.", "seller": "Yana", "data-menu": "cadetblue", "price": 120.00 },
-    { "name": "Bike Chain", "about": "Strong chain for motorcycle maintenance.", "seller": "Yana", "data-menu": "gray", "price": 35.00 },
-    { "name": "Phone Holder", "about": "Mount for navigation while riding.", "seller": "Yana", "data-menu": "pirple", "price": 14.99 }
+    { "name": "Moto Helmet", "about": "Safe helmet for motorcycle riders.", "seller": "Yana", "data-menu": "green", "price": 89.99, "image": "../src/Yana/1.jpg" },
+    { "name": "Gloves", "about": "Protective gloves for riding.", "seller": "Yana", "data-menu": "red", "price": 22.5, "image": "../src/Yana/2.jpg" },
+    { "name": "Motor Jacket", "about": "Durable jacket for bikers.", "seller": "Yana", "data-menu": "cadetblue", "price": 120.0, "image": "../src/Yana/3.jpg" },
+    { "name": "Bike Chain", "about": "Strong chain for motorcycle maintenance.", "seller": "Yana", "data-menu": "gray", "price": 35.0, "image": "../src/Yana/4.jpg" },
+    { "name": "Phone Holder", "about": "Mount for navigation while riding.", "seller": "Yana", "data-menu": "pirple", "price": 14.99, "image": "../src/Yana/5.jpg" }
   ],
 
   "Maksim": [
-    { "name": "Smart Watch", "about": "Track your health and notifications.", "seller": "Maksim", "data-menu": "green", "price": 59.99 },
-    { "name": "Gaming Mouse", "about": "High precision mouse for gamers.", "seller": "Maksim", "data-menu": "red", "price": 29.99 },
-    { "name": "Keyboard", "about": "Mechanical keyboard for fast typing.", "seller": "Maksim", "data-menu": "cadetblue", "price": 79.00 },
-    { "name": "USB Hub", "about": "Expand your laptop ports.", "seller": "Maksim", "data-menu": "gray", "price": 19.50 },
-    { "name": "Webcam", "about": "HD camera for streaming and meetings.", "seller": "Maksim", "data-menu": "pirple", "price": 42.00 }
+    { "name": "Smart Watch", "about": "Track your health and notifications.", "seller": "Maksim", "data-menu": "green", "price": 59.99, "image": "../src/Maksim/1.jpg" },
+    { "name": "Gaming Mouse", "about": "High precision mouse for gamers.", "seller": "Maksim", "data-menu": "red", "price": 29.99, "image": "../src/Maksim/2.jpg" },
+    { "name": "Keyboard", "about": "Mechanical keyboard for fast typing.", "seller": "Maksim", "data-menu": "cadetblue", "price": 79.0, "image": "../src/Maksim/3.jpg" },
+    { "name": "USB Hub", "about": "Expand your laptop ports.", "seller": "Maksim", "data-menu": "gray", "price": 19.5, "image": "../src/Maksim/4.jpg" },
+    { "name": "Webcam", "about": "HD camera for streaming and meetings.", "seller": "Maksim", "data-menu": "pirple", "price": 42.0, "image": "../src/Maksim/5.jpg" }
   ],
 
   "Nikita": [
-    { "name": "Gaming Chair", "about": "Comfortable chair for long gaming sessions.", "seller": "Nikita", "data-menu": "green", "price": 150.00 },
-    { "name": "Headset", "about": "Surround sound gaming headset.", "seller": "Nikita", "data-menu": "red", "price": 49.99 },
-    { "name": "Mouse Pad", "about": "Large smooth surface pad.", "seller": "Nikita", "data-menu": "cadetblue", "price": 9.99 },
-    { "name": "LED Strip", "about": "RGB lights for setup decoration.", "seller": "Nikita", "data-menu": "gray", "price": 16.75 },
-    { "name": "Controller", "about": "Game controller for PC and console.", "seller": "Nikita", "data-menu": "pirple", "price": 39.90 }
+    { "name": "Gaming Chair", "about": "Comfortable chair for long gaming sessions.", "seller": "Nikita", "data-menu": "green", "price": 150.0, "image": "../src/Nikita/1.jpg" },
+    { "name": "Headset", "about": "Surround sound gaming headset.", "seller": "Nikita", "data-menu": "red", "price": 49.99, "image": "../src/Nikita/2.jpg" },
+    { "name": "Mouse Pad", "about": "Large smooth surface pad.", "seller": "Nikita", "data-menu": "cadetblue", "price": 9.99, "image": "../src/Nikita/3.jpg" },
+    { "name": "LED Strip", "about": "RGB lights for setup decoration.", "seller": "Nikita", "data-menu": "gray", "price": 16.75, "image": "../src/Nikita/4.jpg" },
+    { "name": "Controller", "about": "Game controller for PC and console.", "seller": "Nikita", "data-menu": "pirple", "price": 39.9, "image": "../src/Nikita/5.jpg" }
   ],
 
   "Yrik": [
-    { "name": "Mechanical Keyboard", "about": "Fast response gaming keyboard.", "seller": "Yrik", "data-menu": "green", "price": 85.00 },
-    { "name": "Gaming Mouse", "about": "Ergonomic mouse for esports.", "seller": "Yrik", "data-menu": "red", "price": 33.99 },
-    { "name": "Monitor Stand", "about": "Adjustable stand for desk setup.", "seller": "Yrik", "data-menu": "cadetblue", "price": 25.00 },
-    { "name": "PC Case", "about": "Modern airflow case.", "seller": "Yrik", "data-menu": "gray", "price": 70.00 },
-    { "name": "RGB Fan", "about": "Cooling fan with RGB lighting.", "seller": "Yrik", "data-menu": "pirple", "price": 12.50 }
+    { "name": "Mechanical Keyboard", "about": "Fast response gaming keyboard.", "seller": "Yrik", "data-menu": "green", "price": 85.0, "image": "../src/Yrik/1.jpg" },
+    { "name": "Gaming Mouse", "about": "Ergonomic mouse for esports.", "seller": "Yrik", "data-menu": "red", "price": 33.99, "image": "../src/Yrik/2.jpg" },
+    { "name": "Monitor Stand", "about": "Adjustable stand for desk setup.", "seller": "Yrik", "data-menu": "cadetblue", "price": 25.0, "image": "../src/Yrik/3.jpg" },
+    { "name": "PC Case", "about": "Modern airflow case.", "seller": "Yrik", "data-menu": "gray", "price": 70.0, "image": "../src/Yrik/4.jpg" },
+    { "name": "RGB Fan", "about": "Cooling fan with RGB lighting.", 
+    "seller": "Yrik", "data-menu": "pirple", "price": 12.5, "image": "../src/Yrik/5.jpg" }
   ],
 
   "IllaD": [
-    { "name": "Street Hoodie", "about": "Comfortable urban style hoodie.", "seller": "IllaD", "data-menu": "green", "price": 38.00 },
-    { "name": "Sneakers", "about": "Everyday sporty shoes.", "seller": "IllaD", "data-menu": "red", "price": 65.00 },
-    { "name": "Cap", "about": "Stylish cap for summer.", "seller": "IllaD", "data-menu": "cadetblue", "price": 14.99 },
-    { "name": "Jacket", "about": "Warm jacket for cold weather.", "seller": "IllaD", "data-menu": "gray", "price": 90.00 },
-    { "name": "Bag Pack", "about": "Urban backpack for daily use.", "seller": "IllaD", "data-menu": "pirple", "price": 29.99 }
+    { "name": "Street Hoodie", "about": "Comfortable urban style hoodie.", "seller": "IllaD", "data-menu": "green", "price": 38.0, "image": "../src/IllaD/1.jpg" },
+    { "name": "Sneakers", "about": "Everyday sporty shoes.", "seller": "IllaD", "data-menu": "red", "price": 65.0, "image": "../src/IllaD/2.jpg" },
+    { "name": "Cap", "about": "Stylish cap for summer.", "seller": "IllaD", "data-menu": "cadetblue", "price": 14.99, "image": "../src/IllaD/3.jpg" },
+    { "name": "Jacket", "about": "Warm jacket for cold weather.", "seller": "IllaD", "data-menu": "gray", "price": 90.0, "image": "../src/IllaD/4.jpg" },
+    { "name": "Bag Pack", "about": "Urban backpack for daily use.", "seller": "IllaD", "data-menu": "pirple", "price": 29.99, "image": "../src/IllaD/5.jpg" }
   ],
 
   "IllaM": [
-    { "name": "Smart Lamp", "about": "RGB controllable lamp.", "seller": "IllaM", "data-menu": "green", "price": 28.99 },
-    { "name": "Tablet", "about": "Light tablet for work and study.", "seller": "IllaM", "data-menu": "red", "price": 110.00 },
-    { "name": "Stylus Pen", "about": "Precision pen for drawing.", "seller": "IllaM", "data-menu": "cadetblue", "price": 12.00 },
-    { "name": "Laptop", "about": "Powerful laptop for productivity.", "seller": "IllaM", "data-menu": "gray", "price": 699.00 },
-    { "name": "Smart Plug", "about": "Control devices remotely.", "seller": "IllaM", "data-menu": "pirple", "price": 17.99 }
+    { "name": "Smart Lamp", "about": "RGB controllable lamp.", "seller": "IllaM", "data-menu": "green", "price": 28.99, "image": "../src/IllaM/1.jpg" },
+    { "name": "Tablet", "about": "Light tablet for work and study.", "seller": "IllaM", "data-menu": "red", "price": 110.0, "image": "../src/IllaM/2.jpg" },
+    { "name": "Stylus Pen", "about": "Precision pen for drawing.", "seller": "IllaM", "data-menu": "cadetblue", "price": 12.0, "image": "../src/IllaM/3.jpg" },
+    { "name": "Laptop", "about": "Powerful laptop for productivity.", "seller": "IllaM", "data-menu": "gray", "price": 699.0, "image": "../src/IllaM/4.jpg" },
+    { "name": "Smart Plug", "about": "Control devices remotely.", "seller": "IllaM", "data-menu": "pirple", "price": 17.99, "image": "../src/IllaM/5.jpg" }
   ]
 }
