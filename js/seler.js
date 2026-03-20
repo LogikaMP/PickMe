@@ -22,12 +22,6 @@ document.addEventListener("DOMContentLoaded", async function(){
 
     // додамо картки
 
-    let allwrps = this.doctype.querySelector(".allwrps")
-    all_product.forEach(product => {
-        let card = `<div data-menu="${product['data-menu']}" class="single">
-       
-        </div>
-        </div>`
-        
-    });
 })
+
+Filtering();

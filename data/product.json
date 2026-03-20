@@ -20,7 +20,7 @@
     { "name": "Gloves", "about": "Protective gloves for riding.", "seller": "Yana", "data-menu": "red", "price": 22.5, "image": "../src/Yana/2.jpg" },
     { "name": "Motor Jacket", "about": "Durable jacket for bikers.", "seller": "Yana", "data-menu": "cadetblue", "price": 120.0, "image": "../src/Yana/3.jpg" },
     { "name": "Bike Chain", "about": "Strong chain for motorcycle maintenance.", "seller": "Yana", "data-menu": "gray", "price": 35.0, "image": "../src/Yana/4.jpg" },
-    { "name": "Phone Holder", "about": "Mount for navigation while riding.", "seller": "Yana", "data-menu": "pirple", "price": 14.99, "image": "../src/Yana/5.jpg" }
+    { "name": "Phone Holder", "about": "Mount for navigation while riding.", "seller": "Yana", "data-menu": "gray", "price": 14.99, "image": "../src/Yana/5.jpg" }
   ],
 
   "Maksim": [
