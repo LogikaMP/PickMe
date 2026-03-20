@@ -126,16 +126,17 @@ document.addEventListener("DOMContentLoaded", async function(){
       </div>
     </div>
   </div>`
-        divSelers.innerHTML += card
+       let temp = document.createElement("div");
+        temp.innerHTML = card;
+        divSelers.appendChild(temp.firstElementChild)
     })
 })
 
 
-let btn_buy = document.querySelectorAll(".buy-now")
-btn_buy.array.forEach(element => {
-  element.addEventListener("click", function(){
-    let name_seler = this.id
-    localStorage.setItem("seler", name_seler)
-    window.location.href = "seler.html"
-  })
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("buy-now")) {
+    let name_seler = e.target.id;
+    localStorage.setItem("seler", name_seler);
+    window.location.href = "seler.html";
+  }
 });

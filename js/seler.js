@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", async function(){
     let name_seler = localStorage.getItem("seler")
     all_product = all_product[name_seler]
     seler_data = seler_data["selers"][name_seler]
-    let seler_img = document.querySelector(".seler cover img")
-    let seler_name = document.querySelector(".seler cover text name")
-    let seler_about = documrnt.querySelector(".seler cover text about ")
+    let seler_img = document.querySelector(".cover-seler-img")
+    let seler_name = document.querySelector(".cover-seler-text-name")
+    let seler_about = document.querySelector(".cover-seler-text-about ")
+})
