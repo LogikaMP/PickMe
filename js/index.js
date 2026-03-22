@@ -110,9 +110,9 @@ document.addEventListener("DOMContentLoaded", async function(){
     let divSelers = document.querySelector(".selers")
     let selers = await loadData("../data/selers.json")
     selers = selers["selers"]
-    selers.forEach(function(selers) {
-        let name = Object.keys(selers)[0]
-        let data = selers[name]
+   
+    Object.entries(selers).forEach(function([name, value]) {
+        let data = value
         let card = `<div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
@@ -126,16 +126,17 @@ document.addEventListener("DOMContentLoaded", async function(){
       </div>
     </div>
   </div>`
-        divSelers.innerHTML += card
+       let temp = document.createElement("div");
+        temp.innerHTML = card;
+        divSelers.appendChild(temp.firstElementChild)
     })
 })
 
 
-let btn_buy = document.querySelectorAll(".buy-now")
-btn_buy.array.forEach(element => {
-  element.addEventListener("click", function(){
-    let name_seler = this.id
-    localStorage.setItem("seler", name_seler)
-    window.location.href = "seler.html"
-  })
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("buy-now")) {
+    let name_seler = e.target.id;
+    localStorage.setItem("seler", name_seler);
+    window.location.href = "seler.html";
+  }
 });
