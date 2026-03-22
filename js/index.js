@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", async function(){
     await loadComponent('../components/header.html', '.header')
-    await loadComponent('../components/footer.html', '.footer')
-
+    await loadComponent('../components/footer.html','.footer')
 
     let all_product = await loadData("../data/product.json")
     console.log(all_product)
@@ -111,9 +110,9 @@ document.addEventListener("DOMContentLoaded", async function(){
     let divSelers = document.querySelector(".selers")
     let selers = await loadData("../data/selers.json")
     selers = selers["selers"]
-    selers.forEach(function(selers) {
-        let name = Object.keys(selers)[0]
-        let data = selers[name]
+   
+    Object.entries(selers).forEach(function([name, value]) {
+        let data = value
         let card = `<div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
@@ -123,19 +122,21 @@ document.addEventListener("DOMContentLoaded", async function(){
       </div>
       <div class="flip-card-back">
         <p>${data["about"]}</p>
-        <button id="${name} class=buy-now">Buy Now</button>
+        <button id="${name}" class="buy-now">Buy Now</button>
       </div>
     </div>
   </div>`
-        divSelers.innerHTML += card
+       let temp = document.createElement("div");
+        temp.innerHTML = card;
+        divSelers.appendChild(temp.firstElementChild)
     })
 })
 
-let btn_buy = document.querySelector(".buy-now")
-btn_buy.forEach(element => {
-    element.addEventListener("click", function(){
-        let name_seler = this.id
-        localStorage.setItem("seler", name_seler)
-        window.location.href = "seler.html"
-    })
+
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("buy-now")) {
+    let name_seler = e.target.id;
+    localStorage.setItem("seler", name_seler);
+    window.location.href = "seler.html";
+  }
 });
