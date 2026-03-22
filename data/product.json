@@ -1,167 +1,66 @@
 {
-  "sofia": [
-    {
-      "name": "Stylish Backpack",
-      "price": 49.99,
-      "image": "../src/sofia/1.jpg",
-      "aboutshort": "Compact and trendy backpack",
-      "about": "A versatile backpack made of durable material, perfect for school or travel.",
-      "comment": ["Love this backpack!", "Very useful for travel."]
-    },
-    {
-      "name": "Canvas Tote Bag",
-      "price": 24.99,
-      "image": "../src/sofia/1.jpg",
-      "aboutshort": "Lightweight tote bag",
-      "about": "Eco-friendly canvas tote bag ideal for daily shopping or casual use.",
-      "comment": ["Great quality!", "Very comfortable to carry."]
-    },
-    {
-      "name": "Travel Organizer",
-      "price": 19.99,
-      "image": "../src/sofia/1.jpg",
-      "aboutshort": "Organizer for travel",
-      "about": "Compact organizer to keep cables, cosmetics, and accessories tidy.",
-      "comment": ["Very practical.", "Helps keep things organized."]
-    },
-    {
-      "name": "Mini Handbag",
-      "price": 39.99,
-      "image": "../src/sofia/1.jpg",
-      "aboutshort": "Small fashionable handbag",
-      "about": "Elegant mini handbag perfect for casual outings and events.",
-      "comment": ["Looks amazing.", "Perfect size."]
-    },
-    {
-      "name": "Laptop Sleeve",
-      "price": 29.99,
-      "image": "../src/sofia/1.jpg",
-      "aboutshort": "Protective laptop sleeve",
-      "about": "Soft padded sleeve to protect your laptop from scratches.",
-      "comment": ["Fits perfectly.", "Very soft inside."]
-    },
-    {
-      "name": "Cosmetic Bag",
-      "price": 15.99,
-      "image": "../src/sofia/1.jpg",
-      "aboutshort": "Compact cosmetic bag",
-      "about": "Stylish bag for storing makeup and small accessories.",
-      "comment": ["Cute design.", "Very useful."]
-    },
-    {
-      "name": "Travel Pillow",
-      "price": 21.99,
-      "image": "../src/sofia/1.jpg",
-      "aboutshort": "Comfortable neck pillow",
-      "about": "Soft neck pillow designed for long flights and travel comfort.",
-      "comment": ["Very comfortable.", "Perfect for flights."]
-    },
-    {
-      "name": "Fashion Wallet",
-      "price": 27.99,
-      "image": "../src/sofia/1.jpg",
-      "aboutshort": "Stylish wallet",
-      "about": "Elegant wallet with multiple card slots and secure zipper.",
-      "comment": ["Very stylish.", "Great storage."]
-    },
-    {
-      "name": "Portable Mirror",
-      "price": 12.99,
-      "image": "../src/sofia/1.jpg",
-      "aboutshort": "Compact pocket mirror",
-      "about": "Small mirror perfect for travel and daily use.",
-      "comment": ["Very handy.", "Nice design."]
-    },
-    {
-      "name": "Phone Crossbody Bag",
-      "price": 34.99,
-      "image": "../src/sofia/1.jpg",
-      "aboutshort": "Small phone bag",
-      "about": "Light crossbody bag designed to carry phone and essentials.",
-      "comment": ["Very practical.", "Great for daily use."]
-    }
+  "Dasha": [
+    { "name": "Home Lamp", "about": "Stylish lamp for cozy home lighting.", "seller": "Dasha", "data-menu": "green", "price": 24.99, "image": "../src/Dasha/1.jpg" },
+    { "name": "Kitchen Set", "about": "Practical kitchen accessories for everyday use.", "seller": "Dasha", "data-menu": "red", "price": 39.5, "image": "../src/Dasha/2.jpg" },
+    { "name": "Wall Decor", "about": "Modern decorations for your room walls.", "seller": "Dasha", "data-menu": "cadetblue", "price": 18.0, "image": "../src/Dasha/3.jpg" },
+    { "name": "Candle Set", "about": "Aromatic candles for relaxation.", "seller": "Dasha", "data-menu": "gray", "price": 12.99, "image": "../src/Dasha/4.jpg" },
+    { "name": "Storage Box", "about": "Organizer box for home items.", "seller": "Dasha", "data-menu": "pirple", "price": 15.75, "image": "../src/Dasha/5.jpg" }
   ],
 
-  "yana": [
-    {
-      "name": "Wireless Earbuds",
-      "price": 79.99,
-      "image": "../src/yana/1.jpg",
-      "aboutshort": "High-quality wireless earbuds",
-      "about": "Enjoy clear sound and long battery life.",
-      "comment": ["Sound quality is amazing.", "Battery lasts long!"]
-    },
-    {
-      "name": "Bluetooth Headphones",
-      "price": 99.99,
-      "image": "../src/yana/1.jpg",
-      "aboutshort": "Over-ear headphones",
-      "about": "Comfortable headphones with powerful bass.",
-      "comment": ["Great bass.", "Very comfortable."]
-    },
-    {
-      "name": "Portable Charger",
-      "price": 29.99,
-      "image": "../src/yana/1.jpg",
-      "aboutshort": "Power bank",
-      "about": "Fast charging portable power bank.",
-      "comment": ["Very useful.", "Charges quickly."]
-    },
-    {
-      "name": "USB-C Cable",
-      "price": 9.99,
-      "image": "../src/yana/1.jpg",
-      "aboutshort": "Durable charging cable",
-      "about": "Strong braided cable for fast charging.",
-      "comment": ["Very durable.", "Works great."]
-    },
-    {
-      "name": "Wireless Charger",
-      "price": 34.99,
-      "image": "../src/yana/1.jpg",
-      "aboutshort": "Fast wireless charger",
-      "about": "Charge your phone without cables.",
-      "comment": ["Very convenient.", "Fast charging."]
-    },
-    {
-      "name": "Laptop Stand",
-      "price": 39.99,
-      "image": "../src/yana/1.jpg",
-      "aboutshort": "Adjustable stand",
-      "about": "Improves posture while working.",
-      "comment": ["Very ergonomic.", "Great build."]
-    },
-    {
-      "name": "USB Hub",
-      "price": 24.99,
-      "image": "../src/yana/1.jpg",
-      "aboutshort": "Multi-port hub",
-      "about": "Add extra ports to your laptop.",
-      "comment": ["Very useful.", "Works perfectly."]
-    },
-    {
-      "name": "Phone Holder",
-      "price": 14.99,
-      "image": "../src/yana/1.jpg",
-      "aboutshort": "Desk phone holder",
-      "about": "Adjustable holder for comfortable viewing.",
-      "comment": ["Very stable.", "Great design."]
-    },
-    {
-      "name": "Noise Cancelling Earbuds",
-      "price": 119.99,
-      "image": "../src/yana/1.jpg",
-      "aboutshort": "ANC earbuds",
-      "about": "Block outside noise with active noise cancellation.",
-      "comment": ["Noise canceling works great.", "Amazing sound."]
-    },
-    {
-      "name": "Mini Bluetooth Adapter",
-      "price": 19.99,
-      "image": "../src/yana/1.jpg",
-      "aboutshort": "Bluetooth adapter",
-      "about": "Add Bluetooth connectivity to your PC.",
-      "comment": ["Easy to use.", "Works perfectly."]
-    }
+  "Sofia": [
+    { "name": "Fashion Bag", "about": "Trendy bag for everyday outfits.", "seller": "Sofia", "data-menu": "green", "price": 45.0, "image": "../src/Sofia/1.jpg" },
+    { "name": "Backpack", "about": "Light backpack for school or travel.", "seller": "Sofia", "data-menu": "red", "price": 32.9, "image": "../src/Sofia/2.jpg" },
+    { "name": "Wallet", "about": "Elegant wallet with multiple compartments.", "seller": "Sofia", "data-menu": "cadetblue", "price": 19.99, "image": "../src/Sofia/3.jpg" },
+    { "name": "Sunglasses", "about": "Stylish sunglasses for sunny days.", "seller": "Sofia", "data-menu": "gray", "price": 27.5, "image": "../src/Sofia/4.jpg" },
+    { "name": "Makeup Pouch", "about": "Small pouch for cosmetics.", "seller": "Sofia", "data-menu": "pirple", "price": 11.25, "image": "../src/Sofia/5.jpg" }
+  ],
+
+  "Yana": [
+    { "name": "Moto Helmet", "about": "Safe helmet for motorcycle riders.", "seller": "Yana", "data-menu": "green", "price": 89.99, "image": "../src/Yana/1.jpg" },
+    { "name": "Gloves", "about": "Protective gloves for riding.", "seller": "Yana", "data-menu": "red", "price": 22.5, "image": "../src/Yana/2.jpg" },
+    { "name": "Motor Jacket", "about": "Durable jacket for bikers.", "seller": "Yana", "data-menu": "cadetblue", "price": 120.0, "image": "../src/Yana/3.jpg" },
+    { "name": "Bike Chain", "about": "Strong chain for motorcycle maintenance.", "seller": "Yana", "data-menu": "gray", "price": 35.0, "image": "../src/Yana/4.jpg" },
+    { "name": "Phone Holder", "about": "Mount for navigation while riding.", "seller": "Yana", "data-menu": "gray", "price": 14.99, "image": "../src/Yana/5.jpg" }
+  ],
+
+  "Maksim": [
+    { "name": "Smart Watch", "about": "Track your health and notifications.", "seller": "Maksim", "data-menu": "green", "price": 59.99, "image": "../src/Maksim/1.jpg" },
+    { "name": "Gaming Mouse", "about": "High precision mouse for gamers.", "seller": "Maksim", "data-menu": "red", "price": 29.99, "image": "../src/Maksim/2.jpg" },
+    { "name": "Keyboard", "about": "Mechanical keyboard for fast typing.", "seller": "Maksim", "data-menu": "cadetblue", "price": 79.0, "image": "../src/Maksim/3.jpg" },
+    { "name": "USB Hub", "about": "Expand your laptop ports.", "seller": "Maksim", "data-menu": "gray", "price": 19.5, "image": "../src/Maksim/4.jpg" },
+    { "name": "Webcam", "about": "HD camera for streaming and meetings.", "seller": "Maksim", "data-menu": "pirple", "price": 42.0, "image": "../src/Maksim/5.jpg" }
+  ],
+
+  "Nikita": [
+    { "name": "Gaming Chair", "about": "Comfortable chair for long gaming sessions.", "seller": "Nikita", "data-menu": "green", "price": 150.0, "image": "../src/Nikita/1.jpg" },
+    { "name": "Headset", "about": "Surround sound gaming headset.", "seller": "Nikita", "data-menu": "red", "price": 49.99, "image": "../src/Nikita/2.jpg" },
+    { "name": "Mouse Pad", "about": "Large smooth surface pad.", "seller": "Nikita", "data-menu": "cadetblue", "price": 9.99, "image": "../src/Nikita/3.jpg" },
+    { "name": "LED Strip", "about": "RGB lights for setup decoration.", "seller": "Nikita", "data-menu": "gray", "price": 16.75, "image": "../src/Nikita/4.jpg" },
+    { "name": "Controller", "about": "Game controller for PC and console.", "seller": "Nikita", "data-menu": "pirple", "price": 39.9, "image": "../src/Nikita/5.jpg" }
+  ],
+
+  "Yrik": [
+    { "name": "Mechanical Keyboard", "about": "Fast response gaming keyboard.", "seller": "Yrik", "data-menu": "green", "price": 85.0, "image": "../src/Yrik/1.jpg" },
+    { "name": "Gaming Mouse", "about": "Ergonomic mouse for esports.", "seller": "Yrik", "data-menu": "red", "price": 33.99, "image": "../src/Yrik/2.jpg" },
+    { "name": "Monitor Stand", "about": "Adjustable stand for desk setup.", "seller": "Yrik", "data-menu": "cadetblue", "price": 25.0, "image": "../src/Yrik/3.jpg" },
+    { "name": "PC Case", "about": "Modern airflow case.", "seller": "Yrik", "data-menu": "gray", "price": 70.0, "image": "../src/Yrik/4.jpg" },
+    { "name": "RGB Fan", "about": "Cooling fan with RGB lighting.", 
+    "seller": "Yrik", "data-menu": "pirple", "price": 12.5, "image": "../src/Yrik/5.jpg" }
+  ],
+
+  "IllaD": [
+    { "name": "Street Hoodie", "about": "Comfortable urban style hoodie.", "seller": "IllaD", "data-menu": "green", "price": 38.0, "image": "../src/IllaD/1.jpg" },
+    { "name": "Sneakers", "about": "Everyday sporty shoes.", "seller": "IllaD", "data-menu": "red", "price": 65.0, "image": "../src/IllaD/2.jpg" },
+    { "name": "Cap", "about": "Stylish cap for summer.", "seller": "IllaD", "data-menu": "cadetblue", "price": 14.99, "image": "../src/IllaD/3.jpg" },
+    { "name": "Jacket", "about": "Warm jacket for cold weather.", "seller": "IllaD", "data-menu": "gray", "price": 90.0, "image": "../src/IllaD/4.jpg" },
+    { "name": "Bag Pack", "about": "Urban backpack for daily use.", "seller": "IllaD", "data-menu": "pirple", "price": 29.99, "image": "../src/IllaD/5.jpg" }
+  ],
+
+  "IllaM": [
+    { "name": "Smart Lamp", "about": "RGB controllable lamp.", "seller": "IllaM", "data-menu": "green", "price": 28.99, "image": "../src/IllaM/1.jpg" },
+    { "name": "Tablet", "about": "Light tablet for work and study.", "seller": "IllaM", "data-menu": "red", "price": 110.0, "image": "../src/IllaM/2.jpg" },
+    { "name": "Stylus Pen", "about": "Precision pen for drawing.", "seller": "IllaM", "data-menu": "cadetblue", "price": 12.0, "image": "../src/IllaM/3.jpg" },
+    { "name": "Laptop", "about": "Powerful laptop for productivity.", "seller": "IllaM", "data-menu": "gray", "price": 699.0, "image": "../src/IllaM/4.jpg" },
+    { "name": "Smart Plug", "about": "Control devices remotely.", "seller": "IllaM", "data-menu": "pirple", "price": 17.99, "image": "../src/IllaM/5.jpg" }
   ]
 }
