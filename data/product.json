@@ -9,7 +9,7 @@
 
   "Sofia": [
     { "name": "Fashion Bag", "about": "Trendy bag for everyday outfits.", "seller": "Sofia", "data-menu": "green", "price": 45.0, "image": "../src/Sofia/1.jpg" },
-    { "name": "Backpack", "about": "Light backpack for school or travel.", "seller": "Sofia", "data-menu": "red", "price": 32.9, "image": "../src/Sofia/2.jpg" },
+    { "name": "Backpack", "about": "Light backpack for school or travel.", "seller": "Sofia", "data-menu": "green", "price": 32.9, "image": "../src/Sofia/2.jpg" },
     { "name": "Wallet", "about": "Elegant wallet with multiple compartments.", "seller": "Sofia", "data-menu": "cadetblue", "price": 19.99, "image": "../src/Sofia/3.jpg" },
     { "name": "Sunglasses", "about": "Stylish sunglasses for sunny days.", "seller": "Sofia", "data-menu": "gray", "price": 27.5, "image": "../src/Sofia/4.jpg" },
     { "name": "Makeup Pouch", "about": "Small pouch for cosmetics.", "seller": "Sofia", "data-menu": "pirple", "price": 11.25, "image": "../src/Sofia/5.jpg" }
