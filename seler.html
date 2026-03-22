@@ -10,41 +10,46 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.0/gsap.min.js"></script>
 
   </head>
-
   <body>
-    <div class="filter_product">
-        <button type="button" data-menu="all">All</button>
-        <button type="button" data-menu="green">Green</button>
-        <button type="button" data-menu="pirple">Pirple</button>
-        <button type="button" data-menu="cadetblue">Cadetblue</button>
-        <button type="button" data-menu="red">Red</button>
-        <button type="button" data-menu="gray">Gray</button>
-        <div data-menu="green" class="single" style="background-color: green;">Green</div>
-        <div data-menu="pirple" class="single" style="background-color: blueviolet;">Pirple</div>
-        <div data-menu="red" class="single">Red</div>
-        <div data-menu="pirple" class="single" style="background-color: blueviolet;">Pirple</div>
-        <div data-menu="green" class="single" style="background-color: green;">Green</div>
-        <div data-menu="red" class="single">Red</div>
-        <div data-menu="pirple" class="single" style="background-color: blueviolet;">Pirple</div>
-        <div data-menu="cadetblue" class="single" style="background-color: cadetblue;">Cadetblue</div>
-        <div data-menu="green" class="single" style="background-color: green;">Green</div>
-        <div data-menu="cadetblue" class="single" style="background-color: cadetblue;">Cadetblue</div>
-        <div data-menu="gray" class="single" style="background-color: darkgray;">Gray</div>
-    </div>
-
-    <header class="header"> </header>
-    <main> 
+    <header class ="header"></header>
+    <main>
         <div class="cover-seler">
-            <img class="cover-seler-img" src="">
+            <img class="cover-seler-img" src ="">
             <div class="cover-seler-text">
                 <h1 class="cover-seler-text-name"></h1>
-                <p class="cover-text-about"></p>
+                <h1 class="cover-seler-text-seler"></h1>
+                <p class ="cover-seler-text-about"></p>
             </div>
         </div>
-        <div class="filter-seler"></div>
-        <div class="products"></div>
+        <div class="filter-seler" style="width: 100%;">
+            <div class="btns" style="display: flex; width: 80%;margin-left: 10%;justify-content: space-evenly;">
+                <button type="button" data-menu="all">All</button>
+                <button type="button" data-menu="green">Green</button>
+                <button type="button" data-menu="pirple">Pirple</button>
+                <button type="button" data-menu="cadetblue">Cadetblue</button>
+                <button type="button" data-menu="red">Red</button>
+                <button type="button" data-menu="gray">Gray</button>
+            </div>
+            <div class="allwrps container" style="width: 100%;">
+                <!-- <div data-menu="green" class="single" style="background-color: green;">Green</div>
+                <div data-menu="pirple" class="single" style="background-color: blueviolet;">Pirple</div>
+                <div data-menu="red" class="single">Red</div>
+                <div data-menu="pirple" class="single" style="background-color: blueviolet;">Pirple</div>
+                <div data-menu="green" class="single" style="background-color: green;">Green</div>
+                <div data-menu="red" class="single">Red</div>
+                <div data-menu="pirple" class="single" style="background-color: blueviolet;">Pirple</div>
+                <div data-menu="cadetblue" class="single" style="background-color: cadetblue;">Cadetblue</div>
+                <div data-menu="green" class="single" style="background-color: green;">Green</div>
+                <div data-menu="cadetblue" class="single" style="background-color: cadetblue;">Cadetblue</div>
+                <div data-menu="gray" class="single" style="background-color: darkgray;">Gray</div> -->
+            </div>
+        </div>
+        <div class="products-seller"></div>
     </main>
-    <footer class="footer"> </footer>
-    <script src="./js/components.js"></script>
-    <script src="./js/seler.js"></script>
+    <footer class="footer"></footer>
+    <script src = "./js/components.js"></script>
+        <script src="./js/seler_filler.js" defer></script>
+    <script src = "./js/seler.js" defer></script>
+
   </body>
+  
