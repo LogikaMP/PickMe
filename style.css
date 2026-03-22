@@ -901,28 +901,24 @@ ul{
 
 
 
-
+/* ===== CONTAINER ===== */
 .allwrps {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px; /* 🔥 відступи між картками */
+    gap: 20px;
     justify-content: flex-start;
-    padding: 10px;
+    padding: 20px;
 }
 
+/* ===== CARD WRAPPER ===== */
 .single {
-  width: 190px;
-  height: 190px;
-  text-align: center;
-  line-height: 200px;
-  background: red;
-  margin: 0 5px;
+  width: 260px;
+  height: 380px;
   margin-top: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  transition: .3s;     
-}
-.single {
-    transition: 0.3s ease;
+  transition: 0.3s ease;
+  background: transparent;
+  line-height: normal;
 }
 
 .single.hide {
@@ -930,8 +926,10 @@ ul{
 }
 
 .single.show {
-    display: block;
+    display: flex;
 }
+
+/* ===== BUTTONS ===== */
 .btns {
   text-align: center;
   margin-top: 50px;
@@ -942,21 +940,294 @@ ul{
   padding: 15px 40px;
   border: none;
   outline: none;
-
   margin: 0 10px;
   cursor: pointer;
   transition: .3s;
+  background: var(--pink);
+  color: var(--purple);
 }
 
-.btns button:hover,.btns button.active {
-  background: blueviolet;
+.btns button:hover,
+.btns button.active {
+  background: var(--purple);
   color: #fff;
 }
+
 .btns button.selected {
     background: white;
-    color: purple;
+    color: var(--purple);
     font-weight: bold;
-    border: 2px solid purple;
+    border: 2px solid var(--purple);
+}
+
+/* ===== SELLER BLOCK ===== */
+.cover-seler {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 25px;
+  margin: 20px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, var(--pink3), var(--pink), var(--white));
+  box-shadow: 0 10px 30px rgba(92, 46, 179, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===== FLIP CARD ===== */
+.flip-card2{
+  width: 100%;
+  height: 100%;
+  perspective:1200px;
+  cursor:pointer;
+}
+
+.flip-inner{
+  width:100%;
+  height:100%;
+  position:relative;
+  transform-style:preserve-3d;
+  transition:transform .65s cubic-bezier(.4,0,.2,1);
+}
+
+.flip-card:hover .flip-inner{
+  transform:rotateY(180deg);
+}
+
+.flip-front,
+.flip-back{
+  position:absolute;
+  inset:0;
+  border-radius:20px;
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+  overflow:hidden;
+}
+
+/* ===== FRONT ===== */
+.flip-front{
+  background: var(--pink);
+  border:1px solid var(--pink2);
+  box-shadow:0 5px 20px rgba(92, 46, 179, 0.15);
+  display:flex;
+  flex-direction:column;
+}
+
+.card-img{
+  flex:1;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.card-img-bg{
+  position:absolute;
+  inset:0;
+  background: var(--liner-gradient-color);
+  transition:transform .65s;
+}
+
+.flip-card:hover .card-img-bg{
+  transform:scale(1.05);
+}
+
+.card-emoji{
+  position:relative;
+  z-index:1;
+}
+
+.card-emoji img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+
+.card-badge{
+  position:absolute;
+  top:14px;
+  right:14px;
+  z-index:2;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:1px;
+  padding:4px 10px;
+  border-radius:20px;
+  text-transform:uppercase;
+}
+
+.badge-new{background:var(--purple);color:#fff;}
+.badge-sale{background:var(--pink2);color:#fff;}
+.badge-hot{background:var(--violet);color:#fff;}
+
+.card-info{
+  padding:18px 20px;
+  border-top:1px solid var(--pink2);
+}
+
+.card-category{
+  font-size:10px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--violet);
+  margin-bottom:4px;
+}
+
+.card-name{
+  font-size:18px;
+  font-weight:600;
+  color:var(--purple);
+  margin-bottom:8px;
+}
+
+.card-price-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.card-price{
+  font-size:20px;
+  font-weight:600;
+  color:var(--pink2);
+}
+
+.card-price-old{
+  font-size:13px;
+  color:#aaa;
+  text-decoration:line-through;
+  margin-left:6px;
+}
+
+.card-rating{
+  display:flex;
+  align-items:center;
+  gap:4px;
+  font-size:12px;
+  color:#555;
+}
+
+.stars{
+  color:gold;
+}
+
+/* ===== BACK ===== */
+.flip-back{
+  background: var(--purple);
+  transform:rotateY(180deg);
+  display:flex;
+  flex-direction:column;
+  padding:28px;
+  color:#fff;
+}
+
+.back-tag{
+  font-size:10px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  opacity:.6;
+  margin-bottom:16px;
+}
+
+.back-name{
+  font-size:22px;
+  font-weight:600;
+  margin-bottom:12px;
+}
+
+.back-desc{
+  font-size:13px;
+  opacity:.8;
+  line-height:1.6;
+  margin-bottom:20px;
+  flex:1;
+}
+
+.back-features{
+  list-style:none;
+  margin-bottom:24px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+.back-features li{
+  font-size:13px;
+}
+
+.back-features li::before{
+  content:'✓';
+  margin-right:6px;
+  color:var(--pink);
+}
+
+.back-price{
+  display:flex;
+  align-items:baseline;
+  gap:6px;
+  margin-bottom:18px;
+}
+
+.back-price-main{
+  font-size:34px;
+  font-weight:600;
+}
+
+.back-price-period{
+  font-size:13px;
+  opacity:.6;
+}
+
+.back-cta{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  background: var(--pink);
+  border:none;
+  border-radius:12px;
+  padding:13px;
+  color:var(--purple);
+  font-size:14px;
+  font-weight:600;
+  cursor:pointer;
+  transition:all .2s;
+}
+
+.back-cta:hover{
+  background: var(--pink2);
+  color:#fff;
+  transform:scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+.am-credit{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:8px;
+  padding:14px 24px;
+  background:#fff;
+  border-radius:14px;
+  box-shadow:0 2px 12px rgba(0,0,0,.05);
+  border:1px solid #f0ece6;
+  font-size:13px;
+  color:#6b7280;
+  max-width:920px;
+  width:100%;
+}
+
+.am-credit a{
+  color:#111;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.am-credit a:hover{
+  opacity:.6;
 }
 /* seler page */
 /* MAIN CONTAINER */
@@ -1044,183 +1315,209 @@ ul{
   margin: 0;
 }
 /* card product */
-.container{
-  position: relative;
+/* ===== КОНТЕЙНЕР ===== */
+.allwrps.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 30px;
+  
 }
 
-.container .card{
-  position: relative;
-  width: 320px;
-  height: 450px;
-  background: #5C2EB3;
-  border-radius: 20px;
-  overflow: hidden;
+/* ===== КАРТКА ===== */
+.flip-card2{
+  width: 260px;
+  height: 380px;
+  perspective: 1200px;
 }
 
-.container .card:before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
+/* внутрішній блок */
+.flip-card2 .flip-inner{
+  position: relative;
   width: 100%;
   height: 100%;
-  background: #B061DE;
-  clip-path: circle(150px at 80% 20%);
-  transition: 0.5s ease-in-out;
+  transition: transform 0.8s cubic-bezier(.4,2,.3,1);
+  transform-style: preserve-3d;
 }
 
-.container .card:hover:before{
-  clip-path: circle(300px at 80% -20%);
+/* ефект обертання */
+.flip-card2:hover .flip-inner{
+  transform: rotateY(180deg);
 }
 
-.container .card:after{
-  content: 'PickMe';
+/* перед + зад */
+.flip-card2 .flip-front,
+.flip-card2 .flip-back{
   position: absolute;
-  top: 30%;
-  left: -20%;
-  font-size: 12em;
-  font-weight: 800;
-  font-style: italic;
-  color: #ffd7d7
-}
-
-.container .card .imgBx{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10000;
   width: 100%;
-  height: 220px;
-  transition: 0.5s;
+  height: 100%;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
 }
 
-.container .card:hover .imgBx{
-  top: 0%;
-  transform: translateY(0%);
-    
+/* ===== FRONT ===== */
+.flip-front{
+  background: linear-gradient(145deg, var(--purple), var(--violet2));
+  color: white;
 }
 
-.container .card .imgBx img{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-25deg);
-  width: 270px;
-}
-
-.container .card .contentBx{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  text-align: center;
-  transition: 1s;
-  z-index: 10;
-}
-
-.container .card:hover .contentBx{
-  height: 210px;
-}
-
-.container .card .contentBx h2{
+/* картинка */
+.card-img{
   position: relative;
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: #fff;
-  margin: 0;
-}
-
-.container .card .contentBx .size, .container .card .contentBx .color {
+  height: 160px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 8px 20px;
-  transition: 0.5s;opacity: 0;
-  visibility: hidden;
-  padding-top: 0;
-  padding-bottom: 0;
+  justify-content: center;
 }
 
-.container .card:hover .contentBx .size{
-  opacity: 1;
-  visibility: visible;
-  transition-delay: 0.5s;
+.card-img-bg{
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: var(--liner-gradient-color);
+  filter: blur(50px);
+  opacity: 0.5;
 }
 
-.container .card:hover .contentBx .color{
-  opacity: 1;
-  visibility: visible;
-  transition-delay: 0.6s;
+.card-emoji img{
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  z-index: 2;
 }
 
-.container .card .contentBx .size h3, .container .card .contentBx .color h3{
-  color: #fff;
-  font-weight: 300;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-right: 10px;
+/* бейдж */
+.card-badge{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  background: var(--pink2);
+  color: white;
 }
 
-.container .card .contentBx .size span{
-  width: 26px;
-  height: 26px;
-  text-align: center;
-  line-height: 26px;
-  font-size: 14px;
-  display: inline-block;
-  color: #111;
-  background: #fff;
-  margin: 0 5px;
-  transition: 0.5s;
-  color: #111;
-  border-radius: 4px;
-  cursor: pointer;
+/* текст */
+.card-info{
+  padding: 15px;
 }
 
-.container .card .contentBx .size span:hover{
-  background: #9bdc28;
+.card-category{
+  font-size: 13px;
+  opacity: 0.8;
 }
 
-.container .card .contentBx .color span{
-  width: 20px;
-  height: 20px;
-  background: #ff0;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
+.card-name{
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0 10px;
 }
 
-.container .card .contentBx .color span:nth-child(2){
-  background: #9bdc28;
+.card-price-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.container .card .contentBx .color span:nth-child(3){
-  background: #03a9f4;
+.card-price{
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.container .card .contentBx .color span:nth-child(4){
-  background: #e91e63;
+.card-price-old{
+  margin-left: 6px;
+  font-size: 13px;
+  text-decoration: line-through;
+  opacity: 0.6;
 }
 
-.container .card .contentBx a{
-  display: inline-block;
-  padding: 10px 20px;
-  background: #fff;
-  border-radius: 4px;
+.card-rating{
+  font-size: 12px;
+}
+
+.stars{
+  color: gold;
+}
+
+/* ===== BACK ===== */
+.flip-back{
+  transform: rotateY(180deg);
+  background: linear-gradient(145deg, var(--pink2), var(--purple2));
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* тексти */
+.back-tag{
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.back-name{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.back-desc{
+  font-size: 13px;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+.back-features{
+  font-size: 12px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+.back-features li{
+  margin-bottom: 4px;
+}
+
+/* ціна */
+.back-price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-price-main{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.back-price-period{
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* кнопка */
+.back-cta{
   margin-top: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  color: #111;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: 0.5s;
-  margin-top: 0;
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  background: white;
+  color: var(--purple);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.container .card:hover .contentBx a{
-  opacity: 1;
-  transform: translateY(0px);
-  transition-delay: 0.75s;
-  
+.back-cta:hover{
+  background: var(--pink);
+  transform: scale(1.05);
+}
+
+/* ===== HOVER ЕФЕКТ КАРТКИ ===== */
+.flip-card2:hover{
+  transform: translateY(-5px);
 }
