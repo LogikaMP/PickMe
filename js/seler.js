@@ -1,16 +1,27 @@
 document.addEventListener("DOMContentLoaded", async function(){
     await loadComponent('../components/header.html', '.header')
-    await loadComponent('../components/footer.html', ".footer")
-    let seller_data = await loadData("../data/sellers.json")
-    let all_product = await loadData("../data/sellers.json")
-    let name_seller = localStorage.getItem("seller")
-    all_product = all_product[name_seller]
-    seller_data = seller_data["sellers"][name_seller]
-    let seller_img = document.querySelector(".seller-cover-img")
-    let seller_name = document.querySelector(".seller-text-name")
-    let seller_about = document.querySelector(".seller-text-about")
-    seller_img.attributes.src.value = seller_data("image")
-    seller_name.innerHTML = seller_data("name")
-    seller_about.innerHTML = seller_data("about")
+    await loadComponent('../components/footer.html','.footer')
+
+    let seler_data = await loadData("../data/selers.json")
+    
+    let all_product = await loadData("../data/product.json")
+    
+    let name_seler = localStorage.getItem("seler")
+    all_product = all_product[name_seler]
+    seler_data = seler_data["selers"][name_seler]
+    console.log(all_product)
+    let seler_img = document.querySelector(".cover-seler-img")
+    let seler_name = document.querySelector(".cover-seler-text-name")
+    let seler_seler = document.querySelector(".cover-seler-text-seler")
+    let seler_about = document.querySelector(".cover-seler-text-about")
+
+    seler_img.src = seler_data['image']
+    seler_name.innerHTML = seler_data['name']
+    seler_about.innerHTML = seler_data['about']
+    seler_seler.innerHTML = name_seler
+
+    // додамо картки
 
 })
+
+Filtering();
