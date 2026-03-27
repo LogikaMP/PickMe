@@ -12,7 +12,7 @@
       "Sofia":
       {
         "name": "fashion store",
-        "image": "../src/sofia/1.jpg",
+        "image": "../src/sofia/cover.jpg",
         "about": "Стильні сумки, рюкзаки та аксесуари для щоденного використання."
       }
     ,
@@ -28,7 +28,7 @@
       "Yrik":
       {
         "name": "gaming gear",
-        "image": "../src/yrik/1.jpg",
+        "image": "../src/yrik/cover.webp",
         "about": "Ігрові мишки, клавіатури та аксесуари для геймерів."
       }
     ,
