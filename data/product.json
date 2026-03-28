@@ -1,66 +1,665 @@
 {
   "Dasha": [
-    { "name": "Home Lamp", "about": "Stylish lamp for cozy home lighting.", "seller": "Dasha", "data-menu": "green", "price": 24.99, "image": "../src/Dasha/1.jpg" },
-    { "name": "Kitchen Set", "about": "Practical kitchen accessories for everyday use.", "seller": "Dasha", "data-menu": "red", "price": 39.5, "image": "../src/Dasha/2.jpg" },
-    { "name": "Wall Decor", "about": "Modern decorations for your room walls.", "seller": "Dasha", "data-menu": "cadetblue", "price": 18.0, "image": "../src/Dasha/3.jpg" },
-    { "name": "Candle Set", "about": "Aromatic candles for relaxation.", "seller": "Dasha", "data-menu": "gray", "price": 12.99, "image": "../src/Dasha/4.jpg" },
-    { "name": "Storage Box", "about": "Organizer box for home items.", "seller": "Dasha", "data-menu": "pirple", "price": 15.75, "image": "../src/Dasha/5.jpg" }
+      {
+    "id": 41,
+    "name": "Настільна лампа LightHome",
+    "about": "Сучасна лампа для робочого столу з м'яким освітленням.",
+    "data-menu": "new",
+    "price": 35,
+    "image": "../src/Dasha/1.jpg"
+  },
+  {
+    "id": 42,
+    "name": "Стельова люстра Crystal",
+    "about": "Елегантна люстра для вітальні з яскравим світлом.",
+    "data-menu": "hit",
+    "price": 120,
+    "image": "../src/Dasha/2.jpg"
+  },
+  {
+    "id": 43,
+    "name": "Лампа + ліхтар DuoLight",
+    "about": "Універсальний набір лампи та ліхтаря для дому та вулиці.",
+    "data-menu": "all",
+    "price": 50,
+    "image": "../src/Dasha/3.jpg"
+  },
+  {
+    "id": 44,
+    "name": "Кухонне освітлення BrightCook",
+    "about": "Яскраве освітлення для кухні з економним споживанням.",
+    "data-menu": "action",
+    "price": 70,
+    "image": "../src/Dasha/4.jpg"
+  },
+  {
+    "id": 45,
+    "name": "Декоративна ваза Classic",
+    "about": "Стильна ваза для квітів, що прикрасить будь-який інтер’єр.",
+    "data-menu": "ycinka",
+    "price": 25,
+    "image": "../src/Dasha/5.jpg"
+  },
+  {
+    "id": 46,
+    "name": "Статуетка ArtStyle",
+    "about": "Декоративна статуетка для створення затишку в домі.",
+    "data-menu": "all",
+    "price": 30,
+    "image": "../src/Dasha/6.jpg"
+  },
+  {
+    "id": 47,
+    "name": "Штучні квіти Rose Decor",
+    "about": "Реалістичні штучні троянди для декору приміщення.",
+    "data-menu": "new",
+    "price": 20,
+    "image": "../src/Dasha/7.jpg"
+  },
+  {
+    "id": 48,
+    "name": "Штучні квіти Bloom Set",
+    "about": "Набір декоративних квітів для стильного інтер’єру.",
+    "data-menu": "hit",
+    "price": 22,
+    "image": "../src/Dasha/8.jpg"
+  },
+  {
+    "id": 49,
+    "name": "Штучні квіти Green Touch",
+    "about": "Зелені декоративні рослини для дому та офісу.",
+    "data-menu": "all",
+    "price": 18,
+    "image": "../src/Dasha/9.jpg"
+  },
+  {
+    "id": 50,
+    "name": "Штучні квіти Luxury Mix",
+    "about": "Преміальний набір штучних квітів для елегантного декору.",
+    "data-menu": "action",
+    "price": 35,
+    "image": "../src/Dasha/10.jpg"
+  }
   ],
 
   "Sofia": [
-    { "name": "Fashion Bag", "about": "Trendy bag for everyday outfits.", "seller": "Sofia", "data-menu": "green", "price": 45.0, "image": "../src/Sofia/1.jpg" },
-    { "name": "Backpack", "about": "Light backpack for school or travel.", "seller": "Sofia", "data-menu": "red", "price": 32.9, "image": "../src/Sofia/2.jpg" },
-    { "name": "Wallet", "about": "Elegant wallet with multiple compartments.", "seller": "Sofia", "data-menu": "cadetblue", "price": 19.99, "image": "../src/Sofia/3.jpg" },
-    { "name": "Sunglasses", "about": "Stylish sunglasses for sunny days.", "seller": "Sofia", "data-menu": "gray", "price": 27.5, "image": "../src/Sofia/4.jpg" },
-    { "name": "Makeup Pouch", "about": "Small pouch for cosmetics.", "seller": "Sofia", "data-menu": "pirple", "price": 11.25, "image": "../src/Sofia/5.jpg" }
+{
+    "id": 11,
+    "name": "Елегантний костюм Prime",
+    "about": "Стильний класичний костюм для ділових зустрічей та урочистих подій.",
+    "data-menu": "new",
+    "price": 180,
+    "image": "../src/Sofia/1.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Класичний піджак Line",
+    "about": "Сучасний піджак з ідеальною посадкою для щоденного образу.",
+    "data-menu": "hit",
+    "price": 95,
+    "image": "../src/Sofia/2.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Спортивний костюм Flex",
+    "about": "Зручний спортивний комплект для активного способу життя та тренувань.",
+    "data-menu": "all",
+    "price": 75,
+    "image": "../src/Sofia/3.jpg"
+  },
+  {
+    "id": 14,
+    "name": "М'яка піжама Night",
+    "about": "Затишна піжама з м'якої тканини для комфортного сну.",
+    "data-menu": "ycinka",
+    "price": 40,
+    "image": "../src/Sofia/4.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Літня сукня Breeze",
+    "about": "Легка та елегантна сукня для теплих літніх днів.",
+    "data-menu": "new",
+    "price": 65,
+    "image": "../src/Sofia/5.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Міська сорочка Style",
+    "about": "Повсякденна сорочка, що підходить для роботи та прогулянок.",
+    "data-menu": "all",
+    "price": 45,
+    "image": "../src/Sofia/6.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Зимове пальто Pro",
+    "about": "Тепле пальто для холодної погоди зі стильним дизайном.",
+    "data-menu": "hit",
+    "price": 150,
+    "image": "../src/Sofia/7.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Плащ Rain Shield",
+    "about": "Водонепроникний плащ для захисту від дощу.",
+    "data-menu": "action",
+    "price": 85,
+    "image": "../src/Sofia/8.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Вечірня сукня Glam",
+    "about": "Елегантна сукня для святкових подій та вечірок.",
+    "data-menu": "new",
+    "price": 120,
+    "image": "../src/Sofia/9.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Діловий костюм Classic",
+    "about": "Строгий костюм для офісу та офіційних заходів.",
+    "data-menu": "all",
+    "price": 200,
+    "image": "../src/Sofia/10.jpg"
+  }
   ],
 
   "Yana": [
-    { "name": "Moto Helmet", "about": "Safe helmet for motorcycle riders.", "seller": "Yana", "data-menu": "green", "price": 89.99, "image": "../src/Yana/1.jpg" },
-    { "name": "Gloves", "about": "Protective gloves for riding.", "seller": "Yana", "data-menu": "red", "price": 22.5, "image": "../src/Yana/2.jpg" },
-    { "name": "Motor Jacket", "about": "Durable jacket for bikers.", "seller": "Yana", "data-menu": "cadetblue", "price": 120.0, "image": "../src/Yana/3.jpg" },
-    { "name": "Bike Chain", "about": "Strong chain for motorcycle maintenance.", "seller": "Yana", "data-menu": "gray", "price": 35.0, "image": "../src/Yana/4.jpg" },
-    { "name": "Phone Holder", "about": "Mount for navigation while riding.", "seller": "Yana", "data-menu": "gray", "price": 14.99, "image": "../src/Yana/5.jpg" }
+    {
+    "id": 0,
+    "name": "Street Moto X1",
+    "about": "Lightweight street motorcycle perfect for city riding.",
+    "data-menu": "new",
+    "price": 2100,
+    "image": "../src/Yana/1.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Speed Bike R3",
+    "about": "Fast and aggressive sport bike for adrenaline lovers.",
+    "data-menu": "hit",
+    "price": 3400,
+    "image": "../src/Yana/2.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Cruiser Classic 500",
+    "about": "Comfortable cruiser for long distance journeys.",
+    "data-menu": "all",
+    "price": 2800,
+    "image": "../src/Yana/3.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Offroad Beast 250",
+    "about": "Powerful off-road motorcycle for rough terrain.",
+    "data-menu": "action",
+    "price": 2600,
+    "image": "../src/Yana/4.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Urban Rider 150",
+    "about": "Economical and stylish bike for daily commuting.",
+    "data-menu": "ycinka",
+    "price": 1500,
+    "image": "../src/Yana/5.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Pro Helmet X",
+    "about": "High safety motorcycle helmet with modern design.",
+    "data-menu": "hit",
+    "price": 95,
+    "image": "../src/Yana/6.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Moto Jacket Pro",
+    "about": "Durable biker jacket with protection and comfort.",
+    "data-menu": "new",
+    "price": 130,
+    "image": "../src/Yana/7.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Speedster 400",
+    "about": "Balanced motorcycle combining speed and comfort.",
+    "data-menu": "all",
+    "price": 3100,
+    "image": "../src/Yana/8.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Night Rider 600",
+    "about": "Powerful night-style motorcycle with LED lighting.",
+    "data-menu": "wait",
+    "price": 4200,
+    "image": "../src/Yana/9.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Quad Beast 1000",
+    "about": "Strong quad bike for extreme off-road adventures.",
+    "data-menu": "action",
+    "price": 5500,
+    "image": "../src/Yana/10.jpg"
+  }
   ],
 
   "Maksim": [
-    { "name": "Smart Watch", "about": "Track your health and notifications.", "seller": "Maksim", "data-menu": "green", "price": 59.99, "image": "../src/Maksim/1.jpg" },
-    { "name": "Gaming Mouse", "about": "High precision mouse for gamers.", "seller": "Maksim", "data-menu": "red", "price": 29.99, "image": "../src/Maksim/2.jpg" },
-    { "name": "Keyboard", "about": "Mechanical keyboard for fast typing.", "seller": "Maksim", "data-menu": "cadetblue", "price": 79.0, "image": "../src/Maksim/3.jpg" },
-    { "name": "USB Hub", "about": "Expand your laptop ports.", "seller": "Maksim", "data-menu": "gray", "price": 19.5, "image": "../src/Maksim/4.jpg" },
-    { "name": "Webcam", "about": "HD camera for streaming and meetings.", "seller": "Maksim", "data-menu": "pirple", "price": 42.0, "image": "../src/Maksim/5.jpg" }
+    {
+    "id": 21,
+    "name": "Бездротові навушники AirSound",
+    "about": "Якісні бездротові навушники з чистим звуком та шумозаглушенням.",
+    "data-menu": "new",
+    "price": 60,
+    "image": "../src/Maksim/1.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Ігрові навушники ProBass",
+    "about": "Потужні навушники для геймінгу з глибоким басом та мікрофоном.",
+    "data-menu": "hit",
+    "price": 75,
+    "image": "../src/Maksim/2.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Смарт-годинник FitTime",
+    "about": "Розумний годинник для відстеження активності та здоров’я.",
+    "data-menu": "all",
+    "price": 90,
+    "image": "../src/Maksim/3.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Класичний годинник Steel",
+    "about": "Стильний годинник з металевим корпусом для щоденного носіння.",
+    "data-menu": "ycinka",
+    "price": 55,
+    "image": "../src/Maksim/4.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Портативна колонка BoomBox",
+    "about": "Гучна бездротова колонка з потужним звуком та довгим зарядом.",
+    "data-menu": "hit",
+    "price": 80,
+    "image": "../src/Maksim/5.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Швидка зарядка FastCharge",
+    "about": "Компактний зарядний пристрій для швидкої зарядки смартфонів.",
+    "data-menu": "all",
+    "price": 25,
+    "image": "../src/Maksim/6.jpg"
+  },
+  {
+    "id": 27,
+    "name": "3D проєктор VisionX",
+    "about": "Сучасний проєктор для перегляду фільмів у високій якості.",
+    "data-menu": "new",
+    "price": 220,
+    "image": "../src/Maksim/7.jpg"
+  },
+  {
+    "id": 28,
+    "name": "VR шолом VirtualPlay",
+    "about": "Шолом віртуальної реальності для повного занурення в ігри.",
+    "data-menu": "action",
+    "price": 180,
+    "image": "../src/Maksim/8.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Робот-пилосос CleanBot",
+    "about": "Розумний пилосос для автоматичного прибирання дому.",
+    "data-menu": "hit",
+    "price": 250,
+    "image": "../src/Maksim/9.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Ігрові джойстики DualPlay",
+    "about": "Зручні джойстики для ігор з високою точністю керування.",
+    "data-menu": "all",
+    "price": 70,
+    "image": "../src/Maksim/10.jpg"
+  }
   ],
 
   "Nikita": [
-    { "name": "Gaming Chair", "about": "Comfortable chair for long gaming sessions.", "seller": "Nikita", "data-menu": "green", "price": 150.0, "image": "../src/Nikita/1.jpg" },
-    { "name": "Headset", "about": "Surround sound gaming headset.", "seller": "Nikita", "data-menu": "red", "price": 49.99, "image": "../src/Nikita/2.jpg" },
-    { "name": "Mouse Pad", "about": "Large smooth surface pad.", "seller": "Nikita", "data-menu": "cadetblue", "price": 9.99, "image": "../src/Nikita/3.jpg" },
-    { "name": "LED Strip", "about": "RGB lights for setup decoration.", "seller": "Nikita", "data-menu": "gray", "price": 16.75, "image": "../src/Nikita/4.jpg" },
-    { "name": "Controller", "about": "Game controller for PC and console.", "seller": "Nikita", "data-menu": "pirple", "price": 39.9, "image": "../src/Nikita/5.jpg" }
+{
+    "id": 51,
+    "name": "Навушники + колонка SoundMix",
+    "about": "Універсальний набір для прослуховування музики вдома та в дорозі.",
+    "data-menu": "new",
+    "price": 95,
+    "image": "../src/Nikita/1.jpg"
+  },
+  {
+    "id": 52,
+    "name": "Портативна колонка BassBox",
+    "about": "Компактна колонка з потужним басом та чистим звуком.",
+    "data-menu": "hit",
+    "price": 70,
+    "image": "../src/Nikita/2.jpg"
+  },
+  {
+    "id": 53,
+    "name": "Колонка SoundWave",
+    "about": "Стильна колонка для якісного відтворення музики.",
+    "data-menu": "all",
+    "price": 65,
+    "image": "../src/Nikita/3.jpg"
+  },
+  {
+    "id": 54,
+    "name": "Бездротові навушники AirBeat",
+    "about": "Зручні навушники з гарною автономністю та чистим звуком.",
+    "data-menu": "action",
+    "price": 55,
+    "image": "../src/Nikita/4.jpg"
+  },
+  {
+    "id": 55,
+    "name": "Ігрові навушники ProSound",
+    "about": "Навушники з мікрофоном для ігор та спілкування.",
+    "data-menu": "hit",
+    "price": 80,
+    "image": "../src/Nikita/5.jpg"
+  },
+  {
+    "id": 56,
+    "name": "Студійний мікрофон VoicePro",
+    "about": "Якісний мікрофон для запису голосу та стрімінгу.",
+    "data-menu": "new",
+    "price": 110,
+    "image": "../src/Nikita/6.jpg"
+  },
+  {
+    "id": 57,
+    "name": "USB мікрофон StreamMic",
+    "about": "Зручний мікрофон для онлайн-трансляцій та відео.",
+    "data-menu": "all",
+    "price": 75,
+    "image": "../src/Nikita/7.jpg"
+  },
+  {
+    "id": 58,
+    "name": "Акустична система HomeSound",
+    "about": "Потужна акустика для домашнього кінотеатру.",
+    "data-menu": "hit",
+    "price": 220,
+    "image": "../src/Nikita/8.jpg"
+  },
+  {
+    "id": 59,
+    "name": "Акустична система MegaBass",
+    "about": "Система з глибоким басом для справжніх меломанів.",
+    "data-menu": "action",
+    "price": 260,
+    "image": "../src/Nikita/9.jpg"
+  },
+  {
+    "id": 60,
+    "name": "Акустична система ProAudio",
+    "about": "Професійна акустика для максимально якісного звуку.",
+    "data-menu": "new",
+    "price": 300,
+    "image": "../src/Nikita/10.jpg"
+  }
   ],
 
   "Yrik": [
-    { "name": "Mechanical Keyboard", "about": "Fast response gaming keyboard.", "seller": "Yrik", "data-menu": "green", "price": 85.0, "image": "../src/Yrik/1.jpg" },
-    { "name": "Gaming Mouse", "about": "Ergonomic mouse for esports.", "seller": "Yrik", "data-menu": "red", "price": 33.99, "image": "../src/Yrik/2.jpg" },
-    { "name": "Monitor Stand", "about": "Adjustable stand for desk setup.", "seller": "Yrik", "data-menu": "cadetblue", "price": 25.0, "image": "../src/Yrik/3.jpg" },
-    { "name": "PC Case", "about": "Modern airflow case.", "seller": "Yrik", "data-menu": "gray", "price": 70.0, "image": "../src/Yrik/4.jpg" },
-    { "name": "RGB Fan", "about": "Cooling fan with RGB lighting.", 
-    "seller": "Yrik", "data-menu": "pirple", "price": 12.5, "image": "../src/Yrik/5.jpg" }
+     {
+    "id": 31,
+    "name": "Механічна клавіатура Storm",
+    "about": "Надійна клавіатура з підсвіткою для комфортної роботи та ігор.",
+    "data-menu": "new",
+    "price": 85,
+    "image": "../src/Yrik/1.jpg"
+  },
+  {
+    "id": 32,
+    "name": "Комплект клавіатура + мишка Basic",
+    "about": "Зручний набір для повсякденного використання.",
+    "data-menu": "all",
+    "price": 45,
+    "image": "../src/Yrik/2.jpg"
+  },
+  {
+    "id": 33,
+    "name": "Ігровий комплект клавіатура + мишка Pro",
+    "about": "Набір для геймерів з підсвіткою та швидкою реакцією.",
+    "data-menu": "hit",
+    "price": 70,
+    "image": "../src/Yrik/3.jpg"
+  },
+  {
+    "id": 34,
+    "name": "Ігровий джойстик GamePad X",
+    "about": "Зручний джойстик для ПК та консолей.",
+    "data-menu": "action",
+    "price": 60,
+    "image": "../src/Yrik/4.jpg"
+  },
+  {
+    "id": 35,
+    "name": "VR шолом Vision Pro",
+    "about": "Шолом віртуальної реальності для повного занурення в ігри.",
+    "data-menu": "new",
+    "price": 200,
+    "image": "../src/Yrik/5.jpg"
+  },
+  {
+    "id": 36,
+    "name": "Ігрова миша SpeedClick",
+    "about": "Точна та швидка миша для динамічних ігор.",
+    "data-menu": "hit",
+    "price": 35,
+    "image": "../src/Yrik/6.jpg"
+  },
+  {
+    "id": 37,
+    "name": "Бездротова миша Silent",
+    "about": "Тиха миша для роботи та навчання.",
+    "data-menu": "all",
+    "price": 25,
+    "image": "../src/Yrik/7.jpg"
+  },
+  {
+    "id": 38,
+    "name": "Ігровий комплект Ultimate Set",
+    "about": "Повний набір для геймера: клавіатура, миша та килимок.",
+    "data-menu": "hit",
+    "price": 120,
+    "image": "../src/Yrik/8.jpg"
+  },
+  {
+    "id": 39,
+    "name": "Комплект Gamer Pack",
+    "about": "Набір аксесуарів для комфортної гри.",
+    "data-menu": "action",
+    "price": 95,
+    "image": "../src/Yrik/9.jpg"
+  },
+  {
+    "id": 40,
+    "name": "Професійний ігровий комплект Max",
+    "about": "Розширений комплект для професійних геймерів.",
+    "data-menu": "new",
+    "price": 150,
+    "image": "../src/Yrik/10.jpg"
+  }
   ],
 
   "IllaD": [
-    { "name": "Street Hoodie", "about": "Comfortable urban style hoodie.", "seller": "IllaD", "data-menu": "green", "price": 38.0, "image": "../src/IllaD/1.jpg" },
-    { "name": "Sneakers", "about": "Everyday sporty shoes.", "seller": "IllaD", "data-menu": "red", "price": 65.0, "image": "../src/IllaD/2.jpg" },
-    { "name": "Cap", "about": "Stylish cap for summer.", "seller": "IllaD", "data-menu": "cadetblue", "price": 14.99, "image": "../src/IllaD/3.jpg" },
-    { "name": "Jacket", "about": "Warm jacket for cold weather.", "seller": "IllaD", "data-menu": "gray", "price": 90.0, "image": "../src/IllaD/4.jpg" },
-    { "name": "Bag Pack", "about": "Urban backpack for daily use.", "seller": "IllaD", "data-menu": "pirple", "price": 29.99, "image": "../src/IllaD/5.jpg" }
+ {
+    "id": 61,
+    "name": "Килимок для йоги FlexMat",
+    "about": "М'який та нековзкий килимок для занять йогою та фітнесом.",
+    "data-menu": "new",
+    "price": 25,
+    "image": "../src/IllaM/1.jpg"
+  },
+  {
+    "id": 62,
+    "name": "Килимок для фітнесу ComfortMat",
+    "about": "Зручний килимок для тренувань вдома або в залі.",
+    "data-menu": "all",
+    "price": 30,
+    "image": "../src/IllaM/2.jpg"
+  },
+  {
+    "id": 63,
+    "name": "Професійний килимок YogaPro",
+    "about": "Товстий килимок для максимального комфорту під час вправ.",
+    "data-menu": "hit",
+    "price": 40,
+    "image": "../src/IllaM/3.jpg"
+  },
+  {
+    "id": 64,
+    "name": "Еспандер StrongBand",
+    "about": "Еластичний еспандер для тренування м'язів у будь-якому місці.",
+    "data-menu": "action",
+    "price": 15,
+    "image": "../src/IllaM/4.jpg"
+  },
+  {
+    "id": 65,
+    "name": "Набір еспандерів FitSet",
+    "about": "Комплект еспандерів різної жорсткості для повного тренування.",
+    "data-menu": "new",
+    "price": 28,
+    "image": "../src/IllaM/5.jpg"
+  },
+  {
+    "id": 66,
+    "name": "Гантелі Basic 2 кг",
+    "about": "Зручні гантелі для початкових тренувань.",
+    "data-menu": "all",
+    "price": 35,
+    "image": "../src/IllaM/6.jpg"
+  },
+  {
+    "id": 67,
+    "name": "Гантелі Pro 5 кг",
+    "about": "Надійні гантелі для силових тренувань.",
+    "data-menu": "hit",
+    "price": 60,
+    "image": "../src/IllaM/7.jpg"
+  },
+  {
+    "id": 68,
+    "name": "Фітнес рукавички GripFit",
+    "about": "Рукавички для зручного хвату під час тренувань.",
+    "data-menu": "all",
+    "price": 20,
+    "image": "../src/IllaM/8.jpg"
+  },
+  {
+    "id": 69,
+    "name": "Фітнес аксесуари StretchKit",
+    "about": "Набір допоміжних аксесуарів для розтяжки та тренувань.",
+    "data-menu": "action",
+    "price": 22,
+    "image": "../src/IllaM/9.jpg"
+  },
+  {
+    "id": 70,
+    "name": "Набір для тренувань HomeGym",
+    "about": "Комплекс аксесуарів для повноцінних занять вдома.",
+    "data-menu": "new",
+    "price": 75,
+    "image": "../src/IllaM/10.jpg"
+  }
   ],
 
   "IllaM": [
-    { "name": "Smart Lamp", "about": "RGB controllable lamp.", "seller": "IllaM", "data-menu": "green", "price": 28.99, "image": "../src/IllaM/1.jpg" },
-    { "name": "Tablet", "about": "Light tablet for work and study.", "seller": "IllaM", "data-menu": "red", "price": 110.0, "image": "../src/IllaM/2.jpg" },
-    { "name": "Stylus Pen", "about": "Precision pen for drawing.", "seller": "IllaM", "data-menu": "cadetblue", "price": 12.0, "image": "../src/IllaM/3.jpg" },
-    { "name": "Laptop", "about": "Powerful laptop for productivity.", "seller": "IllaM", "data-menu": "gray", "price": 699.0, "image": "../src/IllaM/4.jpg" },
-    { "name": "Smart Plug", "about": "Control devices remotely.", "seller": "IllaM", "data-menu": "pirple", "price": 17.99, "image": "../src/IllaM/5.jpg" }
+{
+    "id": 71,
+    "name": "Термос HotTravel Pro",
+    "about": "Зручний термос для гарячих напоїв із довгим збереженням температури.",
+    "data-menu": "new",
+    "price": 35,
+    "image": "../src/IllaM/1.jpg"
+  },
+  {
+    "id": 72,
+    "name": "Термос SteelGuard",
+    "about": "Міцний термос з нержавіючої сталі для щоденного використання.",
+    "data-menu": "hit",
+    "price": 40,
+    "image": "../src/IllaM/2.jpg"
+  },
+  {
+    "id": 73,
+    "name": "Термос Compact Thermo",
+    "about": "Компактний термос для подорожей та роботи.",
+    "data-menu": "all",
+    "price": 30,
+    "image": "../src/IllaM/3.jpg"
+  },
+  {
+    "id": 74,
+    "name": "Чашки для чаю Classic Set",
+    "about": "Набір стильних чашок для чаювання.",
+    "data-menu": "action",
+    "price": 25,
+    "image": "../src/IllaM/4.jpg"
+  },
+  {
+    "id": 75,
+    "name": "Термокружка CoffeeGo",
+    "about": "Зручна термокружка для гарячої кави в дорозі.",
+    "data-menu": "hit",
+    "price": 20,
+    "image": "../src/IllaM/5.jpg"
+  },
+  {
+    "id": 76,
+    "name": "Термокружка Travel Mug",
+    "about": "Герметична кружка для збереження температури напоїв.",
+    "data-menu": "all",
+    "price": 22,
+    "image": "../src/IllaM/6.jpg"
+  },
+  {
+    "id": 77,
+    "name": "Чашка Ceramic White",
+    "about": "Класична керамічна чашка для щоденного використання.",
+    "data-menu": "new",
+    "price": 10,
+    "image": "../src/IllaM/7.jpg"
+  },
+  {
+    "id": 78,
+    "name": "Чашка Art Design",
+    "about": "Декоративна чашка з унікальним дизайном.",
+    "data-menu": "ycinka",
+    "price": 12,
+    "image": "../src/IllaM/8.jpg"
+  },
+  {
+    "id": 79,
+    "name": "Заварник для чаю Glass Tea",
+    "about": "Скляний заварник для зручного приготування чаю.",
+    "data-menu": "action",
+    "price": 28,
+    "image": "../src/IllaM/9.jpg"
+  },
+  {
+    "id": 80,
+    "name": "Заварник Premium Tea Pot",
+    "about": "Елегантний заварник для листового чаю з фільтром.",
+    "data-menu": "hit",
+    "price": 32,
+    "image": "../src/IllaM/10.jpg"
+  }
   ]
 }

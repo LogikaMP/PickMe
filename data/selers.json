@@ -4,7 +4,7 @@
       "Yana":
       {
         "name": "motobike",
-        "image": "../src/yana/1.jpg",
+        "image": "../src/yana/cover.jpg",
         "about": "Мотоцикли та аксесуари для них. Великий вибір запчастин, шоломів та екіпіровки."
       }
     ,
@@ -12,7 +12,7 @@
       "Sofia":
       {
         "name": "fashion store",
-        "image": "../src/sofia/1.jpg",
+        "image": "../src/sofia/cover.jpg",
         "about": "Стильні сумки, рюкзаки та аксесуари для щоденного використання."
       }
     ,
@@ -20,7 +20,7 @@
       "Maksim":
       {
         "name": "tech gadgets",
-        "image": "../src/maksim/1.jpg",
+        "image": "../src/maksim/cover.jpg",
         "about": "Смарт-годинники, електроніка та корисні гаджети для дому і роботи."
       }
     ,
@@ -28,7 +28,7 @@
       "Yrik":
       {
         "name": "gaming gear",
-        "image": "../src/yrik/1.jpg",
+        "image": "../src/yrik/cover.webp",
         "about": "Ігрові мишки, клавіатури та аксесуари для геймерів."
       }
     ,
@@ -36,7 +36,7 @@
       "Dasha":
       {
         "name": "home decor",
-        "image": "../src/dasha/1.jpg",
+        "image": "../src/dasha/cover.png",
         "about": "Товари для дому: лампи, декор, кухонні аксесуари та елементи затишку."
       }
     ,
@@ -44,7 +44,7 @@
       "Nikita":
       {
         "name": "audio shop",
-        "image": "../src/nikita/1.jpg",
+        "image": "../src/nikita/cover.jpg",
         "about": "Колонки, навушники та портативна аудіотехніка для музики."
       }
     ,
@@ -52,7 +52,7 @@
       "IllaM":
       {
         "name": "sport life",
-        "image": "../src/illaM/1.jpg",
+        "image": "../src/illaM/cover.jpg",
         "about": "Товари для спорту та фітнесу: килимки для йоги, еспандери та аксесуари."
       }
     ,
@@ -60,7 +60,7 @@
       "IllaD":
       {
         "name": "coffee corner",
-        "image": "../src/illaD/1.jpg",
+        "image": "../src/illaD/cover.png",
         "about": "Чашки, термокружки та аксесуари для кави і чаю."
       }
     }
