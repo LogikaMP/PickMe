@@ -1,0 +1,205 @@
+<style>/* === ГОЛОВНИЙ КОНТЕЙНЕР КОШИКА === */
+.cart {
+  position: fixed;
+  padding: 2%;
+  top: 10vh;
+  right: 1%;
+  width: 20%;
+  min-width: 340px; /* Запобігає надмірному звуженню на малих екранах */
+  height: 90vh;
+  background-color: #ffffff; /* Чистий фон для контрасту з яскравими кольорами */
+  box-shadow: -10px 0 40px rgba(92, 46, 179, 0.15); /* М'яка фіолетова тінь */
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* === ШАПКА === */
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.cart-title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--purple);
+  font-weight: 700;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: var(--pink2);
+}
+
+/* === СПИСОК ТОВАРІВ === */
+.cart-items {
+  flex: 1; /* Займає весь вільний простір */
+  overflow-y: auto; /* Додає скрол, якщо товарів багато */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Окремий товар */
+.cart-item {
+  display: grid;
+  grid-template-columns: 2fr auto auto auto;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  background: #fafafa;
+  border-radius: 12px;
+  border: 1px solid rgba(92, 46, 179, 0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(92, 46, 179, 0.08);
+}
+
+.item-name {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* === КОНТРОЛЕР КІЛЬКОСТІ (+ / -) === */
+.chengi {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 4px 8px;
+  border: 1px solid #eee;
+}
+
+.qty-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--purple);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.qty-btn:hover {
+  transform: scale(1.2);
+  color: var(--violet);
+}
+
+.item-count {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  min-width: 20px;
+  text-align: center;
+}
+
+.allprise {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--purple2);
+}
+
+/* Кнопка видалення */
+.delete-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s, color 0.3s;
+}
+
+.delete-btn:hover {
+  opacity: 1;
+  color: #ff4d4d; /* Червоний при наведенні для дії видалення */
+}
+
+/* === ПІДВАЛ ТА ОФОРМЛЕННЯ === */
+.cart-footer {
+  padding: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+}
+
+.totalprise hr {
+  border: none;
+  height: 1px;
+  background: var(--liner-gradient-color);
+  opacity: 0.3;
+  margin-bottom: 15px;
+}
+
+.total {
+  margin: 0 0 20px 0;
+  font-size: 1.3rem;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Головна кнопка дії (Call to Action) */
+.checkout-btn {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 50px; /* Округлі форми виглядають елегантніше */
+  background: var(--liner-gradient-color);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(172, 66, 182, 0.4); /* Тінь в колір градієнту */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.checkout-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(172, 66, 182, 0.6);
+}
+
+.checkout-btn:active {
+  transform: translateY(0);
+}</style>
+<div class ="cart">
+    <h1 class = "cart-title">кошик</h1>
+    <button onclick="clouscart()"></button>
+</div>
+<div class = "cart-items">
+    <div class = "cart-items">
+        <h1 class = "item-name"></h1>
+        <div class = "chengi">
+        <button onclick="subitem()"></button>
+        <h1 class = "item-name"></h1>
+        <button onclick= "additem()">+</button>
+        </div>
+        <button onclick="deleteitem()">del</button>
+        <h1 class="allprise" ></h1>
+    </div>
+
+    <div class = "totalprise"></div>
+    <hr>
+    <h1 class = "total"></h1>
+    <div>
+        <button onclick=""></button>
+</div>
