@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", async function(){
         let card = `<div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img src="${data['img']}" alt = "product image" />
+        <img src="${data['image']}" alt = "product image" />
         <h3>${data["name"]}</h3>
         <h3>${name}</h3>
       </div>
