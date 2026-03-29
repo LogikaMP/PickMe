@@ -18,10 +18,12 @@ function choice(arr) {
 }
 
 function opencart(){
-  if(document.querySelector(".cart")){
+  if(document.querySelector(".cart")) {
     return
   }
-  loadComponent("../component/cart.html","main")
+  else{
+  loadComponent("../components/cart.html", "main")
+  }
 }
 
 function clouscart() {
@@ -35,15 +37,17 @@ function addtocart(product) {
   cart = JSON.parse(cart)
   if(cart) {
 
-
   }
   else{
-    cart =[]
-    let item = {"id":product["id"], 
-                "name": product["name"],
-              "price": product["price"],
-              "count": product("count")}
+    cart = []
+    let item = {
+              "id": product["id"],
+            "name": product["name"],
+            "price": product["price"],
+            "count": product["count"]}
     cart.push(item)
-    cart = JSON.s
+    cart = JSON.stringify(cart)
+    localStorage.setItem("cart", cart)
+
   }
 }
