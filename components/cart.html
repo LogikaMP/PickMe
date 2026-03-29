@@ -11,6 +11,7 @@
   box-shadow: -10px 0 40px rgba(92, 46, 179, 0.15); /* М'яка фіолетова тінь */
   display: flex;
   flex-direction: column;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   z-index: 1000;
   transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -181,25 +182,31 @@
 .checkout-btn:active {
   transform: translateY(0);
 }</style>
-<div class ="cart">
-    <h1 class = "cart-title">кошик</h1>
-    <button onclick="clouscart()"></button>
-</div>
-<div class = "cart-items">
-    <div class = "cart-items">
-        <h1 class = "item-name"></h1>
-        <div class = "chengi">
-        <button onclick="subitem()"></button>
-        <h1 class = "item-name"></h1>
-        <button onclick= "additem()">+</button>
-        </div>
-        <button onclick="deleteitem()">del</button>
-        <h1 class="allprise" ></h1>
+<div class="cart" id="cartSidebar">
+    <div class="cart-header">
+        <h1 class="cart-title">Кошик</h1>
+        <button class="close-btn" onclick="clouscart()">✕</button>
     </div>
+<div class="cart-items">
+        <!-- <div class="cart-item">
+            <h2 class="item-name">Стильна футболка</h2>
+            
+            <div class="chengi">
+                <button class="qty-btn" onclick="subitem()">-</button>
+                <span class="item-count">1</span>
+                <button class="qty-btn" onclick="additem()">+</button>
+            </div>
+            
+            <h3 class="allprise">₴ 850</h3>
+            <button class="delete-btn" onclick="deleteitem()">🗑</button>
+        </div> -->
+        </div>
 
-    <div class = "totalprise"></div>
-    <hr>
-    <h1 class = "total"></h1>
-    <div>
-        <button onclick=""></button>
+    <div class="cart-footer">
+        <div class="totalprise">
+            <hr>
+            <h2 class="total">Разом: ₴ 850</h2>
+        </div>
+        <button class="checkout-btn" onclick="dealmake()">Оформити замовлення</button>
+    </div>
 </div>

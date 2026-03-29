@@ -43,14 +43,8 @@ document.addEventListener("DOMContentLoaded", async function(){
         <div class="back-tag">${product['seller']}</div>
         <div class="back-name">${product['name']}</div>
         <div class="back-desc">${product['about']}</div>
-        <ul class="back-features">
-          <li>40dB Active Noise Cancellation</li>
-          <li>30-hour battery life</li>
-          <li>Hi-Res Audio certified</li>
-          <li>Foldable design, premium case</li>
-        </ul>
         <div class="back-price"><span class="back-price-main">${product['price']}</span><span class="back-price-period">Free shipping</span></div>
-        <button class="back-cta">Add to Cart 🛒</button>
+        <button class="back-cta" onclick = "${addtocart(product)}">Add to Cart 🛒</button>
       </div>
     </div>
   </div>`
