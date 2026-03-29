@@ -17,10 +17,11 @@ var(--violet),var(--purple2),var(--violet2),var(--pink2),var(--pink),var(--white
 *::after{
   box-sizing: border-box;
 }
+
 body{
   width: 100%;
   margin: 0;
-  font-family: "Playwrite DE Grund Guides", cursive;
+  font-family: "Caveat", cursive;
   font-weight: 400;
   font-style: normal;
   position: relative;
@@ -31,10 +32,11 @@ header{
 width: 100%;
 padding: 2%;
 position: fixed;
+top:0;
 display: flex;
 align-items: center;
 justify-content: space-between;
-height: 100px;
+height: 120px;
 background-image: linear-gradient(to right, var(--purple),
 var(--violet),var(--purple2),var(--violet2),var(--pink2),var(--pink),var(--white));
 z-index: 10000;
@@ -1013,13 +1015,15 @@ ul{
   flex-direction:column;
 }
 
-.card-img{
-  flex:1;
-  position:relative;
-  overflow:hidden;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+.card-img2{
+  position: relative;
+  top:20%;
+  width: 100%;
+  height:45%; /* замість фіксованих px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .card-img-bg{
@@ -1027,6 +1031,9 @@ ul{
   inset:0;
   background: var(--liner-gradient-color);
   transition:transform .65s;
+  display: none;
+  width: 100%;
+  height: 100%;
 }
 
 .flip-card:hover .card-img-bg{
@@ -1036,15 +1043,28 @@ ul{
 .card-emoji{
   position:relative;
   z-index:1;
+   width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-emoji img{
-  width:100%;
-  height:100%;
-  object-fit:contain;
-  display:block;
-}
+  width: 100%;
+  height: 100%;
+  /* max-width: 100%;
+  max-height: 100%; */
+  object-fit: contain;
+  background: transparent; /* прибирає фон */
+  border-radius: 12px;
 
+  /* рамка + тінь */
+  border: 2px solid rgba(255,255,255,0.3);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+
+  padding: 5px;
+}
 .card-badge{
   position:absolute;
   top:14px;
@@ -1063,8 +1083,10 @@ ul{
 .badge-hot{background:var(--violet);color:#fff;}
 
 .card-info{
-  padding:18px 20px;
-  border-top:1px solid var(--pink2);
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-category{
@@ -1382,12 +1404,7 @@ ul{
   opacity: 0.5;
 }
 
-.card-emoji img{
-  width: 90px;
-  height: 90px;
-  object-fit: contain;
-  z-index: 2;
-}
+
 
 /* бейдж */
 .card-badge{
