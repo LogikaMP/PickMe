@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", async function(){
         let card = `<div class="flip-card2 card-a single"  data-menu="${product['data-menu']}">
     <div class="flip-inner">
       <div class="flip-front">
-        <div class="card-img">
+        <div class="card-img2">
           <div class="card-img-bg"></div>
-          <div class="card-badge badge-new">New</div>
+          
           <span class="card-emoji"><img src= "${product['image']}"></span>
         </div>
         <div class="card-info">
