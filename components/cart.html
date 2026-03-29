@@ -181,25 +181,26 @@
 .checkout-btn:active {
   transform: translateY(0);
 }</style>
-<div class ="cart">
-    <h1 class = "cart-title">кошик</h1>
-    <button onclick="clouscart()"></button>
-</div>
-<div class = "cart-items">
-    <div class = "cart-items">
-        <h1 class = "item-name"></h1>
-        <div class = "chengi">
-        <button onclick="subitem()"></button>
-        <h1 class = "item-name"></h1>
-        <button onclick= "additem()">+</button>
+<div class="cart-items">
+        <div class="cart-item">
+            <h2 class="item-name">Стильна футболка</h2>
+            
+            <div class="chengi">
+                <button class="qty-btn" onclick="subitem()">-</button>
+                <span class="item-count">1</span>
+                <button class="qty-btn" onclick="additem()">+</button>
+            </div>
+            
+            <h3 class="allprise">₴ 850</h3>
+            <button class="delete-btn" onclick="deleteitem()">🗑</button>
         </div>
-        <button onclick="deleteitem()">del</button>
-        <h1 class="allprise" ></h1>
-    </div>
+        </div>
 
-    <div class = "totalprise"></div>
-    <hr>
-    <h1 class = "total"></h1>
-    <div>
-        <button onclick=""></button>
+    <div class="cart-footer">
+        <div class="totalprise">
+            <hr>
+            <h2 class="total">Разом: ₴ 850</h2>
+        </div>
+        <button class="checkout-btn" onclick="dealmake()">Оформити замовлення</button>
+    </div>
 </div>
