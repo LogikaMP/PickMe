@@ -40,10 +40,12 @@ function addtocart(product) {
   }
   else{
     cart = []
-    let item = {"id": product["id"],
+    let item = {
+           [ product["id"]]:{
             "name": product["name"],
             "price": product["price"],
             "count": product["count"]}
+    }
     cart.push(item)
     cart = JSON.stringify(cart)
     localStorage.setItem("cart", cart)
