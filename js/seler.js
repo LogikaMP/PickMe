@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", async function(){
         <div class="back-name">${product['name']}</div>
         <div class="back-desc">${product['about']}</div>
         <div class="back-price"><span class="back-price-main">${product['price']}</span><span class="back-price-period">Free shipping</span></div>
-        <button class="back-cta" onclick = "${addtocart(product)}">Add to Cart 🛒</button>
+        <button class="back-cta" onclick = 'addtocart(${JSON.stringify(product)})'>Add to Cart 🛒</button>
       </div>
     </div>
   </div>`

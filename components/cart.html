@@ -4,19 +4,19 @@
   padding: 2%;
   top: 10vh;
   right: 1%;
-  width: 20%;
-  min-width: 340px; /* Запобігає надмірному звуженню на малих екранах */
+  width: fit-content;
+  max-width: 35%;
+  min-width: 340px;
   height: 90vh;
-  background-color: #ffffff; /* Чистий фон для контрасту з яскравими кольорами */
-  box-shadow: -10px 0 40px rgba(92, 46, 179, 0.15); /* М'яка фіолетова тінь */
+  background-color: #ffffff;
+  box-shadow: -10px 0 40px rgba(92, 46, 179, 0.15);
   display: flex;
   flex-direction: column;
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   z-index: 1000;
-  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* === ШАПКА === */
+/* === HEADER === */
 .cart-header {
   display: flex;
   justify-content: space-between;
@@ -38,150 +38,137 @@
   font-size: 1.2rem;
   color: #888;
   cursor: pointer;
-  transition: color 0.3s ease;
 }
 
 .close-btn:hover {
   color: var(--pink2);
 }
 
-/* === СПИСОК ТОВАРІВ === */
+/* === ITEMS === */
 .cart-items {
-  flex: 1; /* Займає весь вільний простір */
-  overflow-y: auto; /* Додає скрол, якщо товарів багато */
+  flex: 1;
+  overflow-y: auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-/* Окремий товар */
+/* === ITEM === */
 .cart-item {
   display: grid;
-  grid-template-columns: 2fr auto auto auto;
+  grid-template-columns: 1fr auto auto auto;
   align-items: center;
   gap: 12px;
-  padding: 15px;
+  padding: 12px;
   background: #fafafa;
   border-radius: 12px;
-  border: 1px solid rgba(92, 46, 179, 0.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
 }
 
-.cart-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 15px rgba(92, 46, 179, 0.08);
-}
-
-.item-name {
-  margin: 0;
-  font-size: 1rem;
-  color: #333;
-  font-weight: 500;
-}
-
-/* === КОНТРОЛЕР КІЛЬКОСТІ (+ / -) === */
-.chengi {
+/* LEFT (image + name) */
+.cart-item .left {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+/* IMAGE */
+.item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* 👈 тінь */
+}
+
+/* NAME */
+.item-name {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* QTY */
+.chengi {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   background: #fff;
-  border-radius: 8px;
   padding: 4px 8px;
+  border-radius: 8px;
   border: 1px solid #eee;
 }
 
 .qty-btn {
   background: transparent;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--purple);
   cursor: pointer;
-  transition: transform 0.2s;
 }
 
 .qty-btn:hover {
-  transform: scale(1.2);
-  color: var(--violet);
+  transform: scale(1.1);
 }
 
+/* COUNT */
 .item-count {
-  font-weight: 600;
-  font-size: 1rem;
-  color: #333;
   min-width: 20px;
   text-align: center;
+  font-weight: 600;
 }
 
+/* PRICE */
 .allprise {
-  margin: 0;
-  font-size: 1rem;
   font-weight: 700;
+  white-space: nowrap;
   color: var(--purple2);
 }
 
-/* Кнопка видалення */
+/* DELETE */
 .delete-btn {
   background: transparent;
   border: none;
-  font-size: 1.2rem;
   cursor: pointer;
-  opacity: 0.5;
-  transition: opacity 0.3s, color 0.3s;
+  opacity: 0.6;
 }
 
 .delete-btn:hover {
   opacity: 1;
-  color: #ff4d4d; /* Червоний при наведенні для дії видалення */
+  color: #ff4d4d;
 }
 
-/* === ПІДВАЛ ТА ОФОРМЛЕННЯ === */
+/* === FOOTER === */
 .cart-footer {
   padding: 20px;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
-  background: #ffffff;
-}
-
-.totalprise hr {
-  border: none;
-  height: 1px;
-  background: var(--liner-gradient-color);
-  opacity: 0.3;
-  margin-bottom: 15px;
 }
 
 .total {
   margin: 0 0 20px 0;
   font-size: 1.3rem;
-  color: #333;
   display: flex;
   justify-content: space-between;
 }
 
-/* Головна кнопка дії (Call to Action) */
 .checkout-btn {
   width: 100%;
   padding: 16px;
   border: none;
-  border-radius: 50px; /* Округлі форми виглядають елегантніше */
+  border-radius: 50px;
   background: var(--liner-gradient-color);
   color: white;
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 8px 20px rgba(172, 66, 182, 0.4); /* Тінь в колір градієнту */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 20px rgba(172, 66, 182, 0.4);
 }
 
 .checkout-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(172, 66, 182, 0.6);
 }
-
-.checkout-btn:active {
-  transform: translateY(0);
-}</style>
+</style>
 <div class="cart" id="cartSidebar">
     <div class="cart-header">
         <h1 class="cart-title">Кошик</h1>
@@ -190,7 +177,7 @@
 <div class="cart-items">
         <!-- <div class="cart-item">
             <h2 class="item-name">Стильна футболка</h2>
-            
+             <img  class="item-image" src="${product.image}">
             <div class="chengi">
                 <button class="qty-btn" onclick="subitem()">-</button>
                 <span class="item-count">1</span>
@@ -205,7 +192,7 @@
     <div class="cart-footer">
         <div class="totalprise">
             <hr>
-            <h2 class="total">Разом: ₴ 850</h2>
+            <h2 class="total">Разом: ₴ 0</h2>
         </div>
         <button class="checkout-btn" onclick="dealmake()">Оформити замовлення</button>
     </div>
