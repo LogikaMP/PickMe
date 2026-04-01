@@ -26,9 +26,10 @@ document.addEventListener("DOMContentLoaded", async function(){
     seler_about.innerHTML = seler_data['about']
     seler_seler.innerHTML = name_seler
     }
- renderCard()
+    renderCard(all_product)
+    Filtering(all_product);
 
 })
 
-Filtering();
+
 

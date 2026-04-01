@@ -1,47 +1,39 @@
 let activeFilter = 'all';
 
-function Filtering() {
-    let buttons = document.querySelectorAll('.btns button');
+function Filtering(products) {
+  const container = document.querySelector('.btns');
 
-    function getBlocks() {
-        return document.querySelectorAll('.single');
-    }
-
-    function render(filter) {
-        let blocks = getBlocks();
-
-        blocks.forEach(block => {
-            const match =
-                filter === 'all' ||
-                block.dataset.menu === filter;
-
-            block.classList.remove('show', 'hide');
-
-            if (match) {
-                block.classList.add('show');
-            } else {
-                block.classList.add('hide');
-            }
-        });
-    }
-
-    function updateButtonsUI() {
-        buttons.forEach(btn => {
-            btn.classList.toggle(
-                'selected',
-                btn.dataset.menu === activeFilter
-            );
-        });
-    }
+  function updateButtonsUI() {
+    const buttons = document.querySelectorAll('.btns button');
 
     buttons.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            activeFilter = e.currentTarget.dataset.menu; // 🔥 важливо
-            render(activeFilter);
-            updateButtonsUI();
-        });
+      btn.classList.toggle(
+        'selected',
+        btn.dataset.menu === activeFilter
+      );
     });
+  }
 
-    render(activeFilter);
+  function make_filter(products){
+    if (activeFilter === 'all') return products;
+
+    return products.filter(pr => pr["data-menu"] === activeFilter);
+  }
+
+  container.addEventListener('click', (e) => {
+    const btn = e.target.closest('button');
+    if (!btn) return;
+
+    activeFilter = btn.dataset.menu;
+
+    let filtered = make_filter(products);
+
+    renderCard(filtered, true); // reset!
+
     updateButtonsUI();
+  });
+
+  // initial state
+  updateButtonsUI();
+  renderCard(products, true);
 }

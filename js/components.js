@@ -150,16 +150,20 @@ function addtocart(product) {
 }
 function search(event){
   if (event.key == "Enter"){
-    let request = documet.querySelector(".search").value
+    let request = document.querySelector(".search").value
     localStorage.setItem("request",request)
     window.location.href ="search.html"
   } 
 }
-function renderCard(){
+function renderCard(all_product, reset = false){
+  if (reset) {
+    currentIndex = 0;
+    document.querySelector(".allwrps").innerHTML = "";
+  }
   let slice = all_product.slice(currentIndex,currentIndex + 9)
   let allwrps = document.querySelector(".allwrps")
     slice.forEach(product =>{
-        let card = `<div class="flip-card2 card-a single"  data-menu="${product['data-menu']} onclick ="show_product(${JSON.stringify(product)})"">
+        let card = `<div class="flip-card2 card-a single"  data-menu="${product['data-menu']}" onclick ="show_product(${JSON.stringify(product)})">
     <div class="flip-inner">
       <div class="flip-front">
         <div class="card-img2">
@@ -190,8 +194,9 @@ function renderCard(){
     currentIndex +=9
     if (currentIndex < all_product.length){
       if (document.getElementById("loadMore"))return
-        document.querySelector(".filter-seler").innerHTML += '<button id="loadMore" onclick = "renderCard()">Завантажити ще</button>'
-       }
+        document.querySelector(".filter-seler").innerHTML += `<button id="loadMore">Завантажити ще</button>`
+        document.getElementById("loadMore").onclick = () => renderCard(all_product);
+      }
       else{
         let btn = document.getElementById("loadMore")
         if (btn) btn.remove()
