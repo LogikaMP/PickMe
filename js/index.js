@@ -140,3 +140,7 @@ document.addEventListener("click", function (e) {
     window.location.href = "seler.html";
   }
 });
+function sellerall(){
+  localStorage.setItem("seler","all")
+  window.location.href = "seler.html";
+}

@@ -148,9 +148,56 @@ function addtocart(product) {
     cart = JSON.stringify(cart)
     localStorage.setItem("cart", cart)
 }
-
-
-
-function sellerall(){
-  
+function search(event){
+  if (event.key == "Enter"){
+    let request = documet.querySelector(".search").value
+    localStorage.setItem("request",request)
+    window.location.href ="search.html"
+  } 
+}
+function renderCard(){
+  let slice = all_product.slice(currentIndex,currentIndex + 9)
+  let allwrps = document.querySelector(".allwrps")
+    slice.forEach(product =>{
+        let card = `<div class="flip-card2 card-a single"  data-menu="${product['data-menu']} onclick ="show_product(${JSON.stringify(product)})"">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <div class="card-img2">
+          <div class="card-img-bg"></div>
+          
+          <span class="card-emoji"><img src= "${product['image']}"></span>
+        </div>
+        <div class="card-info">
+          <div class="card-category">${product['seller']}</div>
+          <div class="card-name">${product['name']}</div>
+          <div class="card-price-row">
+            <div><span class="card-price">${product['price']}</span><span class="card-price-old">$${product['price']+100}</span></div>
+            <div class="card-rating"><span class="stars">★★★★★</span> 4.9</div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-back">
+        <div class="back-tag">${product['seller']}</div>
+        <div class="back-name">${product['name']}</div>
+        <div class="back-desc">${product['about']}</div>
+        <div class="back-price"><span class="back-price-main">${product['price']}</span><span class="back-price-period">Free shipping</span></div>
+        <button class="back-cta" onclick = 'addtocart(${JSON.stringify(product)})'>Add to Cart 🛒</button>
+      </div>
+    </div>
+  </div>`
+  allwrps.innerHTML += card
+    })
+    currentIndex +=9
+    if (currentIndex < all_product.length){
+      if (document.getElementById("loadMore"))return
+        document.querySelector(".filter-seler").innerHTML += '<button id="loadMore" onclick = "renderCard()">Завантажити ще</button>'
+       }
+      else{
+        let btn = document.getElementById("loadMore")
+        if (btn) btn.remove()
+      }
+    }
+function show_product(product){
+  localStorage.setItem("product", JSON.stringify(product))
+  window.location.href = "product.html"
 }
