@@ -1538,3 +1538,9 @@ ul{
 .flip-card2:hover{
   transform: translateY(-5px);
 }
+
+#loadMore{
+  width: 20%;
+  margin:2% 40%;
+  color:var(--violet);
+}
