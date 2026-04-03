@@ -78,16 +78,15 @@
   ],
 
   "IllaD": [
-    {"id":61,"name":"Килимок для йоги FlexMat","about":"М'який та нековзкий килимок для занять йогою та фітнесом.","data-menu":"new","price":25,"image":"../src/IllaM/1.jpg","seler":"IllaD"},
-    {"id":62,"name":"Килимок для фітнесу ComfortMat","about":"Зручний килимок для тренувань вдома або в залі.","data-menu":"all","price":30,"image":"../src/IllaM/2.jpg","seler":"IllaD"},
-    {"id":63,"name":"Професійний килимок YogaPro","about":"Товстий килимок для максимального комфорту під час вправ.","data-menu":"hit","price":40,"image":"../src/IllaM/3.jpg","seler":"IllaD"},
-    {"id":64,"name":"Еспандер StrongBand","about":"Еластичний еспандер для тренування м'язів у будь-якому місці.","data-menu":"action","price":15,"image":"../src/IllaM/4.jpg","seler":"IllaD"},
-    {"id":65,"name":"Набір еспандерів FitSet","about":"Комплект еспандерів різної жорсткості для повного тренування.","data-menu":"new","price":28,"image":"../src/IllaM/5.jpg","seler":"IllaD"},
-    {"id":66,"name":"Гантелі Basic 2 кг","about":"Зручні гантелі для початкових тренувань.","data-menu":"all","price":35,"image":"../src/IllaM/6.jpg","seler":"IllaD"},
-    {"id":67,"name":"Гантелі Pro 5 кг","about":"Надійні гантелі для силових тренувань.","data-menu":"hit","price":60,"image":"../src/IllaM/7.jpg","seler":"IllaD"},
-    {"id":68,"name":"Фітнес рукавички GripFit","about":"Рукавички для зручного хвату під час тренувань.","data-menu":"all","price":20,"image":"../src/IllaM/8.jpg","seler":"IllaD"},
-    {"id":69,"name":"Фітнес аксесуари StretchKit","about":"Набір допоміжних аксесуарів для розтяжки та тренувань.","data-menu":"action","price":22,"image":"../src/IllaM/9.jpg","seler":"IllaD"},
-    {"id":70,"name":"Набір для тренувань HomeGym","about":"Комплекс аксесуарів для повноцінних занять вдома.","data-menu":"new","price":75,"image":"../src/IllaM/10.jpg","seler":"IllaD"}
+    {"id": 41,"name": "[[S.POTIS]] Link","about": "HAVE YOU EVER WANTED TO BE A [[BIG SHOT]]? CLICK THIS LINK TO GET [Free Kromer] AND LIVE IN A [Mansion]!!","data-menu": "new","price": 0.00,"image": "../src/illaD/product.jpg","seler": "IllaD"},
+    {"id": 42,"name": "KeyGen","about": "THE KEY TO YOUR [[Dreams]]! ONLY FOR THE LOW LOW PRICE OF [1997] KROMER! (NO REFUNDS).","data-menu": "all","price": 1997.00,"image": "../src/illaD/product.jpg","seler": "IllaD"},
+    {"id": 43,"name": "B3verage","about": "A REFRESHING [Cold Drink] THAT WILL MAKE YOUR [HeartShapedObject] FEEL LIKE [Burning].","data-menu": "hit","price": 4.99,"image": "../src/illaD/product.jpg","seler": "IllaD"},
+    {"id": 44,"name": "Frayed Puppet Strings","about": "TIRED OF BEING A [Little Sponge]? TAKE CONTROL OF YOUR [Strings] TODAY!","data-menu": "action","price": 99.99,"image": "../src/illaD/product.jpg","seler": "IllaD"},
+    {"id": 45,"name": "[[DEALMAKER]] Glasses","about": "BECOME THE [Big Shot] YOU WERE BORN TO BE! SEE THE WORLD IN [1997] COLORS!!","data-menu": "hit","price": 300.00,"image": "../src/illaD/product.jpg","seler": "IllaD"},
+    {"id": 46,"name": "Fresh [[Pipis]]","about": "A DELICIOUS [Fried Egg]? NO! IT'S [Pipis]! EXPLODES WITH [Flavor]!!","data-menu": "action","price": 1.99,"image": "../src/illaD/product.jpg","seler": "IllaD"},
+    {"id": 47,"name": "[[BIG SHOT]] Autograph","about": "SIGNED BY THE [Salesman 1997] HIMSELF! 100% [Authentic] GUARANTEED OR YOUR [Life] BACK.","data-menu": "new","price": 999.99,"image": "../src/illaD/product.jpg","seler": "IllaD"},
+    {"id": 48,"name": "[[Thorn]] Ring","about": "MAKES YOU [Stronger] BUT IT HURTS A LITTLE [Sponge]. COLD TO THE [Touch].","data-menu": "all","price": 1997.99,"image": "../src/illaD/product.jpg","seler": "IllaD"},
+    {"id": 49,"name": "[[Garbage Noise]] Phone","about": "RING RING! IT'S FOR YOU! IT SAYS [Heaven] IS CALLING! CAN YOU HEAR IT?","data-menu": "new","price": 0.01,"image": "../src/illaD/product.jpg","seler": "IllaD"}
   ],
 
   "IllaM": [
