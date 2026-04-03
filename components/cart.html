@@ -14,8 +14,18 @@
   flex-direction: column;
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   z-index: 1000;
-}
 
+  /* 🔥 прихований стан */
+  opacity: 0;
+  transform: translateX(120%);
+  pointer-events: none;
+  transition: all 0.35s ease;
+}
+.cart.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
 /* === HEADER === */
 .cart-header {
   display: flex;

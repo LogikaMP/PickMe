@@ -1,16 +1,17 @@
 document.addEventListener("DOMContentLoaded", async function(){
     await loadComponent('../components/header.html', '.header')
     await loadComponent('../components/footer.html','.footer')
+     await loadComponent('../components/cart.html','.div-cart')
     let product = localStorage.getItem("product")
     product = JSON.parse(product)
     let response = await loadData("../data/response.json")
-    response = response.filter(item => item.id == product.id)
+    response = response[product.id]
     let pr = `<div class="product">
     <img src="${product.image}" alt="Товар">
 
     <div class="product-info">
         <div class="product-title">${product.name}</div>
-        <div class="product-title">${product.seler}</div>
+        <div class="product-title">Продавець: ${product.seler}</div>
         <div class="product-description">
             ${product.about}
         </div>
@@ -27,6 +28,6 @@ response.forEach(res => {
     <div class="review-name">${res.name}</div>
     <div class="review-text">${res.response}</div>
 </div>`
-document.querySelector(".revievs").innerHTML += r
+document.querySelector(".reviews").innerHTML += r
 })
 })

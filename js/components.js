@@ -44,19 +44,15 @@ function rendercart(cart){
 }
 
 async function opencart(){
-      if(document.querySelector(".cart")) {
-        return
-      }
-      else{
-      await loadComponent("../components/cart.html", "main")
-
-      let cart = localStorage.getItem("cart")
-      cart = JSON.parse(cart)
+    
+     let cart = localStorage.getItem("cart")
+  cart = JSON.parse(cart)
+      document.querySelector('.cart').classList.add('active');
       rendercart(cart)
   
 
   }
-}
+
 function subitem(product) {
   let cart = localStorage.getItem("cart")
   cart = JSON.parse(cart)
@@ -110,9 +106,7 @@ function deleteitem(product) {
 }
 
 function clouscart() {
-  let cart = document.querySelector(".cart")
-  let main = document.querySelector("main")
-  main.removeChild(cart)
+  document.querySelector('.cart').classList.remove('active');
 }
 
 function addtocart(product) {
@@ -147,6 +141,7 @@ function addtocart(product) {
   }
     cart = JSON.stringify(cart)
     localStorage.setItem("cart", cart)
+    opencart()
 }
 function search(event){
   if (event.key == "Enter"){
@@ -163,13 +158,14 @@ function renderCard(all_product, reset = false){
   let slice = all_product.slice(currentIndex,currentIndex + 9)
   let allwrps = document.querySelector(".allwrps")
     slice.forEach(product =>{
-        let card = `<div class="flip-card2 card-a single"  data-menu="${product['data-menu']}" onclick ="show_product(${JSON.stringify(product)})">
+        let card =
+         `<div class="flip-card2 card-a single"  data-menu="${product['data-menu']}" onclick ="show_product(${JSON.stringify(product)})">
     <div class="flip-inner">
       <div class="flip-front">
         <div class="card-img2">
           <div class="card-img-bg"></div>
           
-          <span class="card-emoji"><img src= "${product['image']}"></span>
+          <span class="card-emoji" ><img src= "${product['image']}"></span>
         </div>
         <div class="card-info">
           <div class="card-category">${product['seller']}</div>
@@ -182,11 +178,14 @@ function renderCard(all_product, reset = false){
       </div>
       <div class="flip-back">
         <div class="back-tag">${product['seller']}</div>
-        <div class="back-name">${product['name']}</div>
+        <div class="back-name" >${product['name']}</div>
         <div class="back-desc">${product['about']}</div>
         <div class="back-price"><span class="back-price-main">${product['price']}</span><span class="back-price-period">Free shipping</span></div>
-        <button class="back-cta" onclick = 'addtocart(${JSON.stringify(product)})'>Add to Cart 🛒</button>
+        <div style="display:flex;justify-content:space-between;">
+        <button class="back-cta" onclick = 'addtocart(${JSON.stringify(product)})'>До кошику</button>
+         <button class="back-cta" onclick = 'show_product(${JSON.stringify(product)})'>Детальніше</button>
       </div>
+         </div>
     </div>
   </div>`
   allwrps.innerHTML += card
