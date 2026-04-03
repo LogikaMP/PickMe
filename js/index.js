@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", async function(){
     await loadComponent('../components/header.html', '.header')
     await loadComponent('../components/footer.html','.footer')
-
+  await loadComponent('../components/cart.html','.div-cart')
     let all_product = await loadData("../data/product.json")
     console.log(all_product)
 
@@ -140,3 +140,7 @@ document.addEventListener("click", function (e) {
     window.location.href = "seler.html";
   }
 });
+function sellerall(){
+  localStorage.setItem("seler","all")
+  window.location.href = "seler.html";
+}
