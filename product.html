@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+ <meta charset="UTF-8">
+    <title>PickMe</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="src/logo2.png">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.0/gsap.min.js"></script>
+
+<style>
+:root {
+  --purple:#5C2EB3;
+  --violet:#AC42B6;
+  --violet2:#F26FAF;
+  --purple2:#B061DE;
+  --pink:#FED0E0;
+  --pink2:#F1419D;
+  --pink3:#FBD7EE;
+  --white:#ffd7d7;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+
+    /* ГРАДІЄНТ ФОН */
+    background: linear-gradient(135deg, var(--purple), var(--violet), var(--pink2));
+}
+
+/* Блок товару */
+.product {
+    display: flex;
+    background: linear-gradient(135deg, var(--pink), var(--pink3));
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Картинка */
+.product img {
+    width: 250px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+/* Інфо */
+.product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Назва */
+.product-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--purple);
+}
+
+/* Опис */
+.product-description {
+    margin: 10px 0;
+    color: #444;
+}
+
+/* Ціна */
+.product-price {
+    font-size: 24px;
+    color: var(--pink2);
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Кнопка */
+.btn {
+    padding: 12px 20px;
+    background: linear-gradient(45deg, var(--purple2), var(--pink2));
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 180px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Відгуки */
+.reviews {
+    max-width: 800px;
+    margin: 30px auto;
+    background: linear-gradient(135deg, var(--pink3), var(--white));
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.reviews h2 {
+    color: var(--purple);
+}
+
+.review {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 10px 0;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+.review-name {
+    font-weight: bold;
+    color: var(--violet);
+}
+
+.review-text {
+    color: #555;
+}
+</style>
+
+</head>
+<body>
+<header class ="header"></header>
+<main>
+    <div class="div-cart"></div>
+</main>
+<footer class="footer"></footer>
+<script src="./js/components.js"></script>
+<script src="./js/product.js"></script>
+</body>
+</html>
