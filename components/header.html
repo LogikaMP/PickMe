@@ -184,7 +184,7 @@
   <div></div>
   <div></div>
   <div></div>
-<img src ="../src/logo-removebg-preview.png">
+<a href="index.html" style="position: absolute; top: 8px; left: 0;"><img src ="../src/logo-removebg-preview.png"></a>
 </div>
 
 <div class="bounce">
@@ -196,11 +196,11 @@
     <span class="letter">E</span>
 </div>
 <div class="div_search">
-<input type="text" class = "search" placeholder="Шукай товар, продавця...">
+<input type="text" class = "search" placeholder="Шукай товар, продавця..." onkeydown="search(event)">
 <img src="../src/search.svg" class="search-icon">
 </div>
 <div class="button-wrap">
-  <button onclick="opencart()">
+  <button id="btn-cart" onclick="opencart()">
     <span>Кошик
     <img src="../src/shopping-cart.svg" alt="">
     </span>
