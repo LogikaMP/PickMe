@@ -36,3 +36,5 @@ function Filtering(products) {
   updateButtonsUI();
   renderCard(products, true);
 }
+
+
