@@ -23,11 +23,8 @@ function Filtering(products) {
   document.addEventListener('click', (e) => {
   const btn = e.target.closest('.btns button');
   if (!btn) return;
-
   activeFilter = btn.dataset.menu;
-
   let filtered = make_filter(products);
-
   renderCard(filtered, true);
   updateButtonsUI();
 });
