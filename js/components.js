@@ -17,6 +17,10 @@ function choice(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
+function randomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 function rendercart(cart){
   if(Array.isArray(cart)){
     let total = 0 
@@ -204,4 +208,8 @@ function renderCard(all_product, reset = false){
 function show_product(product){
   localStorage.setItem("product", JSON.stringify(product))
   window.location.href = "product.html"
+}
+
+function dealmake(){
+  window.location.href = "order.html"
 }
