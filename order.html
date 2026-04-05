@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="src/logo2.png">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.0/gsap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Оформлення замовлення</title>
+</head>
+<body>
+
+    <header class="header">  </header>
+
+    <h2 class="order_txt">Оформлення замовлення</h2>
+
+    <div class="order-container">
+
+    <form action="#" method="post">
+
+        <label for="name">Ім'я:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="surname">Прізвище:</label><br>
+        <input type="text" id="surname" name="surname" required><br><br>
+
+        <label for="phone">Телефон:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="address">Адреса доставки:</label><br>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="city">Місто:</label><br>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <label for="postcode">Поштовий індекс:</label><br>
+        <input type="text" id="postcode" name="postcode" required><br><br>
+
+        <label for="delivery">Спосіб доставки:</label><br>
+        <select id="delivery" name="delivery">
+            <option value="courier">Кур'єр</option>
+            <option value="pickup">Самовивіз</option>
+        </select><br><br>
+
+        <label for="payment">Спосіб оплати:</label><br>
+        <select id="payment" name="payment">
+            <option value="card">Картка</option>
+            <option value="cash">Готівка при отриманні</option>
+        </select><br><br>
+
+        <label for="post">Тип пошти:</label><br>
+        <select id="post" name="post">
+            <option value="nova">Нова пошта</option>
+            <option value="ukr">Укр пошта</option>
+            <option value="regular">Звичайна пошта</option>
+        </select><br><br>
+
+        <label for="comment">Коментар до замовлення:</label><br>
+        <textarea id="comment" name="comment" rows="4"></textarea><br><br>
+
+        <button type="submit" >Оформити замовлення</button>
+        
+
+    </form>
+
+     <div class="order-summary">
+        <h3>Ваш кошик</h3>
+
+        <div class="cart-items"></div>
+     <div class="total order-total"></div>
+    </div>
+
+</div>
+</div>
+    <footer class="footer"></footer>
+    <script src="./js/order.js"></script>
+    <script src="./js/components.js"></script>
+</body>
+</html>
