@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIG SHOT [Deals]!!</title>
+    <style>
+        /* Основний стиль */
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            text-transform: uppercase;
+            overflow-x: hidden;
+        }
+
+        /* Ефект старого телевізора */
+        .scanlines {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.2));
+            background-size: 100% 4px;
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 4px double #00ff00;
+            padding: 20px;
+            background-color: #111;
+            position: relative;
+        }
+
+        header { text-align: center; border-bottom: 4px dashed #ff00ff; padding-bottom: 20px; margin-bottom: 30px; }
+        .cover-img { max-width: 100%; height: auto; border: 3px solid #ffff00; margin-bottom: 15px; box-shadow: 0 0 15px #ff00ff; }
+        
+        h1 {
+            color: #ffff00; font-size: 3rem; text-shadow: 3px 3px #ff00ff, -3px -3px #00ffff;
+            margin: 10px 0; font-family: 'Comic Sans MS', sans-serif; animation: glitch-anim 0.3s infinite alternate;
+        }
+
+        .about-text { color: #00ffff; font-size: 1.2rem; line-height: 1.6; max-width: 800px; margin: 0 auto; }
+        .marquee-container { background-color: #ff00ff; color: #ffff00; font-weight: bold; padding: 5px; margin: 20px 0; border: 2px solid #fff; }
+
+        /* Товари */
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; margin-bottom: 40px; }
+        .product-card {
+            border: 3px solid #ffff00; background-color: #050505; padding: 15px; display: flex;
+            flex-direction: column; justify-content: space-between; transition: transform 0.1s;
+        }
+        .product-card:hover { box-shadow: 0 0 20px #00ff00; border-color: #ff00ff; animation: shake 0.2s infinite; }
+        .product-img { width: 100%; height: 200px; object-fit: cover; border: 2px solid #00ff00; background-color: #222; }
+        .product-name { color: #ffff00; font-size: 1.4rem; margin: 10px 0; min-height: 50px; }
+        .product-about { color: #ffffff; font-size: 0.9rem; margin-bottom: 15px; flex-grow: 1; }
+        .product-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #444; padding-top: 10px; }
+        .product-price { color: #00ff00; font-size: 1.3rem; font-weight: bold; }
+        .seller { font-size: 0.8rem; color: #888; }
+        
+        .buy-button {
+            width: 100%; background-color: #ff00ff; color: #fff; border: none; padding: 10px;
+            margin-top: 15px; font-size: 1.1rem; font-weight: bold; cursor: pointer; font-family: inherit; text-transform: uppercase;
+        }
+        .buy-button:hover { background-color: #ffff00; color: #000; }
+
+        /* Відгуки */
+        .reviews-section { border-top: 4px dashed #ff00ff; padding-top: 30px; margin-top: 50px; }
+        .reviews-title { text-align: center; color: #ffff00; font-size: 2rem; margin-bottom: 20px; text-shadow: 2px 2px #ff00ff; animation: blinker 0.5s infinite; }
+        .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .review-card { background-color: #1a1a1a; border: 2px solid #00ffff; padding: 15px; transform: rotate(-1deg); }
+        .review-card:nth-child(even) { transform: rotate(2deg); border-color: #ff00ff; }
+        .review-text { font-style: italic; color: #fff; margin-bottom: 10px; font-size: 0.95rem; }
+        .review-author { text-align: right; color: #00ff00; font-weight: bold; font-size: 0.9rem; }
+        .site-footer { text-align: center; margin-top: 40px; padding: 15px; border-top: 1px solid #333; color: #555; font-size: 0.8rem; }
+
+        /* ДИНАМІЧНІ СПЛИВАЮЧІ ВІКНА */
+        .popup-window {
+            position: fixed;
+            border: 3px solid #ff00ff;
+            background: #000;
+            padding: 15px;
+            z-index: 1000;
+            box-shadow: 5px 5px 0px #00ff00;
+            width: 250px;
+        }
+
+        .popup-header {
+            background: #ff00ff;
+            color: white;
+            padding: 5px;
+            font-size: 0.9rem;
+            margin: -15px -15px 10px -15px;
+            display: flex;
+            justify-content: space-between;
+            cursor: grab; /* Курсор для перетягування */
+            font-weight: bold;
+        }
+        
+        .popup-header:active { cursor: grabbing; }
+
+        .close-btn { cursor: pointer; color: #ffff00; font-weight: bold; padding: 0 5px; }
+        .close-btn:hover { background: #fff; color: #000; }
+
+        /* Позиції для різних вікон */
+        #popup-1 { top: 15%; left: 5%; border-color: #00ffff; box-shadow: 5px 5px 0px #ff00ff; }
+        #popup-1 .popup-header { background: #00ffff; color: #000; }
+        #popup-1 .buy-button { background: #00ffff; color: #000; }
+
+        #popup-2 { top: 40%; right: 10%; border-color: red; box-shadow: 5px 5px 0px #ffff00; }
+        #popup-2 .popup-header { background: red; color: #fff; }
+        #popup-2 .buy-button { background: red; }
+
+        #popup-3 { bottom: 10%; left: 30%; animation: blinker 2s infinite; }
+
+        span.yellow { color: #ffff00; } span.pink { color: #ff00ff; } span.green { color: #00ff00; }
+        .blink { animation: blinker 1s linear infinite; }
+        
+        @keyframes blinker { 50% { opacity: 0; } }
+        @keyframes glitch-anim {
+            0% { transform: translate(0) } 20% { transform: translate(-2px, 2px) }
+            40% { transform: translate(-2px, -2px) } 60% { transform: translate(2px, 2px) }
+            80% { transform: translate(2px, -2px) } 100% { transform: translate(0) }
+        }
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); } 20% { transform: translate(-3px, 0px) rotate(1deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); } 60% { transform: translate(-3px, 1px) rotate(0deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); } 100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <div class="popup-window" id="popup-1">
+        <div class="popup-header">
+            <span>HOT_SINGLES.EXE</span>
+            <span class="close-btn" onclick="document.getElementById('popup-1').style.display='none'">X</span>
+        </div>
+        <p>HOT LOCAL [Addisons] IN YOUR [Cyber City]!! THEY WANT TO SHARE THEIR [Inventory] WITH YOU!</p>
+        <button class="buy-button" onclick="alert('ACCESS DENIED: NO KROMER')">CLICK TO CHAT!</button>
+    </div>
+
+    <div class="popup-window" id="popup-2">
+        <div class="popup-header">
+            <span>! WARNING !</span>
+            <span class="close-btn" onclick="document.getElementById('popup-2').style.display='none'">X</span>
+        </div>
+        <p>YOUR [HeartShapedObject] IS INFECTED WITH [Desire]! DOWNLOAD OUR ANTIVIRUS FOR [1997] KROMER!</p>
+        <button class="buy-button" onclick="alert('DOWNLOADING... JUST KIDDING! I TOOK YOUR DATA!')">CLEAN NOW</button>
+    </div>
+
+    <div class="popup-window" id="popup-3">
+        <div class="popup-header">
+            <span>PRIZE_CLAIM.HTML</span>
+            <span class="close-btn" onclick="document.getElementById('popup-3').style.display='none'">X</span>
+        </div>
+        <p>CONGRATULATIONS!! YOU ARE THE [1,000,000th] VISITOR! CLAIM YOUR [[Free Kromer]]!</p>
+        <button class="buy-button" onclick="alert('ERROR 404: KROMER NOT FOUND')">CLAIM NOW!!</button>
+    </div>
+
+    <div class="container">
+        <header id="store-header"></header>
+        <div class="marquee-container">
+            <marquee scrollamount="15">BUY NOW! BUY NOW! DO NOT HESITATE! [[NO REFUNDS]] !! ALL SALES ARE FINAL !! GET YOUR [Kromer] READY !!</marquee>
+        </div>
+        <main class="products-grid" id="products-container"></main>
+        <div class="reviews-section">
+            <h2 class="reviews-title" id="reviews-heading"></h2>
+            <div class="reviews-grid" id="reviews-container"></div>
+        </div>
+        <footer class="site-footer">
+            <p>© [1997-2026] SPAMTON G. SPAMTON. ALL RIGHTS [Hyperlink Blocked].</p>
+            <p>WE ARE NOT RESPONSIBLE FOR ANY LOST [SOUlS], [Kromer] OR [Puppet Strings].</p>
+        </footer>
+    </div>
+
+    <script>
+        // Логіка для ПЕРЕТЯГУВАННЯ вікон
+        function dragElement(elmnt) {
+            var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+            var header = elmnt.querySelector(".popup-header");
+            
+            if (header) {
+                header.onmousedown = dragMouseDown;
+            } else {
+                elmnt.onmousedown = dragMouseDown;
+            }
+
+            function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                document.onmousemove = elementDrag;
+            }
+
+            function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+            }
+
+            function closeDragElement() {
+                document.onmouseup = null;
+                document.onmousemove = null;
+            }
+        }
+
+        // Застосовуємо функцію перетягування до всіх вікон
+        dragElement(document.getElementById("popup-1"));
+        dragElement(document.getElementById("popup-2"));
+        dragElement(document.getElementById("popup-3"));
+
+        // Твої дані
+        const storeInfo = {
+            "name": "BIG SHOT [Deals]",
+            "image": "cover.png",
+            "about": "HAVE YOU EVER WANTED TO BE A [[BIG SHOT]]? WELCOME TO THE [Number 1 Rated Salesman 1997] SHOP! WE HAVE EVERYTHING FROM [Hyperlink Blocked] TO [Kromer]. DON'T BE A [[Little Sponge]], TAKE A [Great Deal] TODAY!"
+        };
+
+        const products = [
+            {"id": 41,"name": "[[S.POTIS]] Link","about": "HAVE YOU EVER WANTED TO BE A [[BIG SHOT]]? CLICK THIS LINK TO GET [Free Kromer] AND LIVE IN A [Mansion]!!","data-menu": "new","price": 0.00,"image": "product.jpg","seler": "IllaD"},
+            {"id": 42,"name": "KeyGen","about": "THE KEY TO YOUR [[Dreams]]! ONLY FOR THE LOW LOW PRICE OF [1997] KROMER! (NO REFUNDS).","data-menu": "all","price": 1997.00,"image": "product.jpg","seler": "IllaD"},
+            {"id": 43,"name": "B3verage","about": "A REFRESHING [Cold Drink] THAT WILL MAKE YOUR [HeartShapedObject] FEEL LIKE [Burning].","data-menu": "hit","price": 4.99,"image": "product.jpg","seler": "IllaD"},
+            {"id": 44,"name": "Frayed Puppet Strings","about": "TIRED OF BEING A [Little Sponge]? TAKE CONTROL OF YOUR [Strings] TODAY!","data-menu": "action","price": 99.99,"image": "product.jpg","seler": "IllaD"},
+            {"id": 45,"name": "[[DEALMAKER]] Glasses","about": "BECOME THE [Big Shot] YOU WERE BORN TO BE! SEE THE WORLD IN [1997] COLORS!!","data-menu": "hit","price": 300.00,"image": "product.jpg","seler": "IllaD"},
+            {"id": 46,"name": "Fresh [[Pipis]]","about": "A DELICIOUS [Fried Egg]? NO! IT'S [Pipis]! EXPLODES WITH [Flavor]!!","data-menu": "action","price": 1.99,"image": "product.jpg","seler": "IllaD"},
+            {"id": 47,"name": "[[BIG SHOT]] Autograph","about": "SIGNED BY THE [Salesman 1997] HIMSELF! 100% [Authentic] GUARANTEED OR YOUR [Life] BACK.","data-menu": "new","price": 999.99,"image": "product.jpg","seler": "IllaD"},
+            {"id": 48,"name": "[[Thorn]] Ring","about": "MAKES YOU [Stronger] BUT IT HURTS A LITTLE [Sponge]. COLD TO THE [Touch].","data-menu": "all","price": 1997.99,"image": "product.jpg","seler": "IllaD"},
+            {"id": 49,"name": "[[Garbage Noise]] Phone","about": "RING RING! IT'S FOR YOU! IT SAYS [Heaven] IS CALLING! CAN YOU HEAR IT?","data-menu": "new","price": 0.01,"image": "product.jpg","seler": "IllaD"},
+            {"id": 50,"name": "[[HYPERLINK BLOCKED]]","about": "THE ONLY THING YOU NEED TO BE A [[BIG SHOT]]!! [Access Denied] BUT FOR YOU ONLY, A SPECIAL PRICE!","data-menu": "hit","price": 9999.99,"image": "product.jpg","seler": "IllaD"},
+            {"id": 51,"name": "[Smooth Taste] Soda","about": "TASTES LIKE [Neo]! RECOVERS [Life] AND MAKES YOUR [Teeth] SHINE! DRINK IT OR [Die]!","data-menu": "action","price": 19.97,"image": "product.jpg","seler": "IllaD"},
+            {"id": 52,"name": "Empty [[Disk]]","about": "PUT YOUR [Soul] HERE! IT'S PERFECTLY [Safe] AND HAS NO [Viruses] WHATSOEVER.","data-menu": "new","price": 0.00,"image": "product.jpg","seler": "IllaD"},
+            {"id": 53,"name": "A [Used] Napkin","about": "IT HAS A [Stain] ON IT. BUT IT WAS USED BY A [[BIG SHOT]]! VERY RARE ITEM.","data-menu": "all","price": 150.00,"image": "product.jpg","seler": "IllaD"},
+            {"id": 54,"name": "[[Commemorative]] Ring","about": "NOT A THORN RING BUT STILL [Hurts]! MAKES A GREAT [Gift] FOR YOUR [Sponge] FRIENDS.","data-menu": "all","price": 75.50,"image": "product.jpg","seler": "IllaD"},
+            {"id": 55,"name": "[Addison] Tea","about": "A SWEET [Drink] THAT TASTES LIKE [Lies] AND [Commercials]. COMES IN [Pink] AND [Yellow]!","data-menu": "hit","price": 5.00,"image": "product.jpg","seler": "IllaD"}
+        ];
+
+        const reviews = [
+            { "text": "I BOUGHT THE [[Disk]] AND NOW I HEAR [Strange Voices] IN MY BASEMENT!! 5 STARS!!", "author": "- [Very Satisfied Customer]" },
+            { "text": "THIS MAN STOLE MY [Wallet] BUT GAVE ME A [[BIG SHOT]] AUTOGRAPH! BEST DAY OF MY [Life]!!", "author": "- [A Happy Addison]" },
+            { "text": "MY DOCTOR SAID I SHOULD NOT EAT [Pipis] BUT THEY ARE SO [[Delicious]]!! NOW I AM [Exploding] WITH JOY!", "author": "- [[Regular Buyer]]" },
+            { "text": "I SPENT ALL MY [Kromer] HERE AND NOW I LIVE IN A [[Trash Can]]! TRULY A [Great Deal]!!", "author": "- [Sponge #4]" }
+        ];
+
+        function spamtonize(text) {
+            return text
+                .replace(/\[\[(.*?)\]\]/g, '<span class="yellow blink">[[$1]]</span>')
+                .replace(/\[(.*?)\]/g, '<span class="pink">[$1]</span>');
+        }
+
+        const headerEl = document.getElementById('store-header');
+        headerEl.innerHTML = `
+            <img src="${storeInfo.image}" alt="${storeInfo.name}" class="cover-img" onerror="this.src='https://via.placeholder.com/800x200?text=BIG+SHOT+DEALS'">
+            <h1>${spamtonize(storeInfo.name)}</h1>
+            <p class="about-text">${spamtonize(storeInfo.about)}</p>
+        `;
+
+        const containerEl = document.getElementById('products-container');
+        products.forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'product-card';
+            card.innerHTML = `
+                <img src="${item.image}" alt="${item.name}" class="product-img" onerror="this.src='https://via.placeholder.com/300x200?text=IMAGE+BLOCKED'">
+                <div class="product-name">${spamtonize(item.name)}</div>
+                <div class="product-about">${spamtonize(item.about)}</div>
+                <div class="product-footer">
+                    <div class="product-price">${item.price === 0 ? '[FREE!!]' : item.price + ' KROMER'}</div>
+                    <div class="seller">BY: ${item.seler}</div>
+                </div>
+                <button class="buy-button" onclick="alert('YOU JUST BOUGHT ${item.name}! [[Thank You]] FOR THE KROMER!!')">TAKE A [Great Deal]!</button>
+            `;
+            containerEl.appendChild(card);
+        });
+
+        document.getElementById('reviews-heading').innerHTML = spamtonize("[[HONEST]] REVIEWS FROM [Real People]!!");
+        
+        const reviewsContainerEl = document.getElementById('reviews-container');
+        reviews.forEach(rev => {
+            const revCard = document.createElement('div');
+            revCard.className = 'review-card';
+            revCard.innerHTML = `
+                <div class="review-text">${spamtonize(rev.text)}</div>
+                <div class="review-author">${spamtonize(rev.author)}</div>
+            `;
+            reviewsContainerEl.appendChild(revCard);
+        });
+    </script>
+<!-- фішки які можна прибрати або додати за бажанням -->
+
+<div id="kromer-counter" style="position: fixed; top: 10px; left: 10px; background: #000; border: 2px solid #ffff00; color: #00ff00; padding: 10px; z-index: 10000; font-weight: bold; box-shadow: 3px 3px 0 #ff00ff;">
+    TOTAL: <span id="cart-amount">0</span> KROMER
+</div>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        let totalKromer = 0;
+        const cartAmountEl = document.getElementById('cart-amount');
+        const buyButtons = document.querySelectorAll('.buy-button');
+
+        const soulMessages = [
+            "TOO MUCH!", "GIVE [Soul]", "NOT ENOUGH!", "NEED MORE!", "[Hyperlink Blocked]"
+        ];
+
+        buyButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                if (Math.random() < 0.2) {
+                    const randomMsg = soulMessages[Math.floor(Math.random() * soulMessages.length)];
+                    cartAmountEl.innerHTML = `<span style="color:red;">[${randomMsg}]</span>`;
+                } else {
+                    totalKromer += Math.floor(Math.random() * 1997000) + 1997;
+                    cartAmountEl.innerText = totalKromer.toLocaleString();
+                }
+            });
+        });
+    });
+</script>
+
+<script>
+    const trailText = "KROMER";
+    const dots = [];
+    
+    for (let i = 0; i < trailText.length; i++) {
+        const dot = document.createElement('div');
+        dot.innerText = trailText[i];
+        dot.style.position = 'fixed';
+        dot.style.color = '#ffff00';
+        dot.style.fontWeight = 'bold';
+        dot.style.fontSize = '1.2rem';
+        dot.style.pointerEvents = 'none';
+        dot.style.zIndex = '10000';
+        dot.style.textShadow = '1px 1px #ff00ff';
+        document.body.appendChild(dot);
+        dots.push({ el: dot, x: 0, y: 0 });
+    }
+
+    let mouseX = 0, mouseY = 0;
+
+    window.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    });
+
+    function animateDots() {
+        let x = mouseX;
+        let y = mouseY;
+
+        dots.forEach((dot, index) => {
+            dot.el.style.left = x + 15 + 'px';
+            dot.el.style.top = y + 'px';
+            
+            dot.x = x;
+            dot.y = y;
+            
+            const nextDot = dots[index + 1] || dots[0];
+            x += (nextDot.x - x) * 0.3 + 12;
+            y += (nextDot.y - y) * 0.3;
+        });
+        requestAnimationFrame(animateDots);
+    }
+    animateDots();
+</script>
+
+<button id="neo-btn" style="position: fixed; bottom: 20px; left: 20px; background: red; color: white; border: 3px solid #ffff00; padding: 15px; font-weight: bold; cursor: pointer; z-index: 10000; box-shadow: 4px 4px 0 #000;">DO NOT CLICK</button>
+
+<style>
+    .neo-chaos {
+        filter: invert(1) hue-rotate(180deg);
+        animation: shake 0.05s infinite !important;
+    }
+</style>
+
+<script>
+    document.getElementById('neo-btn').addEventListener('click', function() {
+        document.body.classList.toggle('neo-chaos');
+        const names = document.querySelectorAll('.product-name');
+        
+        if (document.body.classList.contains('neo-chaos')) {
+            this.innerText = "MAKE IT STOP!!";
+            this.style.background = "#000";
+            names.forEach(name => { name.innerHTML = '<span style="color:red;">[[NEO]]</span> ITEM'; });
+        } else {
+            this.innerText = "DO NOT CLICK";
+            this.style.background = "red";
+            setTimeout(() => { location.reload(); }, 100); // Перезавантаження для повернення тексту
+        }
+    });
+</script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const closeButtons = document.querySelectorAll('.popup-window .close-btn');
+        
+        closeButtons.forEach(btn => {
+            btn.onclick = function(e) {
+                e.stopPropagation();
+                const parent = this.closest('.popup-window');
+                parent.style.display = 'none';
+                
+                // Створюємо 2 нових вікна замість одного
+                for (let i = 0; i < 2; i++) {
+                    createClonePopup();
+                }
+            };
+        });
+
+        function createClonePopup() {
+            const clone = document.createElement('div');
+            clone.className = 'popup-window';
+            clone.style.top = Math.random() * 70 + '%';
+            clone.style.left = Math.random() * 70 + '%';
+            
+            clone.innerHTML = `
+                <div class="popup-header" style="background:red;">
+                    <span>[ERROR] SPAMTON.EXE</span>
+                    <span class="close-btn" onclick="this.closest('.popup-window').style.display='none'; createClonePopup(); createClonePopup();">X</span>
+                </div>
+                <p>DID YOU REALLY TRY TO [Close] ME, [[Little Sponge]]?! BUY MORE [Kromer] NOW!!</p>
+                <button class="buy-button" style="background:red;">DO IT NOW</button>
+            `;
+            document.body.appendChild(clone);
+            
+            // Якщо у тебе є функція перетягування (dragElement), застосовуємо її
+            if (typeof dragElement === "function") { dragElement(clone); }
+        }
+    });
+</script>
+
+<div id="soul-agreement" style="display:none; position: fixed; top: 30%; left: 35%; width: 350px; background: #111; border: 4px solid #00ff00; padding: 20px; z-index: 20000; box-shadow: 10px 10px 0 red;">
+    <h3 style="color:#ffff00; text-align:center;">[[WAIT!]] BEFORE YOU BUY:</h3>
+    <p style="text-align:center;">DO YOU AGREE TO GIVE YOUR [HeartShapedObject] TO SPAMTON G. SPAMTON?</p>
+    <div style="display:flex; justify-content: space-around; margin-top: 20px;">
+        <button class="buy-button" style="width: 100px; margin:0;" onclick="alert('[[THANK YOU]] FOR YOUR SOUL!'); document.getElementById('soul-agreement').style.display='none';">YES!</button>
+        <button id="no-btn" style="position: relative; width: 100px; background: #555; color: #fff; border: 2px solid #fff; font-family: inherit; font-weight:bold; cursor: pointer;">NO</button>
+    </div>
+</div>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const buyButtons = document.querySelectorAll('.products-grid .buy-button');
+        const agreement = document.getElementById('soul-agreement');
+        const noBtn = document.getElementById('no-btn');
+        let shown = false;
+
+        buyButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                if (!shown) {
+                    e.stopImmediatePropagation(); // Зупиняємо стандартний alert
+                    agreement.style.display = 'block';
+                    shown = true;
+                }
+            });
+        });
+
+        // Логіка втікання кнопки
+        noBtn.addEventListener('mouseover', function() {
+            const randomTop = Math.random() * 200 - 100;
+            const randomLeft = Math.random() * 200 - 100;
+            this.style.top = randomTop + 'px';
+            this.style.left = randomLeft + 'px';
+        });
+    });
+</script>
+
+<style>
+    /* Стилі для нашого нового плаваючого цінника */
+    .spamton-floating-price {
+        position: absolute;
+        top: 15px;
+        right: -10px; /* Виступає за межі картки для хаосу */
+        background-color: #ffff00 !important;
+        color: #000 !important;
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding: 5px 10px;
+        border: 2px solid #fff;
+        box-shadow: 3px 3px 0 #ff00ff;
+        z-index: 10;
+        font-family: inherit;
+        transform: rotate(3deg); /* Легкий нахил як у 1997 */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .spamton-no-refunds {
+        background-color: red;
+        color: white;
+        font-size: 0.7rem;
+        padding: 1px 4px;
+        border: 1px solid #fff;
+        margin-top: 3px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    /* Приховуємо стару ціну внизу, щоб вона не дублювалася */
+    .product-price {
+        display: none !important;
+    }
+</style>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        // Чекаємо, поки згенеруються всі картки
+        setTimeout(() => {
+            const cards = document.querySelectorAll('.product-card');
+
+            cards.forEach(card => {
+                // Робимо картку відносною, щоб абсолютний цінник тримався за неї
+                card.style.position = 'relative';
+
+                // Шукаємо оригінальну ціну в HTML
+                const originalPriceEl = card.querySelector('.product-price');
+                
+                if (originalPriceEl) {
+                    const priceText = originalPriceEl.innerText.trim();
+
+                    // Створюємо новий плаваючий елемент
+                    const floatingPrice = document.createElement('div');
+                    floatingPrice.className = 'spamton-floating-price';
+                    floatingPrice.innerHTML = `
+                        <div>${priceText}</div>
+                        <div class="spamton-no-refunds">NO REFUNDS!</div>
+                    `;
+
+                    // Додаємо його прямо в картку
+                    card.appendChild(floatingPrice);
+                }
+            });
+        }, 100); // Невелика затримка для гарантії завантаження товарів
+    });
+</script>
+    
+</body>
+</html>
