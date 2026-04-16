@@ -47,19 +47,19 @@ function renderCard(all_product, reset = false){
           <span class="card-emoji" ><img src= "${product['image']}"></span>
         </div>
         <div class="card-info">
-          <div class="card-category">${product['seller']}</div>
+          <div class="card-category">${product['seler']}</div>
           <div class="card-name">${product['name']}</div>
           <div class="card-price-row">
-            <div><span class="card-price">${product['price']}</span><span class="card-price-old">$${product['price']+100}</span></div>
-            <div class="card-rating"><span class="stars">★★★★★</span> 4.9</div>
+            <div><span class="card-price">${product['price']}$ </span><span class="card-price-old">$${product['price']+100}</span></div>
+            
           </div>
         </div>
       </div>
       <div class="flip-back">
-        <div class="back-tag">${product['seller']}</div>
+        <div class="back-tag">${product['seler']}</div>
         <div class="back-name" >${product['name']}</div>
         <div class="back-desc">${product['about']}</div>
-        <div class="back-price"><span class="back-price-main">${product['price']}</span><span class="back-price-period">Free shipping</span></div>
+        <div class="back-price"><span class="back-price-main">${product['price']}$</span></div>
         <div style="display:flex;justify-content:space-between;">
         <button class="back-cta" onclick = 'addtocart(${JSON.stringify(product)})'>До кошику</button>
          <button class="back-cta" onclick = 'show_product(${JSON.stringify(product)})'>Детальніше</button>
@@ -86,20 +86,26 @@ function show_product(product){
 }
 
 function dealmake(){
+      let cart = localStorage.getItem("cart")
+    cart = JSON.parse(cart)
+   
+    if(cart && Array.isArray(cart) && cart.length > 0) {
   window.location.href = "order.html"
+    }
 }
-
+window.addEventListener("DOMContentLoaded", () => {
 const observer = new IntersectionObserver(elements => {
   elements.forEach(el => {
-    if (el.isintersecting){
-      el.target.classList.add["observer-show"]
-      observer.unobserve[el.target]
+    if (el.isIntersecting){
+      el.target.classList.add("observer-show")
+      observer.unobserve(el.target)
     }
   })
 }, {
-  threshold: 0.7
+  threshold: 0.4
 })
 
-document.querySelectorAll("observer-hide").forEach(el => {
+document.querySelectorAll(".observer-hide").forEach(el => {
   observer.observe(el)
+})
 })
