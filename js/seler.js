@@ -3,10 +3,12 @@ let all_product
 document.addEventListener("DOMContentLoaded", async function(){
     await loadComponent('../components/header.html', '.header')
     await loadComponent('../components/footer.html','.footer')
-     await loadComponent('../components/cart.html','.div-cart')
+    await loadComponent('../components/cart.html','.div-cart')
     let seler_data = await loadData("../data/selers.json")
   all_product = await loadData("../data/product.json")
+
     let name_seler = localStorage.getItem("seler")
+    
     let seler_img = document.querySelector(".cover-seler-img")
     let seler_name = document.querySelector(".cover-seler-text-name")
     let seler_seler = document.querySelector(".cover-seler-text-seler")
@@ -27,7 +29,9 @@ document.addEventListener("DOMContentLoaded", async function(){
     seler_about.innerHTML = seler_data['about']
     seler_seler.innerHTML = name_seler
     }
+
     renderCard(all_product)
+    
     Filtering(all_product);
 
 })

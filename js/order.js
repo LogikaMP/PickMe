@@ -42,7 +42,7 @@ if(!form.checkValidity()){
 }
 else{
     e.preventDefault()
-    document.querySelector(".order-container").innerHTML = `<div class="order-complete">
+    document.querySelector(".order-container").innerHTML = `<div class="order-complete observer-hide">
     <h2>Замовлення оформлено!</h2>
     <p class="order-number">Номер вашого замовлення: <strong>№${randomInt(100000, 999999)}</strong></p>
     <p class="thank-you">

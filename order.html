@@ -19,56 +19,56 @@
 
     <form action="#" method="post">
 
-        <label for="name">Ім'я:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+        <label for="name" class="observer-hide">Ім'я:</label><br>
+        <input type="text" id="name" name="name" class="observer-hide" required><br><br>
 
-        <label for="surname">Прізвище:</label><br>
-        <input type="text" id="surname" name="surname" required><br><br>
+        <label for="surname" class="observer-hide">Прізвище:</label><br>
+        <input type="text" id="surname" class="observer-hide" name="surname" required><br><br>
 
-        <label for="phone">Телефон:</label><br>
-        <input type="tel" id="phone" name="phone" required><br><br>
+        <label for="phone" class="observer-hide">Телефон:</label><br>
+        <input type="tel" id="phone" class="observer-hide" name="phone" required><br><br>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
+        <label for="email" class="observer-hide">Email:</label><br>
+        <input type="email" id="email" class="observer-hide" name="email"><br><br>
 
-        <label for="address">Адреса доставки:</label><br>
-        <input type="text" id="address" name="address" required><br><br>
+        <label for="address" class="observer-hide">Адреса доставки:</label><br>
+        <input type="text" id="address" class="observer-hide" name="address" required><br><br>
 
-        <label for="city">Місто:</label><br>
-        <input type="text" id="city" name="city" required><br><br>
+        <label for="city" class="observer-hide">Місто:</label><br>
+        <input type="text" id="city" class="observer-hide" name="city" required><br><br>
 
-        <label for="postcode">Поштовий індекс:</label><br>
-        <input type="text" id="postcode" name="postcode" required><br><br>
+        <label for="postcode" class="observer-hide">Поштовий індекс:</label><br>
+        <input type="text" id="postcode" class="observer-hide" name="postcode" required><br><br>
 
-        <label for="delivery">Спосіб доставки:</label><br>
+        <label for="delivery" class="observer-hide">Спосіб доставки:</label><br>
         <select id="delivery" name="delivery">
             <option value="courier">Кур'єр</option>
             <option value="pickup">Самовивіз</option>
         </select><br><br>
 
-        <label for="payment">Спосіб оплати:</label><br>
+        <label for="payment" class="observer-hide">Спосіб оплати:</label><br>
         <select id="payment" name="payment">
             <option value="card">Картка</option>
             <option value="cash">Готівка при отриманні</option>
         </select><br><br>
 
-        <label for="post">Тип пошти:</label><br>
+        <label for="post" class="observer-hide">Тип пошти:</label><br>
         <select id="post" name="post">
             <option value="nova">Нова пошта</option>
             <option value="ukr">Укр пошта</option>
             <option value="regular">Звичайна пошта</option>
         </select><br><br>
 
-        <label for="comment">Коментар до замовлення:</label><br>
+        <label for="comment" class="observer-hide">Коментар до замовлення:</label><br>
         <textarea id="comment" name="comment" rows="4"></textarea><br><br>
 
-        <button type="submit" >Оформити замовлення</button>
+        <button type="submit" class="observer-hide" >Оформити замовлення</button>
         
 
     </form>
 
      <div class="order-summary">
-        <h3>Ваш кошик</h3>
+        <h3 class="observer-hide">Ваш кошик</h3>
 
         <div class="cart-items"></div>
      <div class="total order-total"></div>
