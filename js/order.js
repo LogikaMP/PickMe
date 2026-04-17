@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async function(){
-    await loadComponent('../components/header.html', '.header')
-    await loadComponent('../components/footer.html','.footer')
+    await loadComponent('./components/header.html', '.header')
+    await loadComponent('./components/footer.html','.footer')
     document.getElementById("btn-cart").remove()
     let cart = localStorage.getItem("cart")
     cart = cart ? JSON.parse(cart) : []
