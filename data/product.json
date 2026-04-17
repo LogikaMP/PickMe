@@ -1,12 +1,12 @@
 {
   "Dasha": [
-    {"id":41,"name":"Настільна лампа LightHome","about":"Сучасна лампа для робочого столу з м'яким освітленням.","data-menu":"new","price":35,"image":"../src/Dasha/1.jpg","seler":"Dasha"},
-    {"id":42,"name":"Стельова люстра Crystal","about":"Елегантна люстра для вітальні з яскравим світлом.","data-menu":"hit","price":120,"image":"../src/Dasha/2.jpg","seler":"Dasha"},
-    {"id":43,"name":"Лампа + ліхтар DuoLight","about":"Універсальний набір лампи та ліхтаря для дому та вулиці.","data-menu":"all","price":50,"image":"../src/Dasha/3.jpg","seler":"Dasha"},
-    {"id":44,"name":"Кухонне освітлення BrightCook","about":"Яскраве освітлення для кухні з економним споживанням.","data-menu":"action","price":70,"image":"../src/Dasha/4.jpg","seler":"Dasha"},
-    {"id":45,"name":"Декоративна ваза Classic","about":"Стильна ваза для квітів, що прикрасить будь-який інтер’єр.","data-menu":"ycinka","price":25,"image":"../src/Dasha/5.jpg","seler":"Dasha"},
-    {"id":46,"name":"Статуетка ArtStyle","about":"Декоративна статуетка для створення затишку в домі.","data-menu":"all","price":30,"image":"../src/Dasha/6.jpg","seler":"Dasha"},
-    {"id":47,"name":"Штучні квіти Rose Decor","about":"Реалістичні штучні троянди для декору приміщення.","data-menu":"new","price":20,"image":"../src/Dasha/7.jpg","seler":"Dasha"},
+    {"id":41,"name":"Настільна лампа LightHome","about":"Сучасна лампа для робочого столу з м'яким освітленням.","data-menu":"new","price":35,"image":"src/Dasha/1.jpg","seler":"Dasha"},
+    {"id":42,"name":"Стельова люстра Crystal","about":"Елегантна люстра для вітальні з яскравим світлом.","data-menu":"hit","price":120,"image":"src/Dasha/2.jpg","seler":"Dasha"},
+    {"id":43,"name":"Лампа + ліхтар DuoLight","about":"Універсальний набір лампи та ліхтаря для дому та вулиці.","data-menu":"all","price":50,"image":"src/Dasha/3.jpg","seler":"Dasha"},
+    {"id":44,"name":"Кухонне освітлення BrightCook","about":"Яскраве освітлення для кухні з економним споживанням.","data-menu":"action","price":70,"image":"src/Dasha/4.jpg","seler":"Dasha"},
+    {"id":45,"name":"Декоративна ваза Classic","about":"Стильна ваза для квітів, що прикрасить будь-який інтер’єр.","data-menu":"ycinka","price":25,"image":"src/Dasha/5.jpg","seler":"Dasha"},
+    {"id":46,"name":"Статуетка ArtStyle","about":"Декоративна статуетка для створення затишку в домі.","data-menu":"all","price":30,"image":"src/Dasha/6.jpg","seler":"Dasha"},
+    {"id":47,"name":"Штучні квіти Rose Decor","about":"Реалістичні штучні троянди для декору приміщення.","data-menu":"new","price":20,"image":"src/Dasha/7.jpg","seler":"Dasha"},
     {"id":48,"name":"Штучні квіти Bloom Set","about":"Набір декоративних квітів для стильного інтер’єру.","data-menu":"hit","price":22,"image":"../src/Dasha/8.jpg","seler":"Dasha"},
     {"id":49,"name":"Штучні квіти Green Touch","about":"Зелені декоративні рослини для дому та офісу.","data-menu":"all","price":18,"image":"../src/Dasha/9.jpg","seler":"Dasha"},
     {"id":50,"name":"Штучні квіти Luxury Mix","about":"Преміальний набір штучних квітів для елегантного декору.","data-menu":"action","price":35,"image":"../src/Dasha/10.jpg","seler":"Dasha"}
