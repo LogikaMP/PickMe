@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", async function(){
-    await loadComponent('../components/header.html', '.header')
+    await loadComponent('./components/header.html', '.header')
     await loadComponent('./components/footer.html','.footer')
-  await loadComponent('components/cart.html','.div-cart')
-    let all_product = await loadData("../data/product.json")
+  await loadComponent('./components/cart.html','.div-cart')
+    let all_product = await loadData("./data/product.json")
     console.log(all_product)
 
 
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", async function(){
 
     //add card selers//
     let divSelers = document.querySelector(".selers")
-    let selers = await loadData("../data/selers.json")
+    let selers = await loadData("./data/selers.json")
     selers = selers["selers"]
    
     Object.entries(selers).forEach(function([name, value]) {
