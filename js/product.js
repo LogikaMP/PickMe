@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", async function(){
-    await loadComponent('../components/header.html', '.header')
-    await loadComponent('../components/footer.html','.footer')
-     await loadComponent('../components/cart.html','.div-cart')
+    await loadComponent('./components/header.html', '.header')
+    await loadComponent('./components/footer.html','.footer')
+     await loadComponent('./components/cart.html','.div-cart')
     let product = localStorage.getItem("product")
     product = JSON.parse(product)
     let response = await loadData("../data/response.json")
