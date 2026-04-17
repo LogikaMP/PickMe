@@ -1,9 +1,9 @@
 let currentIndex = 0
 let all_product
 document.addEventListener("DOMContentLoaded", async function(){
-    await loadComponent('../components/header.html', '.header')
-    await loadComponent('../components/footer.html','.footer')
-     await loadComponent('../components/cart.html','.div-cart')
+    await loadComponent('./components/header.html', '.header')
+    await loadComponent('./components/footer.html','.footer')
+     await loadComponent('./components/cart.html','.div-cart')
     all_product = await loadData("../data/product.json")
     all_product = Object.values(all_product).flat()
     let request = localStorage.getItem("request")
