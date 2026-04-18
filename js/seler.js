@@ -28,6 +28,12 @@ document.addEventListener("DOMContentLoaded", async function(){
     seler_name.innerHTML = seler_data['name']
     seler_about.innerHTML = seler_data['about']
     seler_seler.innerHTML = name_seler
+        seler_name.addEventListener("click",function(){
+            window.location.href = `${seler_data["site"]}`
+        })
+        seler_img.addEventListener("click",function(){
+            window.location.href = `${seler_data["site-seler"]}`
+        })
     }
 
     renderCard(all_product)
