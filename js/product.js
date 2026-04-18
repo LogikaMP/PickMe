@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", async function(){
      await loadComponent('./components/cart.html','.div-cart')
     let product = localStorage.getItem("product")
     product = JSON.parse(product)
-    let response = await loadData("../data/response.json")
+    let response = await loadData("./data/response.json")
     response = response[product.id]
     let pr = `<div class="product">
     <img src="${product.image}" alt="Товар">
