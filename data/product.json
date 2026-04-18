@@ -1,6 +1,6 @@
 {
   "Dasha": [
-    {"id":41,"name":"Настільна лампа LightHome","about":"Сучасна лампа для робочого столу з м'яким освітленням.","data-menu":"new","price":35,"image":"src/dasha/1.jpg","seler":"dasha"},
+    {"id":41,"name":"Настільна лампа LightHome","about":"Сучасна лампа для робочого столу з м’яким освітленням.","data-menu":"new","price":35,"image":"src/dasha/1.jpg","seler":"dasha"},
     {"id":42,"name":"Стельова люстра Crystal","about":"Елегантна люстра для вітальні з яскравим світлом.","data-menu":"hit","price":120,"image":"src/dasha/2.jpg","seler":"dasha"},
     {"id":43,"name":"Лампа + ліхтар DuoLight","about":"Універсальний набір лампи та ліхтаря для дому та вулиці.","data-menu":"all","price":50,"image":"src/dasha/3.jpg","seler":"dasha"},
     {"id":44,"name":"Кухонне освітлення BrightCook","about":"Яскраве освітлення для кухні з економним споживанням.","data-menu":"action","price":70,"image":"src/dasha/4.jpg","seler":"dasha"},
@@ -16,7 +16,7 @@
     {"id":11,"name":"Елегантний костюм Prime","about":"Стильний класичний костюм для ділових зустрічей та урочистих подій.","data-menu":"new","price":180,"image":"src/sofia/1.jpg","seler":"sofia"},
     {"id":12,"name":"Класичний піджак Line","about":"Сучасний піджак з ідеальною посадкою для щоденного образу.","data-menu":"hit","price":95,"image":"src/sofia/2.jpg","seler":"sofia"},
     {"id":13,"name":"Спортивний костюм Flex","about":"Зручний спортивний комплект для активного способу життя та тренувань.","data-menu":"all","price":75,"image":"src/sofia/3.jpg","seler":"sofia"},
-    {"id":14,"name":"М'яка піжама Night","about":"Затишна піжама з м'якої тканини для комфортного сну.","data-menu":"ycinka","price":40,"image":"src/sofia/4.jpg","seler":"sofia"},
+    {"id":14,"name":"М’яка піжама Night","about":"Затишна піжама з м’якої тканини для комфортного сну.","data-menu":"ycinka","price":40,"image":"src/sofia/4.jpg","seler":"sofia"},
     {"id":15,"name":"Літня сукня Breeze","about":"Легка та елегантна сукня для теплих літніх днів.","data-menu":"new","price":65,"image":"src/sofia/5.jpg","seler":"sofia"},
     {"id":16,"name":"Міська сорочка Style","about":"Повсякденна сорочка, що підходить для роботи та прогулянок.","data-menu":"all","price":45,"image":"src/sofia/6.jpg","seler":"sofia"},
     {"id":17,"name":"Зимове пальто Pro","about":"Тепле пальто для холодної погоди зі стильним дизайном.","data-menu":"hit","price":150,"image":"src/sofia/7.jpg","seler":"sofia"},
@@ -83,10 +83,10 @@
     {"id": 43,"name": "B3verage","about": "A REFRESHING [Cold Drink] THAT WILL MAKE YOUR [HeartShapedObject] FEEL LIKE [Burning].","data-menu": "hit","price": 4.99,"image": "src/illaD/product.jpg","seler": "IllaD"},
     {"id": 44,"name": "Frayed Puppet Strings","about": "TIRED OF BEING A [Little Sponge]? TAKE CONTROL OF YOUR [Strings] TODAY!","data-menu": "action","price": 99.99,"image": "src/illaD/product.jpg","seler": "IllaD"},
     {"id": 45,"name": "[[DEALMAKER]] Glasses","about": "BECOME THE [Big Shot] YOU WERE BORN TO BE! SEE THE WORLD IN [1997] COLORS!!","data-menu": "hit","price": 300.00,"image": "src/illaD/product.jpg","seler": "IllaD"},
-    {"id": 46,"name": "Fresh [[Pipis]]","about": "A DELICIOUS [Fried Egg]? NO! IT'S [Pipis]! EXPLODES WITH [Flavor]!!","data-menu": "action","price": 1.99,"image": "src/illaD/product.jpg","seler": "IllaD"},
+    {"id": 46,"name": "Fresh [[Pipis]]","about": "A DELICIOUS [Fried Egg]? NO! IT’S [Pipis]! EXPLODES WITH [Flavor]!!","data-menu": "action","price": 1.99,"image": "src/illaD/product.jpg","seler": "IllaD"},
     {"id": 47,"name": "[[BIG SHOT]] Autograph","about": "SIGNED BY THE [Salesman 1997] HIMSELF! 100% [Authentic] GUARANTEED OR YOUR [Life] BACK.","data-menu": "new","price": 999.99,"image": "src/illaD/product.jpg","seler": "IllaD"},
     {"id": 48,"name": "[[Thorn]] Ring","about": "MAKES YOU [Stronger] BUT IT HURTS A LITTLE [Sponge]. COLD TO THE [Touch].","data-menu": "all","price": 1997.99,"image": "src/illaD/product.jpg","seler": "IllaD"},
-    {"id": 49,"name": "[[Garbage Noise]] Phone","about": "RING RING! IT'S FOR YOU! IT SAYS [Heaven] IS CALLING! CAN YOU HEAR IT?","data-menu": "new","price": 0.01,"image": "src/illaD/product.jpg","seler": "IllaD"}
+    {"id": 49,"name": "[[Garbage Noise]] Phone","about": "RING RING! IT’S FOR YOU! IT SAYS [Heaven] IS CALLING! CAN YOU HEAR IT?","data-menu": "new","price": 0.01,"image": "src/illaD/product.jpg","seler": "IllaD"}
   ],
 
   "IllaM": [
