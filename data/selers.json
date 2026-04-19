@@ -3,8 +3,8 @@
     {
       "Yana":
       {
-        "site":"",
-        "site-seler":"",
+        "site":"https://logikamp.github.io/Yana/",
+        "site-seler":"https://logikamp.github.io/Yana/magazine",
         "name": "motobike",
         "image": "src/yana/cover.jpg",
         "about": "Мотоцикли та аксесуари для них. Великий вибір запчастин, шоломів та екіпіровки."
@@ -43,7 +43,7 @@
     
       "Dasha":
       {
-        "site":"",
+        "site":"https://detromin27.github.io/Dasha/",
         "site-seler":"",
         "name": "home decor",
         "image": "src/dasha/cover.png",
@@ -53,8 +53,8 @@
     
       "Nikita":
       {
-        "site":"",
-        "site-seler":"",
+        "site":"https://logikamp.github.io/my_page/",
+        "site-seler":"https://detromin27.github.io/Dasha/shop.html",
         "name": "audio shop",
         "image": "src/nikita/cover.jpg",
         "about": "Колонки, навушники та портативна аудіотехніка для музики."
