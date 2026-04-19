@@ -3,6 +3,8 @@
     {
       "Yana":
       {
+        "site":"",
+        "site-seler":"",
         "name": "motobike",
         "image": "src/yana/cover.jpg",
         "about": "Мотоцикли та аксесуари для них. Великий вибір запчастин, шоломів та екіпіровки."
@@ -11,6 +13,8 @@
     
       "Sofia":
       {
+        "site":"",
+        "site-seler":"",
         "name": "fashion store",
         "image": "src/sofia/cover.jpg",
         "about": "Стильні сумки, рюкзаки та аксесуари для щоденного використання."
@@ -19,6 +23,8 @@
     
       "Maksim":
       {
+        "site":"https://logikamp.github.io/maks/",
+        "site-seler":"",
         "name": "tech gadgets",
         "image": "src/maksim/cover.jpg",
         "about": "Смарт-годинники, електроніка та корисні гаджети для дому і роботи."
@@ -28,6 +34,7 @@
       "Yrik":
       {
         "site":"https://logikamp.github.io/Yrik_bio/",
+        "site-seler":"",
         "name": "gaming gear",
         "image": "src/yrik/cover.webp",
         "about": "Ігрові мишки, клавіатури та аксесуари для геймерів."
@@ -36,6 +43,8 @@
     
       "Dasha":
       {
+        "site":"",
+        "site-seler":"",
         "name": "home decor",
         "image": "src/dasha/cover.png",
         "about": "Товари для дому: лампи, декор, кухонні аксесуари та елементи затишку."
@@ -44,6 +53,8 @@
     
       "Nikita":
       {
+        "site":"",
+        "site-seler":"",
         "name": "audio shop",
         "image": "src/nikita/cover.jpg",
         "about": "Колонки, навушники та портативна аудіотехніка для музики."
@@ -53,6 +64,7 @@
       "IllaM":
       {
         "site":"https://naviiluha.github.io/About-Me/",
+        "site-seler":"",
         "name": "sport life",
         "image": "src/illaM/cover.jpg",
         "about": "Товари для спорту та фітнесу: килимки для йоги, еспандери та аксесуари."
